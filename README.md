@@ -18,7 +18,8 @@
 
 <p align="center">
   <img alt="Python" src="https://img.shields.io/badge/python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img alt="UI private" src="https://img.shields.io/badge/ui-private_on_request-8957e5?style=flat-square"/>
+  <img alt="basic desk: included" src="https://img.shields.io/badge/desk-included-2ea44f?style=flat-square"/>
+  <img alt="React UI: private" src="https://img.shields.io/badge/react_ui-private-8957e5?style=flat-square"/>
   <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-SSE%20streaming-009688?style=flat-square&logo=fastapi&logoColor=white"/>
   <img alt="Ollama" src="https://img.shields.io/badge/ollama-llama3%3A8b-000000?style=flat-square&logo=ollama&logoColor=white"/>
   <img alt="FAISS" src="https://img.shields.io/badge/vector%20search-FAISS-4B8BBE?style=flat-square"/>
@@ -69,6 +70,17 @@ python dev.py
 | 🌐 Browser | Opens on the live Vite URL when the UI is there; API-only otherwise |
 | 🧹 `Ctrl+C` | Stops the backend + frontend process trees cleanly |
 
+### Basic front end — included and working
+
+`start_hades_ui.bat` (or `python -m streamlit run streamlit_app.py`) opens a plain
+Streamlit page on `:8602`: pick a lecture set, ask a question, read the answer, and see the
+lessons it came from with their timestamps. No Node.js, no build step, and the RAG core is
+untouched — the page calls `rag_chat.search_chunks_curated` and `rag_chat.ask_llm` exactly
+the way `server.py` does, so the desk and the API answer alike.
+
+The full React UI (globe landing, in-page lecture player, quizzes, setup guide) stays
+private and is shared on request.
+
 Starting from a dirty machine (leftover servers on `:8000` / `:5173-5179`)? Use a fresh boot:
 
 ```bash
@@ -87,7 +99,7 @@ pip install -r requirements.txt     # Anaconda base env is what this is tested o
 ollama pull llama3:8b                # the model used for curation + answers
 ```
 
-No Node.js required: the UI is private and is not part of this repo.
+No Node.js required: the bundled Streamlit desk is the UI; the React one is private.
 
 The first run downloads the offline models — `all-MiniLM-L6-v2` (~90 MB) and `faster-whisper small` (~460 MB) — **after which HadeS never needs the network again.**
 </details>
@@ -230,6 +242,7 @@ Switch datasets in the sidebar — no restart, per-dataset chat history.
 
 | Layer | Tech |
 |-------|------|
+| Desk — **included** | Python · Streamlit — `streamlit_app.py`, the basic front end this repo ships |
 | Frontend — **private** | React 19 · Vite 8 · Tailwind v4 · Base UI primitives · framer-motion + GSAP · three.js globe (`@react-three/fiber`) · react-markdown + rehype-highlight — kept in a private repo, shared on request |
 | API bridge | FastAPI · uvicorn — SSE events `stage` → `token` → `final`; zero changes to retrieval |
 | RAG core | `rag_chat.py` — A+B curated retrieval (`RETRIEVE_K=12` → 5-min clusters → `CURATED_MAIN_K=2` ★) |
@@ -245,6 +258,8 @@ Switch datasets in the sidebar — no restart, per-dataset chat history.
 ```
 HadeS/
 ├── dev.py                           # one-command launcher (Ollama + backend, + frontend if present)
+├── streamlit_app.py                 # basic front end - the desk, calls rag_chat
+├── start_hades_ui.bat               # launches it on :8602
 ├── server.py                        # FastAPI bridge — rag_chat over HTTP/SSE
 ├── rag_chat.py                      # RAG core — untouched in v2
 ├── config.py                        # profiles, paths, all tuning knobs
@@ -274,7 +289,8 @@ HadeS/
 | "Ollama failed" in answers | `ollama run llama3:8b` once to pull/load the model |
 | Port 5173 busy / stale servers | `python dev.py --fresh` — it kills leftovers on `:8000` and `:5173-5179` first |
 | UI looks unstyled | Hard refresh (`Ctrl+Shift+R`) — the theme loads with the page |
-| No UI to open | Expected — it is private. The API answers on `:8000/api`; check `/api/health` |
+| No UI to open | Use the bundled desk: `start_hades_ui.bat` (`:8602`). The React UI is private |
+| `ModuleNotFoundError: streamlit` | `pip install -r requirements.txt`, or just run `start_hades_ui.bat` |
 | `No index for profile` | `python create_embeddings.py --profile <name>` |
 | WiFi off → 2-minute hang | Already fixed via offline snapshots (`HF_HUB_OFFLINE=1` in `server.py` / `rag_chat.py`) |
 | `cublas64_12.dll` at transcribe | `pip install nvidia-cublas-cu12 nvidia-cudnn-cu12` (handled via `os.add_dll_directory`) |
@@ -297,6 +313,11 @@ HadeS/
 
 ## 🖥️ Front end
 
+**A basic front end is included and works.** `streamlit_app.py` (launched by
+`start_hades_ui.bat`) asks a question, streams nothing complicated, prints the answer and
+lists the lessons behind it with their timestamps and snippets. It depends on nothing
+private.
+
 The React 19 + Vite + Tailwind interface is deliberately **not** in this repository. It is
 the part of HadeS I am most protective of — the landing page, the in-place lecture player,
 the streaming answer, the quiz, the setup guide — so it stays private and is shared on
@@ -311,9 +332,13 @@ summary endpoints, and the eval harness. Point any SSE client at
 
 ## 📄 License & author
 
-**Permission required — see [LICENSE](LICENSE).** The source is here to read, not to
-reuse: no rights are granted. Using it, shipping it, or selling anything built from it
-needs my written permission first (kumar.harshzzz04@gmail.com); licenses are available.
+**Public to read, free to use for non-commercial work — commercial use needs a paid
+license.** See [LICENSE](LICENSE). Reading the code, running it on your own machine,
+using it in a course or a portfolio piece, and changing it for any of that costs nothing
+and needs no permission. Using it inside a company's product or internal tooling,
+hosting it for other people, or shipping it in paid work needs a written commercial
+license first: **kumar.harshzzz04@gmail.com**. The bundled Streamlit desk is covered by
+the same terms as the rest of the repository.
 
 Built by **Kumar Harsh** · [@kumarharshzzz04](https://github.com/kumarharshzzz04)
 
