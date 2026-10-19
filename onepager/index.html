@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HadeS — product one-pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" />
+<style>
+  :root {
+    --ink: #0a0c10;
+    --panel: rgba(255, 255, 255, 0.022);
+    --panel-2: rgba(255, 255, 255, 0.05);
+    --line: rgba(255, 255, 255, 0.07);
+    --line-2: rgba(255, 255, 255, 0.14);
+    --fg: #e9eaec;
+    --mut: #8f96a1;
+    --mut-2: #6d747f;
+    --live: #3ec483;
+    --sans: "Plus Jakarta Sans", "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--ink);
+  }
+
+  body {
+    font-family: var(--sans);
+    color: var(--fg);
+    -webkit-font-smoothing: antialiased;
+    /* the same cold silver lamp the app sits under */
+    background-image:
+      radial-gradient(1100px 520px at 50% -14%, rgba(214, 222, 235, 0.07), transparent 62%),
+      radial-gradient(900px 600px at 100% 100%, rgba(150, 165, 190, 0.05), transparent 58%),
+      linear-gradient(180deg, #08090c 0%, #0a0c10 45%, #0d0f14 100%);
+    background-attachment: fixed;
+  }
+
+  .poster {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 46px 56px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  .chrome {
+    background: linear-gradient(180deg, #ffffff 0%, #cdd1d8 55%, #8d939c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .mono {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ── header ─────────────────────────────────────────────── */
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--line);
+  }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand-txt { display: flex; flex-direction: column; gap: 2px; }
+  .brand-name { font-size: 27px; font-weight: 800; letter-spacing: -0.02em; }
+  .brand-sub { font-size: 13px; color: var(--mut); }
+  .top-meta { text-align: right; font-size: 13px; color: var(--mut); line-height: 1.5; }
+
+  /* ── hero ───────────────────────────────────────────────── */
+  .hero { display: flex; flex-direction: column; gap: 18px; }
+  .pill {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 16px;
+    border: 1px solid var(--line-2);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.035);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(233, 234, 236, 0.85);
+  }
+  .dot {
+    width: 8px; height: 8px; border-radius: 999px;
+    background: var(--live);
+    box-shadow: 0 0 10px rgba(62, 196, 131, 0.65);
+  }
+  h1 {
+    margin: 0;
+    font-size: 78px;
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+    font-weight: 800;
+  }
+  .lead {
+    margin: 0;
+    max-width: 940px;
+    font-size: 21px;
+    line-height: 1.5;
+    color: var(--mut);
+  }
+  .lead b { color: var(--fg); font-weight: 600; }
+
+  /* ── definition row ─────────────────────────────────────── */
+  .defs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .def {
+    padding: 20px 22px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--panel);
+  }
+  .def h2 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--fg);
+    letter-spacing: -0.01em;
+  }
+  .def p { margin: 0; font-size: 14.5px; line-height: 1.56; color: var(--mut); }
+  .def p b { color: rgba(233, 234, 236, 0.92); font-weight: 600; }
+
+  /* ── shared section heading ─────────────────────────────── */
+  .sec {
+    margin: 0 0 18px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--mut-2);
+  }
+
+  /* ── journey diagram ────────────────────────────────────── */
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+  .step { position: relative; padding: 0 22px; }
+  .step:first-child { padding-left: 0; }
+  .step:last-child { padding-right: 0; }
+  .step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: -1px;
+    width: 22px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--line-2), rgba(255, 255, 255, 0.28));
+  }
+  .step:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: -1px;
+    border-left: 6px solid rgba(255, 255, 255, 0.34);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+  .step-head { display: flex; align-items: center; gap: 11px; margin-bottom: 10px; }
+  .num {
+    width: 40px; height: 40px; flex: 0 0 40px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #f3f4f6 0%, #c8ccd4 100%);
+    color: #0b0d10;
+    font-size: 18px;
+    font-weight: 800;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  }
+  .step-t { font-size: 16px; font-weight: 700; letter-spacing: -0.015em; }
+  .step p { margin: 0; font-size: 13.5px; line-height: 1.5; color: var(--mut); }
+
+  /* ── four panels ────────────────────────────────────────── */
+  .panels { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 22px 18px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--panel);
+  }
+  .card h3 { margin: 0 0 14px; font-size: 17px; font-weight: 700; letter-spacing: -0.015em; }
+  .card .cap { margin: 14px 0 0; font-size: 13.5px; line-height: 1.5; color: var(--mut); }
+  .shot {
+    flex: 1;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.015);
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-height: 132px;
+    justify-content: center;
+  }
+  .q {
+    align-self: flex-end;
+    max-width: 88%;
+    padding: 7px 12px;
+    border-radius: 12px 12px 4px 12px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.05);
+    font-size: 12.5px;
+  }
+  .q code {
+    font-family: var(--mono);
+    font-size: 0.92em;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    padding: 1px 4px;
+  }
+  .a { font-size: 13px; line-height: 1.5; color: rgba(233, 234, 236, 0.88); }
+  .a b { color: #fff; }
+  .chip {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(233, 234, 236, 0.3);
+    background: rgba(255, 255, 255, 0.07);
+    font-size: 11.5px;
+    font-weight: 600;
+  }
+  .chip .t { color: var(--mut); font-weight: 500; }
+  .chip.quiet { border-color: var(--line); background: rgba(255, 255, 255, 0.03); color: var(--mut); }
+
+  .player { display: flex; flex-direction: column; gap: 0; }
+  .screen {
+    height: 74px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 10px 10px 0 0;
+    background: radial-gradient(120% 130% at 50% -25%, rgba(255, 255, 255, 0.085), transparent 62%), #07080b;
+    border: 1px solid var(--line);
+    border-bottom: none;
+  }
+  .playbtn {
+    width: 34px; height: 34px; border-radius: 999px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.09);
+    font-size: 12px;
+    padding-left: 2px;
+  }
+  .player-body { border: 1px solid var(--line); border-top: none; border-radius: 0 0 10px 10px; padding: 10px 12px 11px; background: rgba(255, 255, 255, 0.015); }
+  .scrub { position: relative; height: 5px; border-radius: 999px; background: rgba(255, 255, 255, 0.09); }
+  .scrub i { position: absolute; inset: 0 38% 0 0; border-radius: 999px; background: linear-gradient(90deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.8)); }
+  .scrub b {
+    position: absolute; top: -4px; left: 62%;
+    width: 13px; height: 13px; margin-left: -6.5px;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 16px rgba(230, 235, 245, 0.6);
+  }
+  .player-row { display: flex; align-items: center; justify-content: space-between; margin-top: 9px; font-size: 11.5px; color: var(--mut); }
+
+  .opt {
+    display: flex; align-items: flex-start; gap: 9px;
+    padding: 6px 10px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.02);
+    font-size: 12.5px;
+    color: var(--mut);
+  }
+  .opt.right { border-color: rgba(62, 196, 131, 0.45); background: rgba(62, 196, 131, 0.1); color: rgba(233, 234, 236, 0.92); }
+  .opt .k { font-family: var(--mono); font-weight: 700; color: var(--mut-2); }
+  .why { font-size: 12px; color: var(--live); }
+  .why span { color: var(--mut); }
+
+  .list-head { display: flex; align-items: center; justify-content: space-between; font-size: 11px; font-weight: 700; color: var(--mut-2); }
+  .row { display: flex; align-items: center; gap: 9px; font-size: 12.5px; color: rgba(233, 234, 236, 0.82); }
+  .tick {
+    width: 16px; height: 16px; flex: 0 0 16px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 999px;
+    border: 1px solid rgba(62, 196, 131, 0.5);
+    background: rgba(62, 196, 131, 0.14);
+    color: var(--live);
+    font-size: 10px;
+  }
+
+  /* ── numbers ────────────────────────────────────────────── */
+  .charts { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .chart { padding: 18px 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
+  .chart h3 { margin: 0 0 14px; font-size: 14px; font-weight: 700; }
+  .bar { display: grid; grid-template-columns: 92px 1fr 58px; align-items: center; gap: 10px; margin-bottom: 9px; }
+  .bar .lab { font-size: 12px; color: var(--mut); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .track { height: 9px; border-radius: 999px; background: rgba(255, 255, 255, 0.06); overflow: hidden; }
+  .track i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.85)); }
+  .bar .val { text-align: right; font-family: var(--mono); font-size: 12px; color: rgba(233, 234, 236, 0.9); }
+  .chart .note { margin: 12px 0 0; font-size: 11.5px; line-height: 1.45; color: var(--mut-2); }
+  .dots { display: flex; flex-wrap: wrap; gap: 7px; margin: 4px 0 0; }
+  .dots i {
+    width: 23px; height: 23px; border-radius: 7px;
+    background: linear-gradient(180deg, rgba(62, 196, 131, 0.38), rgba(62, 196, 131, 0.16));
+    border: 1px solid rgba(62, 196, 131, 0.55);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 0 14px rgba(62, 196, 131, 0.12);
+  }
+  .measure { margin: 16px 0 0; font-size: 12.5px; color: var(--mut-2); }
+  .measure .mono { color: rgba(233, 234, 236, 0.85); }
+
+  /* ── footer ─────────────────────────────────────────────── */
+  .foot {
+    margin-top: 6px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .foot-l { display: flex; align-items: center; gap: 12px; }
+  .foot-name { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; }
+  .foot-sub { font-size: 12.5px; color: var(--mut-2); }
+  .foot-r { font-size: 12.5px; color: var(--mut-2); text-align: right; }
+
+  @media print {
+    /* 1440 px wide at 96dpi; a little height slack keeps it to a single page */
+    @page { size: 381mm 502mm; margin: 0; }
+    html, body { background-image: none; background: #0a0c10; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .poster { padding: 46px 56px 40px; }
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <!-- ── header ────────────────────────────────────────────── -->
+  <header class="top">
+    <div class="brand">
+      <svg width="46" height="46" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="mark" x1="6" y1="4" x2="42" y2="44" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F4F5F7" /><stop offset="1" stop-color="#9BA1AC" />
+          </linearGradient>
+        </defs>
+        <path d="M24 3.5 41.5 13.75v20.5L24 44.5 6.5 34.25v-20.5L24 3.5Z" fill="url(#mark)" />
+        <path d="M24 3.5 41.5 13.75v20.5L24 44.5 6.5 34.25v-20.5L24 3.5Z" stroke="rgba(255,255,255,0.35)" />
+        <g stroke="#101216" stroke-width="2.6" stroke-linecap="round">
+          <line x1="15" y1="21.5" x2="15" y2="26.5" /><line x1="20" y1="17.5" x2="20" y2="30.5" />
+          <line x1="24" y1="14.5" x2="24" y2="33.5" /><line x1="28" y1="17.5" x2="28" y2="30.5" />
+          <line x1="33" y1="21.5" x2="33" y2="26.5" />
+        </g>
+      </svg>
+      <div class="brand-txt">
+        <span class="brand-name chrome">HadeS</span>
+        <span class="brand-sub">A study companion for recorded lectures</span>
+      </div>
+    </div>
+    <div class="top-meta">
+      Product one-pager · October 2026<br />
+      by Kumar Harsh · v2
+    </div>
+  </header>
+
+  <!-- ── hero ──────────────────────────────────────────────── -->
+  <section class="hero">
+    <span class="pill"><span class="dot"></span> Runs on your machine · nothing leaves it</span>
+    <h1 class="chrome">Ask your lectures.</h1>
+    <p class="lead">
+      HadeS turns a recorded course into something you can talk to. Every answer comes from what your
+      teacher actually said — <b>and points at the minute it happens.</b>
+    </p>
+  </section>
+
+  <!-- ── definition ────────────────────────────────────────── -->
+  <section class="defs">
+    <article class="def">
+      <h2>What it is</h2>
+      <p>
+        A study companion for recorded lectures. It learns a course once, then answers questions
+        <b>from that course only</b>, with the lesson and timestamp behind every reply.
+      </p>
+    </article>
+    <article class="def">
+      <h2>Who it's for</h2>
+      <p>
+        Students sitting on hours of class recordings — and anyone who has tried to find
+        <b>one explanation</b> inside a three-hour video.
+      </p>
+    </article>
+    <article class="def">
+      <h2>Why it exists</h2>
+      <p>
+        Re-watching to locate a single moment spends the time the lecture already spent.
+        HadeS gives the moment back in seconds, <b>without sending your course anywhere.</b>
+      </p>
+    </article>
+  </section>
+
+  <!-- ── journey diagram ───────────────────────────────────── -->
+  <section class="journey">
+    <h2 class="sec">How a question travels</h2>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-head"><span class="num">1</span><span class="step-t">Ask anything</span></div>
+        <p>Type the question the way you would ask a friend — no keywords, no lecture number.</p>
+      </li>
+      <li class="step">
+        <div class="step-head"><span class="num">2</span><span class="step-t">Find the exact lesson</span></div>
+        <p>It reads across the whole course and picks the chapter that actually teaches this.</p>
+      </li>
+      <li class="step">
+        <div class="step-head"><span class="num">3</span><span class="step-t">Answer with the minute</span></div>
+        <p>A plain-language answer, carrying the lesson and the time it came from.</p>
+      </li>
+      <li class="step">
+        <div class="step-head"><span class="num">4</span><span class="step-t">Play the moment</span></div>
+        <p>The lecture opens inside the answer, already seeked to the second.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ── four panels ───────────────────────────────────────── -->
+  <section class="panels">
+    <article class="card">
+      <h3>Grounded, never guessing</h3>
+      <div class="shot">
+        <div class="q">Why does <code>age = age + 1</code> work?</div>
+        <div class="a">Assignment rebinds the name — <b>age</b> points at a new value; the old one is dropped.</div>
+        <span class="chip">★ Variables &amp; assignment&nbsp;<span class="t mono">01:01</span></span>
+        <span class="chip quiet">Also mentioned&nbsp;<span class="t mono">00:39</span></span>
+      </div>
+      <p class="cap">Answers are drawn from your course, and every one of them shows its sources — one main lesson, the rest marked as passing mentions.</p>
+    </article>
+
+    <article class="card">
+      <h3>The player lives in the answer</h3>
+      <div class="shot">
+        <div class="player">
+          <div class="screen"><span class="playbtn">▶</span></div>
+          <div class="player-body">
+            <div class="scrub"><i></i><b></b></div>
+            <div class="player-row"><span class="mono">02:06:45</span><span>HadeS Demo</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="cap">Tap a source and the lecture plays right there, seeked to the cited second — no hunting along a timeline.</p>
+    </article>
+
+    <article class="card">
+      <h3>Quiz yourself while it's fresh</h3>
+      <div class="shot">
+        <div class="a"><span class="mono" style="color:var(--mut-2)">Q1</span> What happens when you reassign a variable?</div>
+        <div class="opt"><span class="k">A</span><span>Both values are kept automatically</span></div>
+        <div class="opt right"><span class="k">B</span><span>The name is rebound to the new value</span></div>
+        <div class="opt"><span class="k">C</span><span>The old value is thrown away first</span></div>
+        <div class="why">Correct <span>— assignment moves the label, it never compares values.</span></div>
+      </div>
+      <p class="cap">Three questions drawn from the same lesson the answer came from, graded instantly with the one-line why.</p>
+    </article>
+
+    <article class="card">
+      <h3>Misses become review</h3>
+      <div class="shot">
+        <div class="list-head"><span>Review · misses</span><span class="mono">study-guide.md</span></div>
+        <div class="row"><span class="tick">✓</span><span>Reassignment rebinds the name</span></div>
+        <div class="row"><span class="tick">✓</span><span>A function without return gives back nothing</span></div>
+        <div class="row"><span class="tick">✓</span><span>f-strings format in place</span></div>
+      </div>
+      <p class="cap">Missed questions collect in the sidebar, and the whole session exports as a study guide you can revise from.</p>
+    </article>
+  </section>
+
+  <!-- ── numbers ───────────────────────────────────────────── -->
+  <section class="numbers">
+    <h2 class="sec">Real numbers from the live app — not mockups</h2>
+    <div class="charts">
+      <div class="chart">
+        <h3>Course material it holds</h3>
+        <div class="bar"><span class="lab">Full course</span><span class="track"><i style="width:100%"></i></span><span class="val">1,328</span></div>
+        <div class="bar"><span class="lab">Demo course</span><span class="track"><i style="width:46%"></i></span><span class="val">611</span></div>
+        <div class="bar"><span class="lab">Quantum</span><span class="track"><i style="width:10.4%"></i></span><span class="val">138</span></div>
+        <p class="note">Lesson-sized pieces of the lectures it can answer from, per course.</p>
+      </div>
+
+      <div class="chart">
+        <h3>How much lecture is inside</h3>
+        <div class="bar"><span class="lab">Full course</span><span class="track"><i style="width:100%"></i></span><span class="val">18h 00m</span></div>
+        <div class="bar"><span class="lab">Demo course</span><span class="track"><i style="width:29.2%"></i></span><span class="val">5h 16m</span></div>
+        <div class="bar"><span class="lab">Quantum</span><span class="track"><i style="width:8.9%"></i></span><span class="val">1h 36m</span></div>
+        <p class="note">Three courses ship with it; any course folder can be added the same way.</p>
+      </div>
+
+      <div class="chart">
+        <h3>Answers that hit the right lesson</h3>
+        <div class="dots">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <p class="note">11 of 11 test questions against the full 18-hour course landed on the exact chapter that teaches them.</p>
+      </div>
+    </div>
+    <p class="measure">
+      Measured on this machine, offline: a full grounded answer in <span class="mono">~25 s</span>,
+      streaming word by word from the first second; a quiz in a few seconds.
+    </p>
+  </section>
+
+  <!-- ── footer ────────────────────────────────────────────── -->
+  <footer class="foot">
+    <div class="foot-l">
+      <svg width="30" height="30" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 3.5 41.5 13.75v20.5L24 44.5 6.5 34.25v-20.5L24 3.5Z" fill="url(#mark)" />
+        <g stroke="#101216" stroke-width="2.6" stroke-linecap="round">
+          <line x1="15" y1="21.5" x2="15" y2="26.5" /><line x1="20" y1="17.5" x2="20" y2="30.5" />
+          <line x1="24" y1="14.5" x2="24" y2="33.5" /><line x1="28" y1="17.5" x2="28" y2="30.5" />
+          <line x1="33" y1="21.5" x2="33" y2="26.5" />
+        </g>
+      </svg>
+      <div>
+        <div class="foot-name chrome">HadeS</div>
+        <div class="foot-sub">by Kumar Harsh · v2</div>
+      </div>
+    </div>
+    <div class="foot-r">
+      No account · nothing uploaded · keeps working with the internet off
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

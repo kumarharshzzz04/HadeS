@@ -1,0 +1,1 @@
+hich would then load into Python in a dictionary, and then you extract the specific parts you need. So the pattern here is always the same when you are working with external APIs, you connect, send requests, get data back, and then you use the information from it in whatever shape or form you need it. And API's are really how modern software systems communicate with each other.

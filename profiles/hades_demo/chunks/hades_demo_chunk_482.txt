@@ -1,0 +1,1 @@
+t. Classes don't unlock new features in Python, they're just a different way to organize your code. Choose based on what makes your code cleaner and also the level that you're confident with when you're writing and working with your Python files. As a general rule of thumb, you want to use classes when you want to keep track of a state between operations.

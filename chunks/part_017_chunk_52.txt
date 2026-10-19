@@ -1,0 +1,1 @@
+updates for example like if someone is typing the email it's you can just say spam or not spam okay and a few more things okay those are the things that you can do for future this was a very beginner friendly I tried to keep it very simple just for anyone who has created a model okay and just they can use the steps to deploy their model and showcase it

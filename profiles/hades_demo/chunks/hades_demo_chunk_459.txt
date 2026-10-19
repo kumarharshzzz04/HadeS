@@ -1,0 +1,1 @@
+ddy stock one, you can also have doc to call it max, and then you have the different names in here. So you can try this out for yourself, come in here, and then you can see we have, we have buddy and we have max. So that's kind of like a mental model that you can use to remember why is why we have the self in here, because we can have multiple instances.

@@ -1,0 +1,33 @@
+# python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+*.bak
+*.tmp
+*.log
+
+# freebuff agent workspace
+.freebuff/
+
+# large video — use download_hades_demo.py or GitHub Release instead (630MB > 100MB limit)
+video/
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.webm
+audios/
+
+# os
+.DS_Store
+Thumbs.db
+whisper/
+
+# personal study notes (local only)
+study.md
+
+# The React UI is private and deliberately absent from this repository.
+frontend/

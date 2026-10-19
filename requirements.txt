@@ -1,0 +1,12 @@
+# Pinned to the versions this project is actually tested on (plan Task 0.3).
+# Full environment (transitive deps included): requirements.lock.txt
+faiss-cpu==1.13.2
+sentence-transformers==5.4.0
+faster-whisper==1.2.1
+requests==2.33.1
+numpy==2.4.3
+torch==2.11.0
+transformers==5.5.3
+huggingface-hub==1.10.1
+fastapi==0.142.2
+uvicorn==0.52.4

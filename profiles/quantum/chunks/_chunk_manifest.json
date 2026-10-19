@@ -1,0 +1,692 @@
+{
+  "quantum_chunk_0.txt": {
+    "start": 0.2,
+    "end": 41.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_1.txt": {
+    "start": 27.8,
+    "end": 76.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_2.txt": {
+    "start": 60.6,
+    "end": 108.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_3.txt": {
+    "start": 94.5,
+    "end": 141.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_4.txt": {
+    "start": 131.6,
+    "end": 185.2,
+    "part": "quantum"
+  },
+  "quantum_chunk_5.txt": {
+    "start": 170.2,
+    "end": 241.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_6.txt": {
+    "start": 209.6,
+    "end": 288.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_7.txt": {
+    "start": 268.5,
+    "end": 329.0,
+    "part": "quantum"
+  },
+  "quantum_chunk_8.txt": {
+    "start": 307.4,
+    "end": 360.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_9.txt": {
+    "start": 345.5,
+    "end": 406.0,
+    "part": "quantum"
+  },
+  "quantum_chunk_10.txt": {
+    "start": 388.6,
+    "end": 448.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_11.txt": {
+    "start": 429.5,
+    "end": 491.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_12.txt": {
+    "start": 473.8,
+    "end": 542.2,
+    "part": "quantum"
+  },
+  "quantum_chunk_13.txt": {
+    "start": 522.5,
+    "end": 614.0,
+    "part": "quantum"
+  },
+  "quantum_chunk_14.txt": {
+    "start": 594.4,
+    "end": 656.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_15.txt": {
+    "start": 630.5,
+    "end": 693.8,
+    "part": "quantum"
+  },
+  "quantum_chunk_16.txt": {
+    "start": 677.2,
+    "end": 735.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_17.txt": {
+    "start": 716.5,
+    "end": 785.2,
+    "part": "quantum"
+  },
+  "quantum_chunk_18.txt": {
+    "start": 774.2,
+    "end": 826.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_19.txt": {
+    "start": 811.7,
+    "end": 867.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_20.txt": {
+    "start": 853.9,
+    "end": 911.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_21.txt": {
+    "start": 889.7,
+    "end": 946.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_22.txt": {
+    "start": 931.0,
+    "end": 983.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_23.txt": {
+    "start": 968.3,
+    "end": 1015.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_24.txt": {
+    "start": 1002.2,
+    "end": 1048.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_25.txt": {
+    "start": 1034.2,
+    "end": 1081.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_26.txt": {
+    "start": 1067.3,
+    "end": 1118.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_27.txt": {
+    "start": 1098.0,
+    "end": 1158.2,
+    "part": "quantum"
+  },
+  "quantum_chunk_28.txt": {
+    "start": 1144.6,
+    "end": 1196.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_29.txt": {
+    "start": 1185.0,
+    "end": 1242.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_30.txt": {
+    "start": 1228.2,
+    "end": 1297.0,
+    "part": "quantum"
+  },
+  "quantum_chunk_31.txt": {
+    "start": 1277.3,
+    "end": 1341.0,
+    "part": "quantum"
+  },
+  "quantum_chunk_32.txt": {
+    "start": 1322.0,
+    "end": 1376.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_33.txt": {
+    "start": 1354.0,
+    "end": 1425.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_34.txt": {
+    "start": 1411.2,
+    "end": 1478.0,
+    "part": "quantum"
+  },
+  "quantum_chunk_35.txt": {
+    "start": 1454.9,
+    "end": 1526.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_36.txt": {
+    "start": 1503.8,
+    "end": 1564.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_37.txt": {
+    "start": 1544.6,
+    "end": 1609.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_38.txt": {
+    "start": 1592.2,
+    "end": 1666.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_39.txt": {
+    "start": 1652.7,
+    "end": 1704.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_40.txt": {
+    "start": 1687.3,
+    "end": 1742.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_41.txt": {
+    "start": 1721.5,
+    "end": 1775.8,
+    "part": "quantum"
+  },
+  "quantum_chunk_42.txt": {
+    "start": 1760.3,
+    "end": 1809.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_43.txt": {
+    "start": 1794.9,
+    "end": 1836.8,
+    "part": "quantum"
+  },
+  "quantum_chunk_44.txt": {
+    "start": 1820.2,
+    "end": 1874.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_45.txt": {
+    "start": 1858.1,
+    "end": 1920.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_46.txt": {
+    "start": 1907.9,
+    "end": 1962.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_47.txt": {
+    "start": 1948.0,
+    "end": 2004.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_48.txt": {
+    "start": 1986.4,
+    "end": 2042.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_49.txt": {
+    "start": 2029.9,
+    "end": 2094.8,
+    "part": "quantum"
+  },
+  "quantum_chunk_50.txt": {
+    "start": 2079.5,
+    "end": 2144.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_51.txt": {
+    "start": 2123.9,
+    "end": 2187.2,
+    "part": "quantum"
+  },
+  "quantum_chunk_52.txt": {
+    "start": 2169.8,
+    "end": 2222.8,
+    "part": "quantum"
+  },
+  "quantum_chunk_53.txt": {
+    "start": 2200.9,
+    "end": 2263.0,
+    "part": "quantum"
+  },
+  "quantum_chunk_54.txt": {
+    "start": 2247.3,
+    "end": 2310.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_55.txt": {
+    "start": 2289.5,
+    "end": 2354.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_56.txt": {
+    "start": 2339.3,
+    "end": 2405.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_57.txt": {
+    "start": 2387.0,
+    "end": 2448.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_58.txt": {
+    "start": 2433.5,
+    "end": 2493.8,
+    "part": "quantum"
+  },
+  "quantum_chunk_59.txt": {
+    "start": 2471.5,
+    "end": 2535.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_60.txt": {
+    "start": 2520.2,
+    "end": 2576.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_61.txt": {
+    "start": 2563.6,
+    "end": 2626.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_62.txt": {
+    "start": 2612.4,
+    "end": 2670.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_63.txt": {
+    "start": 2656.3,
+    "end": 2711.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_64.txt": {
+    "start": 2697.9,
+    "end": 2753.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_65.txt": {
+    "start": 2738.1,
+    "end": 2796.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_66.txt": {
+    "start": 2786.4,
+    "end": 2845.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_67.txt": {
+    "start": 2829.6,
+    "end": 2895.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_68.txt": {
+    "start": 2881.6,
+    "end": 2931.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_69.txt": {
+    "start": 2914.6,
+    "end": 2975.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_70.txt": {
+    "start": 2960.7,
+    "end": 3014.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_71.txt": {
+    "start": 2990.7,
+    "end": 3051.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_72.txt": {
+    "start": 3037.9,
+    "end": 3100.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_73.txt": {
+    "start": 3084.2,
+    "end": 3142.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_74.txt": {
+    "start": 3130.5,
+    "end": 3186.2,
+    "part": "quantum"
+  },
+  "quantum_chunk_75.txt": {
+    "start": 3170.9,
+    "end": 3227.0,
+    "part": "quantum"
+  },
+  "quantum_chunk_76.txt": {
+    "start": 3213.0,
+    "end": 3270.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_77.txt": {
+    "start": 3253.4,
+    "end": 3307.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_78.txt": {
+    "start": 3294.0,
+    "end": 3350.8,
+    "part": "quantum"
+  },
+  "quantum_chunk_79.txt": {
+    "start": 3337.5,
+    "end": 3391.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_80.txt": {
+    "start": 3379.7,
+    "end": 3431.8,
+    "part": "quantum"
+  },
+  "quantum_chunk_81.txt": {
+    "start": 3414.7,
+    "end": 3475.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_82.txt": {
+    "start": 3462.5,
+    "end": 3511.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_83.txt": {
+    "start": 3499.1,
+    "end": 3550.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_84.txt": {
+    "start": 3532.7,
+    "end": 3591.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_85.txt": {
+    "start": 3575.8,
+    "end": 3624.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_86.txt": {
+    "start": 3611.2,
+    "end": 3664.0,
+    "part": "quantum"
+  },
+  "quantum_chunk_87.txt": {
+    "start": 3647.6,
+    "end": 3712.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_88.txt": {
+    "start": 3693.8,
+    "end": 3752.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_89.txt": {
+    "start": 3742.4,
+    "end": 3794.8,
+    "part": "quantum"
+  },
+  "quantum_chunk_90.txt": {
+    "start": 3775.6,
+    "end": 3830.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_91.txt": {
+    "start": 3814.1,
+    "end": 3863.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_92.txt": {
+    "start": 3852.6,
+    "end": 3905.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_93.txt": {
+    "start": 3890.3,
+    "end": 3947.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_94.txt": {
+    "start": 3933.2,
+    "end": 3984.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_95.txt": {
+    "start": 3972.2,
+    "end": 4020.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_96.txt": {
+    "start": 4007.3,
+    "end": 4063.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_97.txt": {
+    "start": 4045.1,
+    "end": 4099.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_98.txt": {
+    "start": 4083.9,
+    "end": 4143.2,
+    "part": "quantum"
+  },
+  "quantum_chunk_99.txt": {
+    "start": 4123.3,
+    "end": 4192.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_100.txt": {
+    "start": 4171.8,
+    "end": 4234.2,
+    "part": "quantum"
+  },
+  "quantum_chunk_101.txt": {
+    "start": 4218.6,
+    "end": 4271.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_102.txt": {
+    "start": 4260.0,
+    "end": 4308.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_103.txt": {
+    "start": 4298.3,
+    "end": 4343.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_104.txt": {
+    "start": 4324.0,
+    "end": 4386.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_105.txt": {
+    "start": 4371.5,
+    "end": 4429.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_106.txt": {
+    "start": 4415.6,
+    "end": 4477.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_107.txt": {
+    "start": 4461.9,
+    "end": 4528.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_108.txt": {
+    "start": 4511.1,
+    "end": 4569.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_109.txt": {
+    "start": 4557.5,
+    "end": 4609.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_110.txt": {
+    "start": 4595.9,
+    "end": 4635.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_111.txt": {
+    "start": 4621.4,
+    "end": 4673.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_112.txt": {
+    "start": 4660.1,
+    "end": 4716.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_113.txt": {
+    "start": 4697.7,
+    "end": 4752.2,
+    "part": "quantum"
+  },
+  "quantum_chunk_114.txt": {
+    "start": 4736.2,
+    "end": 4791.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_115.txt": {
+    "start": 4776.6,
+    "end": 4847.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_116.txt": {
+    "start": 4821.1,
+    "end": 4894.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_117.txt": {
+    "start": 4877.0,
+    "end": 4923.7,
+    "part": "quantum"
+  },
+  "quantum_chunk_118.txt": {
+    "start": 4906.6,
+    "end": 4970.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_119.txt": {
+    "start": 4947.3,
+    "end": 5001.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_120.txt": {
+    "start": 4984.3,
+    "end": 5041.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_121.txt": {
+    "start": 5027.4,
+    "end": 5085.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_122.txt": {
+    "start": 5071.4,
+    "end": 5129.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_123.txt": {
+    "start": 5113.1,
+    "end": 5170.3,
+    "part": "quantum"
+  },
+  "quantum_chunk_124.txt": {
+    "start": 5158.4,
+    "end": 5222.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_125.txt": {
+    "start": 5205.8,
+    "end": 5262.1,
+    "part": "quantum"
+  },
+  "quantum_chunk_126.txt": {
+    "start": 5244.7,
+    "end": 5311.8,
+    "part": "quantum"
+  },
+  "quantum_chunk_127.txt": {
+    "start": 5298.4,
+    "end": 5347.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_128.txt": {
+    "start": 5331.1,
+    "end": 5390.4,
+    "part": "quantum"
+  },
+  "quantum_chunk_129.txt": {
+    "start": 5376.5,
+    "end": 5435.2,
+    "part": "quantum"
+  },
+  "quantum_chunk_130.txt": {
+    "start": 5411.6,
+    "end": 5484.0,
+    "part": "quantum"
+  },
+  "quantum_chunk_131.txt": {
+    "start": 5467.2,
+    "end": 5528.8,
+    "part": "quantum"
+  },
+  "quantum_chunk_132.txt": {
+    "start": 5515.4,
+    "end": 5575.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_133.txt": {
+    "start": 5556.8,
+    "end": 5615.9,
+    "part": "quantum"
+  },
+  "quantum_chunk_134.txt": {
+    "start": 5598.4,
+    "end": 5660.6,
+    "part": "quantum"
+  },
+  "quantum_chunk_135.txt": {
+    "start": 5639.4,
+    "end": 5704.5,
+    "part": "quantum"
+  },
+  "quantum_chunk_136.txt": {
+    "start": 5688.4,
+    "end": 5760.2,
+    "part": "quantum"
+  },
+  "quantum_chunk_137.txt": {
+    "start": 5736.9,
+    "end": 5760.2,
+    "part": "quantum"
+  }
+}

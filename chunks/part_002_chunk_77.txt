@@ -1,0 +1,1 @@
+tively speaking, but if you have millions of rows or tens of millions of rows, it's always a good idea to initially work with a sample and by a sample, we mean a fraction or randomly picked fraction. And this is so that you can quickly set up your model training notebook so that each line of code that you execute runs quickly and.

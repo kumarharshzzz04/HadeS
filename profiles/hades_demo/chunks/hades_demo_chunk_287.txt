@@ -1,0 +1,1 @@
+here's the thing, it works the other way around. So within functions, we can use global variables. So if I specify the discount outside of the function, we can use that discount in here. And Python will know, look, we have a global variable. So that's one level higher, it overrides it, and we can use that inside a function. Now, this is not common, but it can, it works.

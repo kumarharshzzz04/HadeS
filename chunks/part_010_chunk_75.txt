@@ -1,0 +1,1 @@
+edicted, you once you've made one set of predictions, which is the averages, then we go back into each row of training data and we calculate the difference of the predictions with the actual targets. So just to convey that, let's maybe walk through an example here. Let's say we have.

@@ -1,0 +1,1 @@
+SV. So let's load it into a pandas data frame. I'm going to run PD dot read CSV. And that loads the data frame up. And here's the data frame. So here's the data we looked at it the last time as well. We have date, location, minimum temperature, a bunch of weather parameters.

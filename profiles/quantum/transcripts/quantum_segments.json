@@ -1,0 +1,5885 @@
+{
+  "duration": 5763.19275,
+  "segments": [
+    {
+      "start": 0.21,
+      "end": 6.35,
+      "text": "Quantum computing leverages the principles of quantum mechanics to process information"
+    },
+    {
+      "start": 6.35,
+      "end": 8.27,
+      "text": "at incredible speeds."
+    },
+    {
+      "start": 8.27,
+      "end": 12.95,
+      "text": "This course provides a solid foundation in quantum computing from the ground up, taking"
+    },
+    {
+      "start": 12.95,
+      "end": 19.27,
+      "text": "you from the basics to a thorough understanding of how popular quantum algorithms work."
+    },
+    {
+      "start": 19.27,
+      "end": 24.27,
+      "text": "The first section covers all the essential mathematics, and the second section is a deeper"
+    },
+    {
+      "start": 24.27,
+      "end": 27.79,
+      "text": "exploration into the mechanics of quantum computers."
+    },
+    {
+      "start": 27.79,
+      "end": 32.47,
+      "text": "You'll learn why quantum computers are so powerful and how they're poised to transform"
+    },
+    {
+      "start": 32.47,
+      "end": 33.87,
+      "text": "technology."
+    },
+    {
+      "start": 33.87,
+      "end": 36.95,
+      "text": "Michael from QuantumSore created this course."
+    },
+    {
+      "start": 36.95,
+      "end": 41.71,
+      "text": "If you were to search up on Google, more than quantum computers, you'd get answers in the"
+    },
+    {
+      "start": 41.71,
+      "end": 47.79,
+      "text": "form of analogies, like quantum computers use qubits that are both 0 and 1 at the same"
+    },
+    {
+      "start": 47.79,
+      "end": 48.79,
+      "text": "time."
+    },
+    {
+      "start": 48.79,
+      "end": 53.51,
+      "text": "When I first started learning about quantum computers, these analogies and explanations"
+    },
+    {
+      "start": 53.51,
+      "end": 55.03,
+      "text": "never made sense."
+    },
+    {
+      "start": 55.03,
+      "end": 60.63,
+      "text": "This course was created in order to provide a solid foundation on quantum computation"
+    },
+    {
+      "start": 60.63,
+      "end": 67.49,
+      "text": "without using analogies but teaching how quantum computers actually work."
+    },
+    {
+      "start": 67.49,
+      "end": 71.17,
+      "text": "Let's quickly look at the structure of this course."
+    },
+    {
+      "start": 71.17,
+      "end": 76.37,
+      "text": "The first section of this course goes through the basic mathematics needed to understand"
+    },
+    {
+      "start": 76.37,
+      "end": 83.13,
+      "text": "the rest of the course, including an introduction to complex numbers and basic linear algebra."
+    },
+    {
+      "start": 83.13,
+      "end": 89.17,
+      "text": "In the next section, we'll explore what a qubit is and how we can represent them mathematically."
+    },
+    {
+      "start": 89.17,
+      "end": 94.49,
+      "text": "We also explore some single qubit operations and discuss some of their properties."
+    },
+    {
+      "start": 94.49,
+      "end": 100.03,
+      "text": "The third section introduces how we can represent multiple qubits mathematically and explores"
+    },
+    {
+      "start": 100.03,
+      "end": 103.69,
+      "text": "some operations we can perform on multiple qubits."
+    },
+    {
+      "start": 103.69,
+      "end": 108.59,
+      "text": "This section ends on exploring the strange quantum phenomena of quantum entanglement"
+    },
+    {
+      "start": 108.59,
+      "end": 110.09,
+      "text": "and phase kickback."
+    },
+    {
+      "start": 110.09,
+      "end": 115.25,
+      "text": "In the final section of this course, we use everything we have studied up until this point"
+    },
+    {
+      "start": 115.25,
+      "end": 117.85,
+      "text": "to analyze quantum algorithms."
+    },
+    {
+      "start": 117.85,
+      "end": 124.45,
+      "text": "This section showcases why quantum computers are such revolutionary technology."
+    },
+    {
+      "start": 124.45,
+      "end": 128.81,
+      "text": "Let's start with understanding imaginary and complex numbers, but before that, we need"
+    },
+    {
+      "start": 128.81,
+      "end": 131.61,
+      "text": "to consider the square roots of numbers."
+    },
+    {
+      "start": 131.61,
+      "end": 136.57,
+      "text": "Let's say we have the equation x squared is equal to 4, which means x is equal to plus"
+    },
+    {
+      "start": 136.57,
+      "end": 137.57,
+      "text": "or minus 2."
+    },
+    {
+      "start": 137.57,
+      "end": 138.57,
+      "text": "Easy."
+    },
+    {
+      "start": 138.57,
+      "end": 141.37,
+      "text": "But what if x squared is equal to negative 4?"
+    },
+    {
+      "start": 141.37,
+      "end": 145.97,
+      "text": "Since the number squared is always greater than 0, how can x squared ever be a negative"
+    },
+    {
+      "start": 145.97,
+      "end": 146.97,
+      "text": "number?"
+    },
+    {
+      "start": 146.97,
+      "end": 149.25,
+      "text": "This is where imaginary numbers come in."
+    },
+    {
+      "start": 149.25,
+      "end": 153.69,
+      "text": "If we let i be the square root of negative 1, we can then write the square root of negative"
+    },
+    {
+      "start": 153.69,
+      "end": 162.29,
+      "text": "4 as plus or minus 2i."
+    },
+    {
+      "start": 162.29,
+      "end": 167.21,
+      "text": "This is an imaginary number, any number that contains a factor of the square root of negative"
+    },
+    {
+      "start": 167.21,
+      "end": 170.21,
+      "text": "1, or i."
+    },
+    {
+      "start": 170.21,
+      "end": 173.13,
+      "text": "Now we move one level up to complex numbers."
+    },
+    {
+      "start": 173.13,
+      "end": 177.57,
+      "text": "All a complex number is, is a number that contains a real number, plus an imaginary"
+    },
+    {
+      "start": 177.57,
+      "end": 178.57,
+      "text": "number."
+    },
+    {
+      "start": 178.57,
+      "end": 185.17,
+      "text": "A standard complex number looks like this, a plus i b, where both a and b are real numbers,"
+    },
+    {
+      "start": 185.17,
+      "end": 194.76,
+      "text": "a being the real part of the number, and b being the imaginary part of the number."
+    },
+    {
+      "start": 194.76,
+      "end": 198.76,
+      "text": "Complex numbers may not seem very useful, but in the next lesson, we will see how we"
+    },
+    {
+      "start": 198.76,
+      "end": 206.24,
+      "text": "can represent complex numbers in another form, which is used to model quantum computing states."
+    },
+    {
+      "start": 206.24,
+      "end": 209.56,
+      "text": "We can add and subtract complex numbers pretty easily."
+    },
+    {
+      "start": 209.56,
+      "end": 214.68,
+      "text": "All we do is add or subtract the real parts and the imaginary parts."
+    },
+    {
+      "start": 214.68,
+      "end": 226.23,
+      "text": "Pause the video and try adding up these complex numbers."
+    },
+    {
+      "start": 226.23,
+      "end": 241.29,
+      "text": "Multiplication is pretty simple as well, but we must remember that if we get i squared,"
+    },
+    {
+      "start": 241.29,
+      "end": 250.19,
+      "text": "that becomes negative 1, since i is the square root of negative 1."
+    },
+    {
+      "start": 250.19,
+      "end": 254.47,
+      "text": "The complex conjugate of a complex number is when you take the complex number and flip"
+    },
+    {
+      "start": 254.47,
+      "end": 257.39,
+      "text": "the sign or negate the imaginary part."
+    },
+    {
+      "start": 257.39,
+      "end": 259.39,
+      "text": "This is denoted by an asterisk."
+    },
+    {
+      "start": 259.39,
+      "end": 264.08,
+      "text": "Here are some examples."
+    },
+    {
+      "start": 264.08,
+      "end": 268.52,
+      "text": "One cool property of complex numbers is if we multiply any complex number by its complex"
+    },
+    {
+      "start": 268.52,
+      "end": 271.92,
+      "text": "conjugate, the result is always a real number."
+    },
+    {
+      "start": 271.92,
+      "end": 283.8,
+      "text": "Try multiplying 2 plus 3i with 2 minus 3i and confirming this is the case."
+    },
+    {
+      "start": 283.8,
+      "end": 288.6,
+      "text": "We can think of a complex number as a vector, but we have the real axis on the horizontal"
+    },
+    {
+      "start": 288.6,
+      "end": 291.56,
+      "text": "and the imaginary axis on the vertical."
+    },
+    {
+      "start": 291.56,
+      "end": 294.32,
+      "text": "This allows us to graph our complex numbers."
+    },
+    {
+      "start": 294.32,
+      "end": 299.08,
+      "text": "For example, the complex number negative 2 plus 3i would be a vector that would end"
+    },
+    {
+      "start": 299.08,
+      "end": 302.44,
+      "text": "at the point negative 2, 3."
+    },
+    {
+      "start": 302.44,
+      "end": 307.4,
+      "text": "When we represent a complex number on the number plane like this, we also uncover another"
+    },
+    {
+      "start": 307.4,
+      "end": 312.4,
+      "text": "property, its magnitude, which is its distance from the origin."
+    },
+    {
+      "start": 312.4,
+      "end": 323.48,
+      "text": "This is denoted with vertical lines and is calculated by using Pythagoras' theorem."
+    },
+    {
+      "start": 323.48,
+      "end": 329.0,
+      "text": "So we get that the magnitude of some arbitrary complex number, a plus i b, is equal to the"
+    },
+    {
+      "start": 329.0,
+      "end": 332.76,
+      "text": "square root of a squared plus b squared."
+    },
+    {
+      "start": 332.76,
+      "end": 341.95,
+      "text": "Pause the video and see if you can find the magnitude of 4 minus 3i."
+    },
+    {
+      "start": 341.95,
+      "end": 345.51,
+      "text": "This is not the only way of representing complex numbers."
+    },
+    {
+      "start": 345.51,
+      "end": 349.99,
+      "text": "Instead of using real and imaginary parts as coordinates, we can represent them through"
+    },
+    {
+      "start": 349.99,
+      "end": 354.39,
+      "text": "their magnitude and the angle they make with the positive x axis."
+    },
+    {
+      "start": 354.39,
+      "end": 360.07,
+      "text": "Using trigonometry, we find that we can also represent complex numbers in the form r cos"
+    },
+    {
+      "start": 360.07,
+      "end": 365.95,
+      "text": "theta plus i sin theta, where r is the magnitude of the complex number, and theta is the angle"
+    },
+    {
+      "start": 365.95,
+      "end": 368.75,
+      "text": "it makes with the positive x axis."
+    },
+    {
+      "start": 368.75,
+      "end": 375.03,
+      "text": "We can find theta by using the tan function, as tan of theta is equal to b over a, so theta"
+    },
+    {
+      "start": 375.03,
+      "end": 377.87,
+      "text": "is arc tan of b over a."
+    },
+    {
+      "start": 377.87,
+      "end": 380.11,
+      "text": "This is called polar form."
+    },
+    {
+      "start": 380.11,
+      "end": 385.43,
+      "text": "There is also one other form, which is re to the power of i theta."
+    },
+    {
+      "start": 385.43,
+      "end": 388.55,
+      "text": "This form is exponential form."
+    },
+    {
+      "start": 388.55,
+      "end": 393.95,
+      "text": "Pause the video now and try to convert the complex number, 1 plus i, into polar form"
+    },
+    {
+      "start": 393.95,
+      "end": 400.6,
+      "text": "then into exponential form."
+    },
+    {
+      "start": 400.6,
+      "end": 405.96,
+      "text": "In quantum computing, we almost exclusively use complex numbers in exponential form."
+    },
+    {
+      "start": 405.96,
+      "end": 417.52,
+      "text": "This is because the property that when we change theta, we rotate around a circle."
+    },
+    {
+      "start": 417.52,
+      "end": 423.6,
+      "text": "So multiplying two complex numbers in exponential form, whose magnitude is 1, graphically we"
+    },
+    {
+      "start": 423.6,
+      "end": 429.48,
+      "text": "are rotating around a unit circle, as the angles of the two complex numbers add together."
+    },
+    {
+      "start": 429.48,
+      "end": 434.36,
+      "text": "You will see once we start studying quantum computing, that this property is very useful"
+    },
+    {
+      "start": 434.36,
+      "end": 441.02,
+      "text": "in representing quantum states."
+    },
+    {
+      "start": 441.02,
+      "end": 443.9,
+      "text": "A matrix is a 2D arrangement of numbers."
+    },
+    {
+      "start": 443.9,
+      "end": 448.1,
+      "text": "In the next lesson, we will get to the applications and matrices and how they relate to quantum"
+    },
+    {
+      "start": 448.1,
+      "end": 449.1,
+      "text": "computing."
+    },
+    {
+      "start": 449.1,
+      "end": 453.22,
+      "text": "But in this lesson, we will quickly define some properties and operations we can do on"
+    },
+    {
+      "start": 453.22,
+      "end": 454.22,
+      "text": "them."
+    },
+    {
+      "start": 454.22,
+      "end": 459.3,
+      "text": "We say we have an m by n matrix, if the number of rows is m, and the number of columns is"
+    },
+    {
+      "start": 459.3,
+      "end": 460.3,
+      "text": "n."
+    },
+    {
+      "start": 460.3,
+      "end": 465.97,
+      "text": "This matrix here would be a 2 by 3 matrix."
+    },
+    {
+      "start": 465.97,
+      "end": 473.75,
+      "text": "Pause the video and see if you can find out the dimensions of these matrices."
+    },
+    {
+      "start": 473.75,
+      "end": 484.81,
+      "text": "If we want to add two matrices together, all we need to do is add each element of the matrices."
+    },
+    {
+      "start": 484.81,
+      "end": 486.61,
+      "text": "This is the same for subtraction."
+    },
+    {
+      "start": 486.61,
+      "end": 491.57,
+      "text": "Note that we can only add and subtract matrices if the number of rows and columns is the same"
+    },
+    {
+      "start": 491.57,
+      "end": 493.09,
+      "text": "for both."
+    },
+    {
+      "start": 493.09,
+      "end": 496.13,
+      "text": "So we wouldn't be able to add these two matrices."
+    },
+    {
+      "start": 496.13,
+      "end": 502.67,
+      "text": "Pause the video and see if you can add these matrices."
+    },
+    {
+      "start": 502.67,
+      "end": 505.73,
+      "text": "We can also multiply matrices by a scalar."
+    },
+    {
+      "start": 505.73,
+      "end": 510.59,
+      "text": "If we do, each element in the matrix gets multiplied by the scalar, giving us another"
+    },
+    {
+      "start": 510.59,
+      "end": 518.12,
+      "text": "matrix."
+    },
+    {
+      "start": 518.12,
+      "end": 522.48,
+      "text": "When multiplying matrices, we have to do this weird operation, where to get the element"
+    },
+    {
+      "start": 522.48,
+      "end": 526.92,
+      "text": "in the first column and first row, we take a sort of dot product with the first row of"
+    },
+    {
+      "start": 526.92,
+      "end": 536.57,
+      "text": "the left matrix and the first column of the right matrix."
+    },
+    {
+      "start": 536.57,
+      "end": 542.21,
+      "text": "Then, to get the second column first row, we take the dot product of the first row of"
+    },
+    {
+      "start": 542.21,
+      "end": 551.73,
+      "text": "the left matrix and the second column of the right matrix."
+    },
+    {
+      "start": 551.73,
+      "end": 562.39,
+      "text": "We continue this process until we have all the elements in the new matrix."
+    },
+    {
+      "start": 562.39,
+      "end": 584.64,
+      "text": "Pause the video and try to complete this matrix multiplication."
+    },
+    {
+      "start": 584.64,
+      "end": 589.56,
+      "text": "It's important to note that we can only multiply two matrices together if the number of columns"
+    },
+    {
+      "start": 589.56,
+      "end": 594.44,
+      "text": "of the first matrix is the same as the number of rows in the second matrix."
+    },
+    {
+      "start": 594.44,
+      "end": 598.8,
+      "text": "For example, we can't multiply these two matrices here, since the first one has two"
+    },
+    {
+      "start": 598.8,
+      "end": 606.43,
+      "text": "columns but the second one has three rows."
+    },
+    {
+      "start": 606.43,
+      "end": 613.96,
+      "text": "If we have a n by one matrix, we call it a column vector."
+    },
+    {
+      "start": 613.96,
+      "end": 616.88,
+      "text": "We can graph these like any other vector."
+    },
+    {
+      "start": 616.88,
+      "end": 621.4,
+      "text": "These are useful as one of the ways we can represent a state of a quantum computation"
+    },
+    {
+      "start": 621.4,
+      "end": 624.2,
+      "text": "is through a column vector."
+    },
+    {
+      "start": 624.2,
+      "end": 629.0,
+      "text": "It turns out that when we multiply a matrix with a column vector, we get another column"
+    },
+    {
+      "start": 629.0,
+      "end": 630.52,
+      "text": "vector."
+    },
+    {
+      "start": 630.52,
+      "end": 636.28,
+      "text": "Intuitively, what is happening is the column vector is getting transformed by the matrix,"
+    },
+    {
+      "start": 636.28,
+      "end": 639.92,
+      "text": "so we can use matrices as transformations on a vector."
+    },
+    {
+      "start": 639.92,
+      "end": 651.63,
+      "text": "Here are some examples graphically."
+    },
+    {
+      "start": 651.63,
+      "end": 656.55,
+      "text": "As you will see in the quantum computing sections, we do the same process of applying matrices"
+    },
+    {
+      "start": 656.55,
+      "end": 661.59,
+      "text": "to our quantum state to apply operations on quantum computers."
+    },
+    {
+      "start": 661.59,
+      "end": 665.35,
+      "text": "We also have a special matrix called an identity matrix."
+    },
+    {
+      "start": 665.35,
+      "end": 670.43,
+      "text": "This matrix is all zeros except for the main diagonal that has all ones."
+    },
+    {
+      "start": 670.43,
+      "end": 677.19,
+      "text": "If we multiply the identity matrix by any matrix, we get back the original matrix."
+    },
+    {
+      "start": 677.19,
+      "end": 683.27,
+      "text": "Verify this is true by multiplying the two-dimensional identity matrix with this matrix and check"
+    },
+    {
+      "start": 683.27,
+      "end": 688.72,
+      "text": "to make sure you get back the original matrix."
+    },
+    {
+      "start": 688.72,
+      "end": 693.76,
+      "text": "Matrices also have what's called an inverse that when multiplied with the original matrix"
+    },
+    {
+      "start": 693.76,
+      "end": 696.04,
+      "text": "gives us the identity matrix."
+    },
+    {
+      "start": 696.04,
+      "end": 698.28,
+      "text": "We denote this with a negative one."
+    },
+    {
+      "start": 698.28,
+      "end": 703.16,
+      "text": "Graphically, this means that if we have a matrix A and we apply it to a column vector"
+    },
+    {
+      "start": 703.16,
+      "end": 710.55,
+      "text": "11, if we then apply the inverse of A, we'll end back on the point 11."
+    },
+    {
+      "start": 710.55,
+      "end": 716.55,
+      "text": "Therefore, applying A then A inverse is the same as applying the identity matrix, which"
+    },
+    {
+      "start": 716.55,
+      "end": 725.29,
+      "text": "means the column vector stays in the same spot."
+    },
+    {
+      "start": 725.29,
+      "end": 730.01,
+      "text": "As we saw previously with complex numbers, we can also take the complex conjugate of"
+    },
+    {
+      "start": 730.01,
+      "end": 731.45,
+      "text": "a matrix."
+    },
+    {
+      "start": 731.45,
+      "end": 735.29,
+      "text": "This is denoted by the asterisks on the top right of the matrix."
+    },
+    {
+      "start": 735.45,
+      "end": 740.13,
+      "text": "Just like with complex numbers, when we apply this, we flip the sign of all the imaginary"
+    },
+    {
+      "start": 740.13,
+      "end": 743.69,
+      "text": "components of all the elements in the matrix."
+    },
+    {
+      "start": 743.69,
+      "end": 757.39,
+      "text": "Pause the video and find the complex conjugate of this matrix."
+    },
+    {
+      "start": 757.39,
+      "end": 760.87,
+      "text": "We can also do what we call the transpose of a matrix."
+    },
+    {
+      "start": 760.87,
+      "end": 774.16,
+      "text": "This is denoted by the t and involves exchanging as rows with its columns."
+    },
+    {
+      "start": 774.16,
+      "end": 779.68,
+      "text": "If we combine these two and find the complex conjugate and transpose of a matrix A, we"
+    },
+    {
+      "start": 779.68,
+      "end": 783.52,
+      "text": "get something called a dagger, denoted by the dagger symbol."
+    },
+    {
+      "start": 783.52,
+      "end": 785.24,
+      "text": "What was the point of all this?"
+    },
+    {
+      "start": 785.24,
+      "end": 790.12,
+      "text": "In quantum computing, we use two types of matrices to apply our operations."
+    },
+    {
+      "start": 790.12,
+      "end": 792.72,
+      "text": "One of them is unitary matrices."
+    },
+    {
+      "start": 792.72,
+      "end": 798.48,
+      "text": "These have the property that given a unitary matrix u, u times u dagger is equal to the"
+    },
+    {
+      "start": 798.48,
+      "end": 803.4,
+      "text": "identity matrix, so u dagger is its inverse."
+    },
+    {
+      "start": 803.4,
+      "end": 808.68,
+      "text": "Geometrically, when a unitary matrix acts on a vector, the length of the vector stays"
+    },
+    {
+      "start": 808.68,
+      "end": 811.64,
+      "text": "the same, but it is rotated or flipped."
+    },
+    {
+      "start": 811.68,
+      "end": 816.36,
+      "text": "This property may not seem very useful, but once we start talking about probabilities"
+    },
+    {
+      "start": 816.36,
+      "end": 820.32,
+      "text": "in quantum computers, it will all start to make sense."
+    },
+    {
+      "start": 820.32,
+      "end": 826.64,
+      "text": "The other type of matrix we use to apply operations in quantum computing is the Hermitian matrix."
+    },
+    {
+      "start": 826.64,
+      "end": 833.04,
+      "text": "These matrices have the property that given a Hermitian matrix h, h is equal to h dagger."
+    },
+    {
+      "start": 833.04,
+      "end": 837.68,
+      "text": "As you go through the quantum computing sections of this course, you will start to understand"
+    },
+    {
+      "start": 837.68,
+      "end": 848.94,
+      "text": "why we use these types of matrices to perform operations on quantum computers."
+    },
+    {
+      "start": 848.94,
+      "end": 853.94,
+      "text": "Sometimes when we apply a transformation to a vector, the vector stays in the same direction,"
+    },
+    {
+      "start": 853.94,
+      "end": 858.9,
+      "text": "but just gets stretched or compressed, meaning that we can factor out a scalar and get back"
+    },
+    {
+      "start": 858.9,
+      "end": 861.66,
+      "text": "that same vector."
+    },
+    {
+      "start": 861.66,
+      "end": 867.14,
+      "text": "When this happens, we call the vector an eigenvector of the transformation matrix that we applied,"
+    },
+    {
+      "start": 867.14,
+      "end": 872.15,
+      "text": "and the scalar we factored out an eigenvalue."
+    },
+    {
+      "start": 872.15,
+      "end": 873.83,
+      "text": "Let's go through an example."
+    },
+    {
+      "start": 873.83,
+      "end": 880.67,
+      "text": "If we have the matrix 2, 0, 1, 2 with the vector 0, 3, applying the matrix on the vector"
+    },
+    {
+      "start": 880.67,
+      "end": 883.35,
+      "text": "gives us the vector 0, 6."
+    },
+    {
+      "start": 883.35,
+      "end": 889.67,
+      "text": "With this, we can factor out a 2, leaving us with 2 times the vector 0, 3."
+    },
+    {
+      "start": 889.67,
+      "end": 901.02,
+      "text": "This gives us an eigenvalue of 2 with the eigenvector 0, 3 for that matrix."
+    },
+    {
+      "start": 901.02,
+      "end": 906.38,
+      "text": "Classical computers use binary, zeros and ones, to store and process their data."
+    },
+    {
+      "start": 906.38,
+      "end": 911.54,
+      "text": "Quantum computers on the other hand use qubits or quantum bits, which can be 0 and 1 at the"
+    },
+    {
+      "start": 911.54,
+      "end": 912.7,
+      "text": "same time."
+    },
+    {
+      "start": 912.7,
+      "end": 917.94,
+      "text": "We have all heard this explanation of quantum computers, but what does that actually mean?"
+    },
+    {
+      "start": 917.94,
+      "end": 922.86,
+      "text": "In order to understand what a quantum computer is actually doing, we must look at how we"
+    },
+    {
+      "start": 922.86,
+      "end": 925.58,
+      "text": "represent them mathematically."
+    },
+    {
+      "start": 925.58,
+      "end": 930.86,
+      "text": "Instead of using binary, like classical computers, quantum computers use qubits."
+    },
+    {
+      "start": 931.02,
+      "end": 936.58,
+      "text": "Physically, a qubit can be any quantum particle that exists in two distinct states, such as"
+    },
+    {
+      "start": 936.58,
+      "end": 941.34,
+      "text": "a photon of light being polarized either horizontally or vertically."
+    },
+    {
+      "start": 941.34,
+      "end": 946.62,
+      "text": "Just like classical computers, we still use zeros and ones, but in quantum computation,"
+    },
+    {
+      "start": 946.62,
+      "end": 952.58,
+      "text": "we define them instead as the column vectors 1, 0 and 0, 1 respectively."
+    },
+    {
+      "start": 952.58,
+      "end": 956.9,
+      "text": "The weird brackets around 0 and 1 is Dirac notation."
+    },
+    {
+      "start": 956.9,
+      "end": 959.46,
+      "text": "We will look more into it later."
+    },
+    {
+      "start": 959.46,
+      "end": 961.98,
+      "text": "You may have heard of the term superposition."
+    },
+    {
+      "start": 961.98,
+      "end": 966.42,
+      "text": "What it means in quantum mechanics is that a quantum particle is in two states at the"
+    },
+    {
+      "start": 966.42,
+      "end": 968.26,
+      "text": "same time."
+    },
+    {
+      "start": 968.26,
+      "end": 971.3,
+      "text": "So back to our photon polarization example."
+    },
+    {
+      "start": 971.3,
+      "end": 977.7,
+      "text": "This means that the photon is both horizontally and vertically polarized at the same time."
+    },
+    {
+      "start": 977.7,
+      "end": 983.38,
+      "text": "In terms of quantum computing, we say a qubit is in superposition, if it is both 0 and 1"
+    },
+    {
+      "start": 983.38,
+      "end": 985.14,
+      "text": "at the same time."
+    },
+    {
+      "start": 985.14,
+      "end": 989.91,
+      "text": "Let's look at how we represent qubits mathematically."
+    },
+    {
+      "start": 989.91,
+      "end": 995.03,
+      "text": "Mathematically, we can represent a qubit as a column vector with two elements."
+    },
+    {
+      "start": 995.03,
+      "end": 999.71,
+      "text": "The top element indicates how much the qubit is in the zero state, and the bottom element"
+    },
+    {
+      "start": 999.71,
+      "end": 1002.23,
+      "text": "indicates how much the qubit is in the one state."
+    },
+    {
+      "start": 1002.23,
+      "end": 1006.47,
+      "text": "The convention for a quantum state is to set it equal to the Greek letter psi."
+    },
+    {
+      "start": 1006.47,
+      "end": 1009.43,
+      "text": "We'll talk more about this in the next video."
+    },
+    {
+      "start": 1009.43,
+      "end": 1015.07,
+      "text": "So if we have a qubit in the state 1, 0, it now makes sense why this is 0, since it is"
+    },
+    {
+      "start": 1015.07,
+      "end": 1017.79,
+      "text": "all in the zero state and none in the one."
+    },
+    {
+      "start": 1017.79,
+      "end": 1022.79,
+      "text": "We can say the same for a qubit in the state 0, 1 being 1."
+    },
+    {
+      "start": 1022.79,
+      "end": 1028.47,
+      "text": "If a qubit is in both the 0 and 1 state, so it has non-zero numbers in the matrix, then"
+    },
+    {
+      "start": 1028.47,
+      "end": 1033.23,
+      "text": "we say it is in a superposition of 0 and 1, since it is both of the states at the same"
+    },
+    {
+      "start": 1033.23,
+      "end": 1034.23,
+      "text": "time."
+    },
+    {
+      "start": 1034.23,
+      "end": 1037.59,
+      "text": "So now we know how to represent a qubit mathematically."
+    },
+    {
+      "start": 1037.59,
+      "end": 1039.79,
+      "text": "But how do we measure the qubits?"
+    },
+    {
+      "start": 1039.79,
+      "end": 1043.11,
+      "text": "For that, we must look at another rule of quantum mechanics."
+    },
+    {
+      "start": 1043.11,
+      "end": 1048.31,
+      "text": "When we measure a quantum system, it changes the state of the system to the measurement."
+    },
+    {
+      "start": 1048.31,
+      "end": 1049.87,
+      "text": "What does that mean?"
+    },
+    {
+      "start": 1049.87,
+      "end": 1055.39,
+      "text": "If we go back to our photon polarization example, if the photon is in a superposition of both"
+    },
+    {
+      "start": 1055.39,
+      "end": 1060.03,
+      "text": "horizontally and vertically polarized, then when we measure it, we will only measure it"
+    },
+    {
+      "start": 1060.03,
+      "end": 1062.55,
+      "text": "as one or the other, but not both."
+    },
+    {
+      "start": 1062.55,
+      "end": 1067.35,
+      "text": "And once it has been measured, it collapses into the state we measured."
+    },
+    {
+      "start": 1067.35,
+      "end": 1072.03,
+      "text": "So if it was in a superposition and we measure it to be horizontally polarized, it would"
+    },
+    {
+      "start": 1072.03,
+      "end": 1078.55,
+      "text": "collapse and become horizontally polarized, meaning it is not in a superposition anymore."
+    },
+    {
+      "start": 1078.55,
+      "end": 1081.35,
+      "text": "The same thing happens when we measure qubits."
+    },
+    {
+      "start": 1081.35,
+      "end": 1083.95,
+      "text": "We can only measure a 0 or a 1."
+    },
+    {
+      "start": 1083.95,
+      "end": 1088.63,
+      "text": "We do not measure how much the qubit is in the zero state, or how much the qubit is in"
+    },
+    {
+      "start": 1088.63,
+      "end": 1090.91,
+      "text": "the one state."
+    },
+    {
+      "start": 1090.91,
+      "end": 1096.31,
+      "text": "Immediately after measuring a qubit, its state changes to either 0 or 1, depending on the"
+    },
+    {
+      "start": 1096.31,
+      "end": 1098.03,
+      "text": "measurement."
+    },
+    {
+      "start": 1098.03,
+      "end": 1102.79,
+      "text": "So what is the point in those numbers telling us how much the qubit is in the zero state"
+    },
+    {
+      "start": 1102.79,
+      "end": 1105.55,
+      "text": "or the one state?"
+    },
+    {
+      "start": 1105.55,
+      "end": 1112.03,
+      "text": "What those numbers tell us is the probability of measuring a 0 or a 1."
+    },
+    {
+      "start": 1112.03,
+      "end": 1118.27,
+      "text": "The probability of measuring 0 is the magnitude squared of the amplitude of the zero state,"
+    },
+    {
+      "start": 1118.27,
+      "end": 1126.11,
+      "text": "and the probability of measuring 1 is the magnitude squared of the amplitude of the one state."
+    },
+    {
+      "start": 1126.11,
+      "end": 1132.19,
+      "text": "So for this example qubit, when we measure it, we have a 75% chance of measuring a 0"
+    },
+    {
+      "start": 1132.19,
+      "end": 1136.86,
+      "text": "and a 25% chance of measuring a 1."
+    },
+    {
+      "start": 1136.86,
+      "end": 1141.82,
+      "text": "If we now think about how we defined the zero and one state at the start of the lesson,"
+    },
+    {
+      "start": 1141.82,
+      "end": 1144.62,
+      "text": "they should now start to make sense."
+    },
+    {
+      "start": 1144.62,
+      "end": 1149.86,
+      "text": "We stated that zero was the column vector 1, 0, and now we can see why."
+    },
+    {
+      "start": 1149.86,
+      "end": 1155.06,
+      "text": "The probability of measuring 0 is 1, so it will always be measured as 0."
+    },
+    {
+      "start": 1155.06,
+      "end": 1158.18,
+      "text": "This is the same for the one state."
+    },
+    {
+      "start": 1158.18,
+      "end": 1162.7,
+      "text": "Since there are only two possible outcomes when measuring a qubit, the probability of"
+    },
+    {
+      "start": 1162.7,
+      "end": 1169.54,
+      "text": "measuring a 0 plus the probability of measuring a 1 must equal 1, giving us this equation."
+    },
+    {
+      "start": 1169.54,
+      "end": 1174.82,
+      "text": "So this would be a valid qubit state since the probabilities add up to 1, but this would"
+    },
+    {
+      "start": 1174.82,
+      "end": 1179.22,
+      "text": "not be since the probabilities add up to more than 1."
+    },
+    {
+      "start": 1179.22,
+      "end": 1185.02,
+      "text": "When we do measure a qubit that is in superposition, it collapses into the measured state."
+    },
+    {
+      "start": 1185.02,
+      "end": 1190.54,
+      "text": "So if we measure this state to be zero, it collapses into the zero state so every measurement"
+    },
+    {
+      "start": 1190.54,
+      "end": 1193.14,
+      "text": "after will be zero."
+    },
+    {
+      "start": 1193.14,
+      "end": 1196.14,
+      "text": "This is because of the laws of quantum mechanics."
+    },
+    {
+      "start": 1196.14,
+      "end": 1209.96,
+      "text": "When we measure something, it permanently changes the state of the system to that measurement."
+    },
+    {
+      "start": 1209.96,
+      "end": 1215.88,
+      "text": "Normally, when we are mathematically representing a quantum state of a quantum computer, instead"
+    },
+    {
+      "start": 1215.88,
+      "end": 1221.08,
+      "text": "of using matrices, we use a specific notation called direct notation."
+    },
+    {
+      "start": 1221.08,
+      "end": 1228.2,
+      "text": "To see how this works, let's convert an arbitrary qubit state, alpha-beta, into direct notation."
+    },
+    {
+      "start": 1228.2,
+      "end": 1233.6,
+      "text": "All we need to do is turn the matrix into the sum of two matrices and then factor out"
+    },
+    {
+      "start": 1233.6,
+      "end": 1235.84,
+      "text": "the alpha and the beta."
+    },
+    {
+      "start": 1235.84,
+      "end": 1242.32,
+      "text": "Now, if you look at the column vectors, they are the 0 and 1 states as we saw in the previous"
+    },
+    {
+      "start": 1242.32,
+      "end": 1243.4,
+      "text": "lesson."
+    },
+    {
+      "start": 1243.4,
+      "end": 1248.68,
+      "text": "This gives us a linear combination of the 0 and 1 states."
+    },
+    {
+      "start": 1248.68,
+      "end": 1253.32,
+      "text": "Those brackets around the 0, 1 and psi are called kets."
+    },
+    {
+      "start": 1253.32,
+      "end": 1260.24,
+      "text": "All they tell us is that 0, 1 and psi are quantum states."
+    },
+    {
+      "start": 1260.24,
+      "end": 1270.41,
+      "text": "Pause the video and convert this qubit state from matrix to direct notation."
+    },
+    {
+      "start": 1270.41,
+      "end": 1275.43,
+      "text": "This notation might seem weird at first, but it is the conventional way of writing a quantum"
+    },
+    {
+      "start": 1275.43,
+      "end": 1277.33,
+      "text": "computing state."
+    },
+    {
+      "start": 1277.33,
+      "end": 1282.93,
+      "text": "Since when we start adding more qubits, using matrices to represent them becomes unmanageable,"
+    },
+    {
+      "start": 1282.93,
+      "end": 1291.88,
+      "text": "as we start to get very large matrices."
+    },
+    {
+      "start": 1291.88,
+      "end": 1296.96,
+      "text": "We can represent a qubit graphically, on what is called a block sphere."
+    },
+    {
+      "start": 1296.96,
+      "end": 1302.04,
+      "text": "On the top, we have the 0 state, and on the bottom, we have the 1 state."
+    },
+    {
+      "start": 1302.04,
+      "end": 1308.8,
+      "text": "On the horizontal, we have the plus state, minus state, i state, and negative i state."
+    },
+    {
+      "start": 1308.8,
+      "end": 1311.4,
+      "text": "We will discuss these in later lessons."
+    },
+    {
+      "start": 1311.4,
+      "end": 1317.6,
+      "text": "The closer up the qubit is to the 0 state, the higher probability of measuring a 0."
+    },
+    {
+      "start": 1317.6,
+      "end": 1321.95,
+      "text": "And the same goes for the 1 state."
+    },
+    {
+      "start": 1321.95,
+      "end": 1327.91,
+      "text": "That means that if we have the state 1 on root 2, 1 on root 2, it will lie halfway between"
+    },
+    {
+      "start": 1327.91,
+      "end": 1335.91,
+      "text": "the north and south poles, since it has an even chance of being measured as 0 or 1."
+    },
+    {
+      "start": 1335.91,
+      "end": 1340.97,
+      "text": "You may notice that since it is a sphere, the qubit can spin around the sphere."
+    },
+    {
+      "start": 1340.97,
+      "end": 1342.63,
+      "text": "This is called phase."
+    },
+    {
+      "start": 1342.63,
+      "end": 1345.91,
+      "text": "We will talk about this in later lessons."
+    },
+    {
+      "start": 1345.91,
+      "end": 1351.47,
+      "text": "Right now, it is important to understand the basic idea that the higher up the qubit is,"
+    },
+    {
+      "start": 1351.47,
+      "end": 1354.03,
+      "text": "the more likely we are to measure a 0."
+    },
+    {
+      "start": 1354.03,
+      "end": 1358.83,
+      "text": "And the lower the qubit, the more likely we are to measure a 1."
+    },
+    {
+      "start": 1358.83,
+      "end": 1364.91,
+      "text": "Pause the video and think about where the state 1 on 2, root 3 on 2, will be on the"
+    },
+    {
+      "start": 1364.91,
+      "end": 1369.49,
+      "text": "block sphere."
+    },
+    {
+      "start": 1369.49,
+      "end": 1376.45,
+      "text": "The qubit 1 on 2, root 3 on 2, would be halfway between the equator and the 1 state, since"
+    },
+    {
+      "start": 1376.45,
+      "end": 1382.65,
+      "text": "it has a 1 on 4 chance of being measured as a 0 and a 3 on 4 chance of being measured"
+    },
+    {
+      "start": 1382.65,
+      "end": 1390.79,
+      "text": "as a 1."
+    },
+    {
+      "start": 1390.79,
+      "end": 1395.95,
+      "text": "With classical computers, we use logic gates to process data."
+    },
+    {
+      "start": 1395.95,
+      "end": 1401.59,
+      "text": "With quantum computers, we still use gates to change the states of our qubits, but they"
+    },
+    {
+      "start": 1401.59,
+      "end": 1405.39,
+      "text": "are a little bit different to your usual logic gates."
+    },
+    {
+      "start": 1405.39,
+      "end": 1411.19,
+      "text": "The most common single qubit gates are the x, y and z gates."
+    },
+    {
+      "start": 1411.19,
+      "end": 1413.37,
+      "text": "Let's first look at the x gate."
+    },
+    {
+      "start": 1413.37,
+      "end": 1420.35,
+      "text": "If we have a qubit in the 0 state and apply the x gate to it, it flips to the 1 state."
+    },
+    {
+      "start": 1420.35,
+      "end": 1425.07,
+      "text": "Let's try a qubit that is halfway between 0 and 1."
+    },
+    {
+      "start": 1425.07,
+      "end": 1429.63,
+      "text": "Try and see if you can figure out what the x gate is doing."
+    },
+    {
+      "start": 1429.63,
+      "end": 1432.95,
+      "text": "Let's try a qubit in this state."
+    },
+    {
+      "start": 1432.95,
+      "end": 1440.71,
+      "text": "As you can see, the x gate flips the qubit 180 degrees or pi radians around the x axis."
+    },
+    {
+      "start": 1440.71,
+      "end": 1442.95,
+      "text": "Now let's have a look at the y gate."
+    },
+    {
+      "start": 1442.95,
+      "end": 1449.46,
+      "text": "Here are some examples of the y gate transformation."
+    },
+    {
+      "start": 1449.46,
+      "end": 1454.9,
+      "text": "As you can see, it does the same thing as the x gate, but instead it rotates the qubit"
+    },
+    {
+      "start": 1454.9,
+      "end": 1460.58,
+      "text": "state 180 degrees or pi radians around the y axis."
+    },
+    {
+      "start": 1460.58,
+      "end": 1468.22,
+      "text": "Lastly, we have the z gate, which rotates the qubit 180 degrees or pi radians around"
+    },
+    {
+      "start": 1468.22,
+      "end": 1472.09,
+      "text": "the z axis."
+    },
+    {
+      "start": 1472.09,
+      "end": 1478.05,
+      "text": "Since these gates rotate the qubit around the specified axis by pi radians, if we apply"
+    },
+    {
+      "start": 1478.05,
+      "end": 1484.41,
+      "text": "the same gate twice, one after the other, then the qubit returns to its original position."
+    },
+    {
+      "start": 1484.41,
+      "end": 1489.17,
+      "text": "This means that these three gates are their own inverses."
+    },
+    {
+      "start": 1489.17,
+      "end": 1492.41,
+      "text": "We can represent these gates as matrices."
+    },
+    {
+      "start": 1492.41,
+      "end": 1494.93,
+      "text": "Here are the matrices for these gates."
+    },
+    {
+      "start": 1494.93,
+      "end": 1499.45,
+      "text": "For the moment, ignore the complex numbers in the y gate matrix."
+    },
+    {
+      "start": 1499.45,
+      "end": 1503.85,
+      "text": "We will explain this later in the next lesson when we talk about phase."
+    },
+    {
+      "start": 1503.85,
+      "end": 1509.73,
+      "text": "Mathematically, to apply a gate to a qubit, we can multiply the matrix that represents"
+    },
+    {
+      "start": 1509.73,
+      "end": 1514.72,
+      "text": "the gate with the column vector of the qubit."
+    },
+    {
+      "start": 1514.72,
+      "end": 1526.72,
+      "text": "Pause the video and prove that applying the x gate to the zero state gives us the one state."
+    },
+    {
+      "start": 1526.72,
+      "end": 1532.64,
+      "text": "In direct notation, if we want to apply a quantum gate, we still use the matrices, but"
+    },
+    {
+      "start": 1532.64,
+      "end": 1539.12,
+      "text": "instead of using matrix multiplication, we look at the columns of the matrix."
+    },
+    {
+      "start": 1539.12,
+      "end": 1544.56,
+      "text": "The first column of the matrix indicates the column vector the zero state becomes after"
+    },
+    {
+      "start": 1544.56,
+      "end": 1550.48,
+      "text": "applying the gate, and the second column indicates the column vector the one state becomes."
+    },
+    {
+      "start": 1550.48,
+      "end": 1557.32,
+      "text": "Then we can factor out both our zero and one states again to get back into direct notation."
+    },
+    {
+      "start": 1558.04,
+      "end": 1564.68,
+      "text": "Also, since quantum gates are linear, if we apply an arbitrary gate u, that gate acts"
+    },
+    {
+      "start": 1564.68,
+      "end": 1569.6,
+      "text": "on each of the superposition states individually."
+    },
+    {
+      "start": 1569.6,
+      "end": 1574.84,
+      "text": "Let's look at an example of applying a gate in direct notation."
+    },
+    {
+      "start": 1574.84,
+      "end": 1580.24,
+      "text": "If we want to apply a y gate to this state in direct notation, the y gets distributed"
+    },
+    {
+      "start": 1580.24,
+      "end": 1586.48,
+      "text": "into the state, then the y changes the zero state to the first column of the matrix and"
+    },
+    {
+      "start": 1586.48,
+      "end": 1592.2,
+      "text": "the one state to the second column of the matrix."
+    },
+    {
+      "start": 1592.2,
+      "end": 1595.48,
+      "text": "Then we can factor out the i and the negative i."
+    },
+    {
+      "start": 1595.48,
+      "end": 1603.5,
+      "text": "The column vectors once again become the zero and one states, leaving us with this state."
+    },
+    {
+      "start": 1603.5,
+      "end": 1609.14,
+      "text": "With this, pause the video and prove that applying a z gate to a qubit in the state"
+    },
+    {
+      "start": 1609.14,
+      "end": 1624.8,
+      "text": "alpha zero plus beta one gives us the state alpha zero minus beta one."
+    },
+    {
+      "start": 1624.8,
+      "end": 1629.44,
+      "text": "Looking at this, you may be thinking, what is the point of the z gate?"
+    },
+    {
+      "start": 1629.44,
+      "end": 1634.6,
+      "text": "This qubit still has an alpha squared chance of being zero and a beta squared chance of"
+    },
+    {
+      "start": 1634.6,
+      "end": 1635.96,
+      "text": "being one."
+    },
+    {
+      "start": 1635.96,
+      "end": 1638.88,
+      "text": "It didn't affect their probabilities."
+    },
+    {
+      "start": 1638.88,
+      "end": 1644.08,
+      "text": "In the next lesson, we will finally bring complex numbers into quantum computing with"
+    },
+    {
+      "start": 1644.08,
+      "end": 1652.74,
+      "text": "an introduction to phase."
+    },
+    {
+      "start": 1652.74,
+      "end": 1657.82,
+      "text": "On the block sphere, we saw in the previous lessons that we could also rotate around the"
+    },
+    {
+      "start": 1657.82,
+      "end": 1659.66,
+      "text": "z axis."
+    },
+    {
+      "start": 1659.66,
+      "end": 1661.22,
+      "text": "This is called phase."
+    },
+    {
+      "start": 1661.22,
+      "end": 1666.94,
+      "text": "It may not seem very useful, as the probability of measuring a zero or a one is still the"
+    },
+    {
+      "start": 1666.94,
+      "end": 1670.38,
+      "text": "same, no matter how much we rotate around."
+    },
+    {
+      "start": 1670.38,
+      "end": 1674.42,
+      "text": "But phase is what makes quantum computers as powerful as they are."
+    },
+    {
+      "start": 1674.42,
+      "end": 1677.86,
+      "text": "We will get into the uses of phase in the next lesson."
+    },
+    {
+      "start": 1677.86,
+      "end": 1682.3,
+      "text": "In this lesson, we will see how we can represent phase mathematically."
+    },
+    {
+      "start": 1682.3,
+      "end": 1687.26,
+      "text": "To represent phase, we have to bring back our old friend, complex numbers."
+    },
+    {
+      "start": 1687.26,
+      "end": 1692.62,
+      "text": "In quantum computing, we mostly use complex numbers in exponential form."
+    },
+    {
+      "start": 1692.62,
+      "end": 1694.66,
+      "text": "You will now see why."
+    },
+    {
+      "start": 1694.66,
+      "end": 1698.54,
+      "text": "But first let's consider some states in the block sphere."
+    },
+    {
+      "start": 1698.54,
+      "end": 1704.1,
+      "text": "Let's first consider the states one over root two zero plus one over root two one."
+    },
+    {
+      "start": 1704.1,
+      "end": 1709.66,
+      "text": "If we apply a z gate, we get it to the state one over root two zero minus one over root"
+    },
+    {
+      "start": 1709.66,
+      "end": 1711.74,
+      "text": "two one."
+    },
+    {
+      "start": 1711.74,
+      "end": 1717.38,
+      "text": "As you can see, the one state was multiplied by a factor of negative one, and the qubit"
+    },
+    {
+      "start": 1717.38,
+      "end": 1721.46,
+      "text": "rotated pi radians around the z axis."
+    },
+    {
+      "start": 1721.46,
+      "end": 1727.18,
+      "text": "If we represent the negative one as a complex number in exponential form, we get e to the"
+    },
+    {
+      "start": 1727.18,
+      "end": 1729.18,
+      "text": "i pi."
+    },
+    {
+      "start": 1729.18,
+      "end": 1735.31,
+      "text": "Notice how the angle of the complex number is pi radians."
+    },
+    {
+      "start": 1735.31,
+      "end": 1737.23,
+      "text": "Let's try another example."
+    },
+    {
+      "start": 1737.23,
+      "end": 1742.55,
+      "text": "Let's plot the state one over root two zero plus one over root two one and one over root"
+    },
+    {
+      "start": 1742.55,
+      "end": 1746.35,
+      "text": "two zero plus i on root two one."
+    },
+    {
+      "start": 1746.35,
+      "end": 1753.07,
+      "text": "If we represent i as a complex number in exponential form, we get e to the i pi over two."
+    },
+    {
+      "start": 1753.07,
+      "end": 1758.15,
+      "text": "And if you look at the block sphere, to get that state, we rotate pi over two radians around"
+    },
+    {
+      "start": 1758.15,
+      "end": 1760.31,
+      "text": "the z axis."
+    },
+    {
+      "start": 1760.31,
+      "end": 1765.11,
+      "text": "We use complex numbers in exponential form in quantum computing since it gives us a nice"
+    },
+    {
+      "start": 1765.11,
+      "end": 1770.47,
+      "text": "mathematical way of rotating around a circle by changing the value of pi."
+    },
+    {
+      "start": 1770.47,
+      "end": 1775.75,
+      "text": "By multiplying the one state of the qubit with the complex number e to the i pi, we"
+    },
+    {
+      "start": 1775.75,
+      "end": 1780.35,
+      "text": "rotate the qubit around the z axis by pi radians."
+    },
+    {
+      "start": 1780.35,
+      "end": 1785.71,
+      "text": "But why is it the one state and not the zero state being multiplied by the complex number?"
+    },
+    {
+      "start": 1785.71,
+      "end": 1790.27,
+      "text": "There are two types of phase, global phase and relative phase."
+    },
+    {
+      "start": 1790.27,
+      "end": 1794.87,
+      "text": "Global phase is when the entire qubit is multiplied by a complex number."
+    },
+    {
+      "start": 1794.87,
+      "end": 1799.91,
+      "text": "And relative phase is when just the one state is multiplied by a complex number."
+    },
+    {
+      "start": 1799.91,
+      "end": 1803.87,
+      "text": "It turns out the global phase is physically irrelevant."
+    },
+    {
+      "start": 1803.87,
+      "end": 1809.35,
+      "text": "So the state e to the i pi times one over root two zero plus one over root two one is"
+    },
+    {
+      "start": 1809.35,
+      "end": 1814.79,
+      "text": "logically equivalent to the state one over root two zero plus one over root two one."
+    },
+    {
+      "start": 1814.79,
+      "end": 1820.19,
+      "text": "Relative phase on the other hand is extremely important and matters in our calculations."
+    },
+    {
+      "start": 1820.19,
+      "end": 1825.51,
+      "text": "Relative phase is when the amplitude of the one state has a factor of a complex number."
+    },
+    {
+      "start": 1825.51,
+      "end": 1830.75,
+      "text": "As we saw earlier, having relative phase rotates the qubit on the block sphere around the z"
+    },
+    {
+      "start": 1830.75,
+      "end": 1832.25,
+      "text": "axis."
+    },
+    {
+      "start": 1832.25,
+      "end": 1836.79,
+      "text": "But what if we have a complex number in both the amplitudes of the zero state and the one"
+    },
+    {
+      "start": 1836.79,
+      "end": 1837.91,
+      "text": "state?"
+    },
+    {
+      "start": 1837.91,
+      "end": 1843.39,
+      "text": "What we do is we factor out the complex number of the zero state from the entire qubit, creating"
+    },
+    {
+      "start": 1843.39,
+      "end": 1847.11,
+      "text": "a global phase and relative phase."
+    },
+    {
+      "start": 1847.11,
+      "end": 1852.75,
+      "text": "Then we can discard the global phase, leaving us with a qubit with a relative phase."
+    },
+    {
+      "start": 1852.75,
+      "end": 1858.07,
+      "text": "We saw previously on the block sphere that phase does not affect the probability of measuring"
+    },
+    {
+      "start": 1858.07,
+      "end": 1864.47,
+      "text": "a zero or a one, as the qubit stays the same distance from the zero state and the one state,"
+    },
+    {
+      "start": 1864.47,
+      "end": 1867.75,
+      "text": "no matter how far we rotate around the block sphere."
+    },
+    {
+      "start": 1867.75,
+      "end": 1874.43,
+      "text": "If we look at an arbitrary qubit state, alpha zero plus e to the i pi beta one, the probability"
+    },
+    {
+      "start": 1874.43,
+      "end": 1880.03,
+      "text": "of measuring a one is the magnitude of e to the i pi beta squared."
+    },
+    {
+      "start": 1880.03,
+      "end": 1883.31,
+      "text": "We can split the absolute values up like this."
+    },
+    {
+      "start": 1883.31,
+      "end": 1889.27,
+      "text": "The magnitude of e to the i pi is one, since the coefficient of the complex number in exponential"
+    },
+    {
+      "start": 1889.27,
+      "end": 1891.59,
+      "text": "form states its magnitude."
+    },
+    {
+      "start": 1891.59,
+      "end": 1896.79,
+      "text": "So the probability of measuring one is still the magnitude of beta squared."
+    },
+    {
+      "start": 1896.79,
+      "end": 1907.88,
+      "text": "In the next lesson, we will see why relative phase matters."
+    },
+    {
+      "start": 1907.88,
+      "end": 1912.44,
+      "text": "Before we discuss perhaps the most important gate in quantum computing, we will quickly"
+    },
+    {
+      "start": 1912.44,
+      "end": 1914.4,
+      "text": "revisit the block sphere."
+    },
+    {
+      "start": 1914.4,
+      "end": 1920.12,
+      "text": "In earlier lessons, we saw that on the equator we have four states, the plus state, minus"
+    },
+    {
+      "start": 1920.12,
+      "end": 1923.76,
+      "text": "state, i state, and negative i state."
+    },
+    {
+      "start": 1923.76,
+      "end": 1927.56,
+      "text": "Now that we know about phase, we can define these states."
+    },
+    {
+      "start": 1927.56,
+      "end": 1933.0,
+      "text": "All they are, a shorthand for commonly used states, since they all lie on the equator"
+    },
+    {
+      "start": 1933.0,
+      "end": 1934.32,
+      "text": "of the block sphere."
+    },
+    {
+      "start": 1934.32,
+      "end": 1940.04,
+      "text": "They all have an even chance of being measured as zero or one, but each one contains a different"
+    },
+    {
+      "start": 1940.04,
+      "end": 1942.16,
+      "text": "relative phase."
+    },
+    {
+      "start": 1942.16,
+      "end": 1948.04,
+      "text": "The plus state is the state one on root two zero plus one on root two one."
+    },
+    {
+      "start": 1948.04,
+      "end": 1950.36,
+      "text": "The next state is the minus state."
+    },
+    {
+      "start": 1950.36,
+      "end": 1956.48,
+      "text": "This is the same as the plus state, but with a relative phase of negative one."
+    },
+    {
+      "start": 1956.48,
+      "end": 1962.92,
+      "text": "The i state has a relative phase of i, and the negative i state has a relative phase"
+    },
+    {
+      "start": 1962.92,
+      "end": 1966.77,
+      "text": "of negative i."
+    },
+    {
+      "start": 1966.77,
+      "end": 1969.41,
+      "text": "Now let's look at the Hadamard gate."
+    },
+    {
+      "start": 1969.41,
+      "end": 1971.65,
+      "text": "Here is the matrix for the gate."
+    },
+    {
+      "start": 1971.65,
+      "end": 1976.89,
+      "text": "If we look at how the gate acts on a qubit on the block sphere, we see that the zero"
+    },
+    {
+      "start": 1976.89,
+      "end": 1983.17,
+      "text": "state gets transformed into the plus state, and the one state gets transformed into the"
+    },
+    {
+      "start": 1983.17,
+      "end": 1986.37,
+      "text": "minus state."
+    },
+    {
+      "start": 1986.37,
+      "end": 1991.57,
+      "text": "Applying a Hadamard to the plus state gives us the zero state, and applying a Hadamard"
+    },
+    {
+      "start": 1991.57,
+      "end": 1994.73,
+      "text": "to the minus state gives us a one state."
+    },
+    {
+      "start": 1994.73,
+      "end": 1998.41,
+      "text": "This means that the Hadamard is its own inverse."
+    },
+    {
+      "start": 1998.41,
+      "end": 2004.29,
+      "text": "If we wanted to apply a Hadamard gate to an arbitrary qubit state in direct notation,"
+    },
+    {
+      "start": 2004.29,
+      "end": 2014.4,
+      "text": "we can replace the zero with the plus state, and the one with the minus state, and expand."
+    },
+    {
+      "start": 2014.4,
+      "end": 2017.44,
+      "text": "The Hadamard gate shows that phase matters."
+    },
+    {
+      "start": 2017.44,
+      "end": 2023.92,
+      "text": "If we apply the gate to the plus state, we get zero, and to the minus state, we get one."
+    },
+    {
+      "start": 2023.92,
+      "end": 2029.88,
+      "text": "These states only differ by a relative phase, but after applying the gate, they are different,"
+    },
+    {
+      "start": 2029.88,
+      "end": 2035.52,
+      "text": "even though initially they both had a 0.5 chance of being measured as zero, and a 0.5"
+    },
+    {
+      "start": 2035.52,
+      "end": 2038.12,
+      "text": "chance of being measured as one."
+    },
+    {
+      "start": 2038.12,
+      "end": 2042.52,
+      "text": "In the fourth section of this course, we will start to look at some quantum computing"
+    },
+    {
+      "start": 2042.52,
+      "end": 2055.06,
+      "text": "algorithms, and you will start to see why the Hadamard gate and phase is so powerful."
+    },
+    {
+      "start": 2055.06,
+      "end": 2062.54,
+      "text": "Now that we understand relative phase, let's introduce two new gates, the S and T gates."
+    },
+    {
+      "start": 2062.54,
+      "end": 2067.5,
+      "text": "The S gate adds a relative phase of pi on two radians."
+    },
+    {
+      "start": 2067.5,
+      "end": 2072.5,
+      "text": "The T gate adds a relative phase of pi on four radians."
+    },
+    {
+      "start": 2072.5,
+      "end": 2077.94,
+      "text": "If we take the conjugate transpose of the two matrices of the two gates, we get their"
+    },
+    {
+      "start": 2077.94,
+      "end": 2079.5,
+      "text": "inverses."
+    },
+    {
+      "start": 2079.5,
+      "end": 2085.18,
+      "text": "For the S gate, we can see that applying S dagger adds a relative phase of negative"
+    },
+    {
+      "start": 2085.18,
+      "end": 2089.66,
+      "text": "pi on two, which is the inverse of the S gate."
+    },
+    {
+      "start": 2089.66,
+      "end": 2094.78,
+      "text": "This means that if we apply a S gate, then an S dagger gate, we are back in the same"
+    },
+    {
+      "start": 2094.78,
+      "end": 2100.66,
+      "text": "spot, meaning the S dagger gate is the inverse of the S gate."
+    },
+    {
+      "start": 2100.66,
+      "end": 2106.3,
+      "text": "We also have the T dagger gate, which is the same thing as the S dagger, but adds a relative"
+    },
+    {
+      "start": 2106.3,
+      "end": 2118.67,
+      "text": "phase of negative pi on four radians instead, meaning it is the inverse of the T gate."
+    },
+    {
+      "start": 2118.67,
+      "end": 2123.87,
+      "text": "If we have multiple qubits, we represent them through the tensor product."
+    },
+    {
+      "start": 2123.87,
+      "end": 2129.91,
+      "text": "For example, if we had two qubits in the zero state, then we would represent the state like"
+    },
+    {
+      "start": 2129.91,
+      "end": 2131.07,
+      "text": "this."
+    },
+    {
+      "start": 2131.07,
+      "end": 2137.19,
+      "text": "This is usually shortened to this, where we have the two zeros in the one gate vector."
+    },
+    {
+      "start": 2137.19,
+      "end": 2144.05,
+      "text": "If we wanted to represent two qubits in superposition, we can expand it out like any other operation"
+    },
+    {
+      "start": 2144.05,
+      "end": 2149.39,
+      "text": "by multiplying the amplitudes of the states and using the tensor product on the zero and"
+    },
+    {
+      "start": 2149.39,
+      "end": 2151.99,
+      "text": "one states."
+    },
+    {
+      "start": 2151.99,
+      "end": 2158.87,
+      "text": "As you can see, now we have four states, the zero zero, zero one, one zero, and one one"
+    },
+    {
+      "start": 2158.87,
+      "end": 2159.87,
+      "text": "states."
+    },
+    {
+      "start": 2159.87,
+      "end": 2164.55,
+      "text": "This makes sense since those are the possible combinations of zeros and ones we can have"
+    },
+    {
+      "start": 2164.55,
+      "end": 2167.07,
+      "text": "with two qubits."
+    },
+    {
+      "start": 2167.07,
+      "end": 2169.79,
+      "text": "That works the exact same as before."
+    },
+    {
+      "start": 2169.79,
+      "end": 2175.03,
+      "text": "The probability of measuring zero zero is the magnitude squared of the coefficient"
+    },
+    {
+      "start": 2175.03,
+      "end": 2179.64,
+      "text": "of the zero zero state and so on."
+    },
+    {
+      "start": 2179.64,
+      "end": 2187.15,
+      "text": "Here is an example of combining these two qubits."
+    },
+    {
+      "start": 2187.15,
+      "end": 2193.27,
+      "text": "If we wanted to add another qubit to the system, all we need to do is tensor it onto the end"
+    },
+    {
+      "start": 2193.27,
+      "end": 2196.71,
+      "text": "of the state."
+    },
+    {
+      "start": 2196.71,
+      "end": 2200.91,
+      "text": "We also have some shorthand notation you will sometimes see."
+    },
+    {
+      "start": 2200.91,
+      "end": 2207.77,
+      "text": "If we have n zeros, we can write it like this, which means zero tends with itself n times."
+    },
+    {
+      "start": 2207.77,
+      "end": 2217.11,
+      "text": "So this state would be shorthand for five ones."
+    },
+    {
+      "start": 2217.11,
+      "end": 2222.75,
+      "text": "This representation of qubits is great, but what if we wanted to apply a gate to a certain"
+    },
+    {
+      "start": 2222.75,
+      "end": 2223.75,
+      "text": "qubit?"
+    },
+    {
+      "start": 2223.75,
+      "end": 2229.71,
+      "text": "How would we indicate that we wanted to, let's say, apply an x gate to the second qubit in"
+    },
+    {
+      "start": 2229.71,
+      "end": 2231.47,
+      "text": "this state?"
+    },
+    {
+      "start": 2231.47,
+      "end": 2235.07,
+      "text": "For this, we use a diagram called the quantum circuit."
+    },
+    {
+      "start": 2235.07,
+      "end": 2237.51,
+      "text": "Here is an example of one."
+    },
+    {
+      "start": 2237.51,
+      "end": 2243.19,
+      "text": "On the vertical, we have the qubits, each line representing a singular qubit."
+    },
+    {
+      "start": 2243.19,
+      "end": 2247.27,
+      "text": "The states on the left are the initial states of the qubits."
+    },
+    {
+      "start": 2247.27,
+      "end": 2254.19,
+      "text": "The boxes of the quantum gates and the letters on the boxes are the type of gate we are applying."
+    },
+    {
+      "start": 2254.19,
+      "end": 2257.87,
+      "text": "For example, this is an x gate."
+    },
+    {
+      "start": 2257.87,
+      "end": 2263.03,
+      "text": "These boxes are measurements and represent us measuring the qubit."
+    },
+    {
+      "start": 2263.03,
+      "end": 2266.87,
+      "text": "The horizontal is the order in which we apply the gates."
+    },
+    {
+      "start": 2266.87,
+      "end": 2270.75,
+      "text": "We start from the left and go to the right."
+    },
+    {
+      "start": 2270.75,
+      "end": 2276.23,
+      "text": "Sometimes you will also see size states pointing to different points in the circuit."
+    },
+    {
+      "start": 2276.23,
+      "end": 2282.87,
+      "text": "These are used to represent the state of the system at different points during the algorithm."
+    },
+    {
+      "start": 2282.87,
+      "end": 2285.03,
+      "text": "Let's go through this circuit."
+    },
+    {
+      "start": 2285.03,
+      "end": 2289.47,
+      "text": "At size sub zero, we have the state zero zero one."
+    },
+    {
+      "start": 2289.47,
+      "end": 2295.63,
+      "text": "Then at size sub one, we apply an x gate to the second qubit."
+    },
+    {
+      "start": 2295.63,
+      "end": 2304.52,
+      "text": "At size sub two, we apply a Hadamard gate to the second qubit, giving us this state."
+    },
+    {
+      "start": 2304.52,
+      "end": 2310.6,
+      "text": "Then at size sub three, we apply an x gate to both the first qubit and the third qubit,"
+    },
+    {
+      "start": 2310.6,
+      "end": 2313.04,
+      "text": "giving us this state."
+    },
+    {
+      "start": 2313.04,
+      "end": 2316.56,
+      "text": "Then at size sub four, we measure the qubits."
+    },
+    {
+      "start": 2316.56,
+      "end": 2326.91,
+      "text": "So we will get one of these states with these probabilities."
+    },
+    {
+      "start": 2326.91,
+      "end": 2330.87,
+      "text": "Now let's introduce some gates that act on multiple qubits."
+    },
+    {
+      "start": 2330.87,
+      "end": 2336.63,
+      "text": "The most common multi qubit gate is the CNOT or controlled x gate."
+    },
+    {
+      "start": 2336.63,
+      "end": 2339.27,
+      "text": "Here is the gate on a quantum circuit."
+    },
+    {
+      "start": 2339.27,
+      "end": 2341.67,
+      "text": "The gate acts on two qubits."
+    },
+    {
+      "start": 2341.67,
+      "end": 2347.87,
+      "text": "One of the qubits is called the control qubit and the other is called the target qubit."
+    },
+    {
+      "start": 2347.87,
+      "end": 2354.67,
+      "text": "The CNOT gate applies an x gate to the target qubit if the control qubit is a one and does"
+    },
+    {
+      "start": 2354.67,
+      "end": 2358.47,
+      "text": "nothing if the control is a zero."
+    },
+    {
+      "start": 2358.47,
+      "end": 2362.11,
+      "text": "Let's look at the CNOT gate acting on some states."
+    },
+    {
+      "start": 2362.11,
+      "end": 2367.19,
+      "text": "If we apply a CNOT to this state with the first qubit as the control and the second"
+    },
+    {
+      "start": 2367.19,
+      "end": 2373.99,
+      "text": "qubit as the target, then we apply that CNOT gate to each of the superposition states,"
+    },
+    {
+      "start": 2373.99,
+      "end": 2377.16,
+      "text": "giving us this state."
+    },
+    {
+      "start": 2377.16,
+      "end": 2384.49,
+      "text": "Here is another example."
+    },
+    {
+      "start": 2384.49,
+      "end": 2386.97,
+      "text": "We also have the Defoli gate."
+    },
+    {
+      "start": 2386.97,
+      "end": 2392.77,
+      "text": "This gate is very similar to the CNOT, but instead it has two control qubits."
+    },
+    {
+      "start": 2392.77,
+      "end": 2398.76,
+      "text": "Here it is on a quantum circuit."
+    },
+    {
+      "start": 2398.76,
+      "end": 2405.52,
+      "text": "If we apply a Defoli gate to this qubit state with the second and third qubits as control"
+    },
+    {
+      "start": 2405.52,
+      "end": 2411.61,
+      "text": "and the fourth qubit as the target, we get this state."
+    },
+    {
+      "start": 2411.61,
+      "end": 2417.41,
+      "text": "It turns out that we can use CNOT gates to create controlled versions of single qubit"
+    },
+    {
+      "start": 2417.41,
+      "end": 2418.53,
+      "text": "gates."
+    },
+    {
+      "start": 2418.53,
+      "end": 2425.01,
+      "text": "So we also have controlled y, z, s, t and Hadamard gates."
+    },
+    {
+      "start": 2425.01,
+      "end": 2430.85,
+      "text": "They act the same as the CNOT, applying the gate if the control is one and does nothing"
+    },
+    {
+      "start": 2430.85,
+      "end": 2433.47,
+      "text": "if the control is zero."
+    },
+    {
+      "start": 2433.47,
+      "end": 2439.13,
+      "text": "We represent these on a quantum circuit like this, with the regular gate box but with the"
+    },
+    {
+      "start": 2439.13,
+      "end": 2443.01,
+      "text": "line going out to the control qubit."
+    },
+    {
+      "start": 2443.01,
+      "end": 2448.61,
+      "text": "For example, here is the controlled s gate on a quantum circuit, where the second qubit"
+    },
+    {
+      "start": 2448.61,
+      "end": 2457.59,
+      "text": "is the control and the first is the target."
+    },
+    {
+      "start": 2457.59,
+      "end": 2462.59,
+      "text": "Now that we have multiple qubits, how do we measure a single qubit?"
+    },
+    {
+      "start": 2462.59,
+      "end": 2468.59,
+      "text": "Let's say we have two qubits in this state and we wanted to find the probability of measuring"
+    },
+    {
+      "start": 2468.59,
+      "end": 2471.51,
+      "text": "the second qubit as a one."
+    },
+    {
+      "start": 2471.51,
+      "end": 2478.03,
+      "text": "We do this by looking at all the superposition states where the second qubit is one."
+    },
+    {
+      "start": 2478.03,
+      "end": 2486.25,
+      "text": "Then summing up the probabilities of measuring those states."
+    },
+    {
+      "start": 2486.25,
+      "end": 2487.91,
+      "text": "Let's do an example."
+    },
+    {
+      "start": 2487.91,
+      "end": 2493.81,
+      "text": "If we wanted to find the probability of measuring a zero in the first qubit, then we sum the"
+    },
+    {
+      "start": 2493.81,
+      "end": 2500.88,
+      "text": "probabilities of measuring each of the states where the first qubit is a zero."
+    },
+    {
+      "start": 2500.88,
+      "end": 2506.08,
+      "text": "But how do we know what the state collapses to once we measure a qubit?"
+    },
+    {
+      "start": 2506.08,
+      "end": 2512.88,
+      "text": "Remember, once we measure a qubit, it collapses its superposition and becomes the measurement."
+    },
+    {
+      "start": 2512.88,
+      "end": 2515.28,
+      "text": "Let's look at an example."
+    },
+    {
+      "start": 2515.28,
+      "end": 2520.24,
+      "text": "Say we have this state and we measure the first qubit to be a one."
+    },
+    {
+      "start": 2520.24,
+      "end": 2526.04,
+      "text": "Then the state collapses and since the first qubit becomes a one, we get rid of all the"
+    },
+    {
+      "start": 2526.04,
+      "end": 2530.6,
+      "text": "superposition states where the first qubit is not a one."
+    },
+    {
+      "start": 2530.6,
+      "end": 2535.68,
+      "text": "Remember, the probabilities must add up to one."
+    },
+    {
+      "start": 2535.68,
+      "end": 2541.28,
+      "text": "But we have just removed some states, so the probabilities will be less than one."
+    },
+    {
+      "start": 2541.28,
+      "end": 2546.88,
+      "text": "We fix this by multiplying the state by what we call a normalization constant."
+    },
+    {
+      "start": 2546.88,
+      "end": 2548.44,
+      "text": "Let's call it a."
+    },
+    {
+      "start": 2548.44,
+      "end": 2553.44,
+      "text": "Now we can normalize the state by using the identity that the probabilities must add up"
+    },
+    {
+      "start": 2553.44,
+      "end": 2554.92,
+      "text": "to one."
+    },
+    {
+      "start": 2554.92,
+      "end": 2557.52,
+      "text": "This gives us values for a."
+    },
+    {
+      "start": 2557.52,
+      "end": 2563.64,
+      "text": "So if we measure the first qubit to be one, the state collapses to this state."
+    },
+    {
+      "start": 2563.64,
+      "end": 2567.88,
+      "text": "We can use these techniques with any number of qubits."
+    },
+    {
+      "start": 2567.88,
+      "end": 2571.26,
+      "text": "Let's go through an example with three qubits."
+    },
+    {
+      "start": 2571.26,
+      "end": 2576.3,
+      "text": "Let's say we have this state and we measure the middle qubit to be zero."
+    },
+    {
+      "start": 2576.3,
+      "end": 2589.94,
+      "text": "The state collapses like this, collapsing into this state."
+    },
+    {
+      "start": 2589.94,
+      "end": 2592.86,
+      "text": "Let's consider this quantum circuit."
+    },
+    {
+      "start": 2592.86,
+      "end": 2596.74,
+      "text": "At psi sub zero, we have the state zero zero."
+    },
+    {
+      "start": 2596.74,
+      "end": 2603.5,
+      "text": "Then at psi sub one, we have the state one on route two zero plus one zero."
+    },
+    {
+      "start": 2603.5,
+      "end": 2608.14,
+      "text": "Let's distribute the zero state into the equation, giving us the state one on route"
+    },
+    {
+      "start": 2608.14,
+      "end": 2612.38,
+      "text": "two zero zero plus one zero."
+    },
+    {
+      "start": 2612.38,
+      "end": 2617.98,
+      "text": "Now at psi sub two, we apply a C knot, with the first qubit being the control and the"
+    },
+    {
+      "start": 2617.98,
+      "end": 2620.66,
+      "text": "second being the target."
+    },
+    {
+      "start": 2620.66,
+      "end": 2626.3,
+      "text": "This means that the zero zero state stays the same, since the control is zero, but for"
+    },
+    {
+      "start": 2626.3,
+      "end": 2633.98,
+      "text": "the one zero state, the control is one, so the second qubit flips to a one."
+    },
+    {
+      "start": 2633.98,
+      "end": 2639.94,
+      "text": "This leaves us with the state one on route two zero zero plus one one."
+    },
+    {
+      "start": 2639.94,
+      "end": 2643.38,
+      "text": "Can you notice anything weird about this state?"
+    },
+    {
+      "start": 2643.38,
+      "end": 2650.3,
+      "text": "If we were to measure one of the qubits as a zero, the other would collapse into a zero."
+    },
+    {
+      "start": 2650.3,
+      "end": 2656.26,
+      "text": "And if we were to measure a one, the other would collapse to a one."
+    },
+    {
+      "start": 2656.26,
+      "end": 2662.58,
+      "text": "So without even looking at both the qubits, by measuring one of them, we immediately know"
+    },
+    {
+      "start": 2662.58,
+      "end": 2665.1,
+      "text": "the state of the other qubit."
+    },
+    {
+      "start": 2665.1,
+      "end": 2667.9,
+      "text": "This is called entanglement."
+    },
+    {
+      "start": 2667.9,
+      "end": 2670.66,
+      "text": "There are many different entangled states."
+    },
+    {
+      "start": 2670.66,
+      "end": 2678.34,
+      "text": "We say a state is entangled if it cannot be factored into the tensor of single qubit states."
+    },
+    {
+      "start": 2678.34,
+      "end": 2684.5,
+      "text": "For example, this state is not entangled since we can factor it like this, but this state"
+    },
+    {
+      "start": 2684.5,
+      "end": 2689.9,
+      "text": "is entangled since we cannot factor it into singular qubit states."
+    },
+    {
+      "start": 2689.9,
+      "end": 2695.58,
+      "text": "What this means is that when the qubits are entangled, they depend on each other to determine"
+    },
+    {
+      "start": 2695.58,
+      "end": 2697.86,
+      "text": "their state."
+    },
+    {
+      "start": 2697.86,
+      "end": 2705.42,
+      "text": "There are two types of entangled states, maximally entangled states and partially entangled states."
+    },
+    {
+      "start": 2705.42,
+      "end": 2711.54,
+      "text": "We say qubits are maximally entangled if measuring one of the qubits tells us the state that"
+    },
+    {
+      "start": 2711.54,
+      "end": 2714.06,
+      "text": "the other qubits are in."
+    },
+    {
+      "start": 2714.06,
+      "end": 2720.86,
+      "text": "So the example entangled state from the beginning, one on route two, zero, zero plus one, one"
+    },
+    {
+      "start": 2720.86,
+      "end": 2724.22,
+      "text": "is maximally entangled."
+    },
+    {
+      "start": 2724.22,
+      "end": 2729.26,
+      "text": "Here are the common maximally entangled states with two qubits."
+    },
+    {
+      "start": 2729.26,
+      "end": 2738.13,
+      "text": "We call these states the bell states, and we denote them with capital phi and psi."
+    },
+    {
+      "start": 2738.13,
+      "end": 2744.13,
+      "text": "We say qubits are partially entangled if the measurement of a qubit affects the probabilities"
+    },
+    {
+      "start": 2744.13,
+      "end": 2747.77,
+      "text": "or phase of the other qubits."
+    },
+    {
+      "start": 2747.77,
+      "end": 2753.65,
+      "text": "For example, with this state, if we measure the first qubit as zero, the state collapses"
+    },
+    {
+      "start": 2753.65,
+      "end": 2760.57,
+      "text": "to this, but if we measure the first qubit as a one, then it collapses to this state."
+    },
+    {
+      "start": 2760.57,
+      "end": 2766.97,
+      "text": "As you can see, the two states have different probabilities of measuring zero or one, so"
+    },
+    {
+      "start": 2766.97,
+      "end": 2773.15,
+      "text": "this state is partially entangled since measuring one qubit affects the probabilities of the"
+    },
+    {
+      "start": 2773.15,
+      "end": 2782.06,
+      "text": "other."
+    },
+    {
+      "start": 2782.06,
+      "end": 2786.44,
+      "text": "Another quantum property we can use is something called phase kickback."
+    },
+    {
+      "start": 2786.44,
+      "end": 2790.72,
+      "text": "To understand how this works, let's consider this circuit."
+    },
+    {
+      "start": 2790.72,
+      "end": 2796.64,
+      "text": "As you can see, we have a qubit in the plus state and another qubit in the state v. We"
+    },
+    {
+      "start": 2796.64,
+      "end": 2800.64,
+      "text": "also have an arbitrary controlled u operation."
+    },
+    {
+      "start": 2800.64,
+      "end": 2807.16,
+      "text": "Let's say that v is an eigenstate of u, so if we apply the u gate to the state v, we"
+    },
+    {
+      "start": 2807.16,
+      "end": 2813.72,
+      "text": "get e to the i theta v, since all eigenvalues of quantum computers can be represented as"
+    },
+    {
+      "start": 2813.72,
+      "end": 2816.24,
+      "text": "e to the i theta."
+    },
+    {
+      "start": 2816.24,
+      "end": 2822.88,
+      "text": "Now at psi sub one, we have the state plus v. Let's expand the plus state and distribute"
+    },
+    {
+      "start": 2822.88,
+      "end": 2825.72,
+      "text": "the v state into the plus state."
+    },
+    {
+      "start": 2825.72,
+      "end": 2829.56,
+      "text": "At psi sub two, we apply the controlled u gate."
+    },
+    {
+      "start": 2829.56,
+      "end": 2834.32,
+      "text": "Nothing happens to the first superposition state since the control is a zero, but the"
+    },
+    {
+      "start": 2834.32,
+      "end": 2841.48,
+      "text": "second superposition state has the gate applied to the v state since the control is a one."
+    },
+    {
+      "start": 2841.48,
+      "end": 2845.48,
+      "text": "We can now factor back out the v state from the equation."
+    },
+    {
+      "start": 2845.48,
+      "end": 2847.72,
+      "text": "Can you see what has happened?"
+    },
+    {
+      "start": 2847.72,
+      "end": 2853.8,
+      "text": "v is unchanged even though it was the target qubit and a factor of e to the i theta has"
+    },
+    {
+      "start": 2853.8,
+      "end": 2859.0,
+      "text": "been applied as a relative phase to the control qubit."
+    },
+    {
+      "start": 2859.0,
+      "end": 2863.76,
+      "text": "This occurs if v is an eigenstate of the gate you are applying."
+    },
+    {
+      "start": 2863.76,
+      "end": 2878.9,
+      "text": "We call this phenomenon phase kickback and it is used in some quantum algorithms."
+    },
+    {
+      "start": 2878.9,
+      "end": 2881.62,
+      "text": "Let's have a look at superdense coding."
+    },
+    {
+      "start": 2881.62,
+      "end": 2886.66,
+      "text": "This quantum protocol allows us to send two bits of classical information with only one"
+    },
+    {
+      "start": 2886.66,
+      "end": 2887.78,
+      "text": "qubit."
+    },
+    {
+      "start": 2887.78,
+      "end": 2890.38,
+      "text": "To do this, we need entanglement."
+    },
+    {
+      "start": 2890.38,
+      "end": 2895.34,
+      "text": "We'll say that the person sending the qubit is Alice and the person receiving this qubit"
+    },
+    {
+      "start": 2895.34,
+      "end": 2897.38,
+      "text": "is Bob."
+    },
+    {
+      "start": 2897.38,
+      "end": 2904.06,
+      "text": "To start off with, Alice and Bob maximally entangle two qubits, so they are in this state."
+    },
+    {
+      "start": 2904.06,
+      "end": 2906.9,
+      "text": "Alice takes one and Bob takes the other."
+    },
+    {
+      "start": 2906.9,
+      "end": 2911.38,
+      "text": "We will say that Alice takes the left qubit and Bob takes the right qubit."
+    },
+    {
+      "start": 2911.38,
+      "end": 2914.58,
+      "text": "Then Alice and Bob take those qubits with them."
+    },
+    {
+      "start": 2914.58,
+      "end": 2920.38,
+      "text": "Now when Alice wants to send two bits of classical information to Bob, depending on which two"
+    },
+    {
+      "start": 2920.38,
+      "end": 2926.86,
+      "text": "bits of information Alice wants to send, she performs some operations on her qubit."
+    },
+    {
+      "start": 2926.86,
+      "end": 2931.94,
+      "text": "If Alice wants to send the two classical bits, zero zero, she does nothing and sends her"
+    },
+    {
+      "start": 2931.94,
+      "end": 2934.14,
+      "text": "qubit to Bob."
+    },
+    {
+      "start": 2934.14,
+      "end": 2940.22,
+      "text": "If Alice wants to send zero one, she applies an x gate to her qubit, transforming the qubits"
+    },
+    {
+      "start": 2940.22,
+      "end": 2944.34,
+      "text": "to this state, then she sends her qubit to Bob."
+    },
+    {
+      "start": 2944.34,
+      "end": 2950.54,
+      "text": "If Alice wants to send one zero, she applies a z gate to her qubit, transforming the qubits"
+    },
+    {
+      "start": 2950.54,
+      "end": 2953.86,
+      "text": "to this state, then she sends it to Bob."
+    },
+    {
+      "start": 2953.86,
+      "end": 2960.66,
+      "text": "Lastly, if she wants to send one one, she applies both an x and z gate to her qubit,"
+    },
+    {
+      "start": 2960.66,
+      "end": 2962.02,
+      "text": "giving us this state."
+    },
+    {
+      "start": 2962.02,
+      "end": 2965.66,
+      "text": "She then sends her qubit to Bob."
+    },
+    {
+      "start": 2965.66,
+      "end": 2969.66,
+      "text": "Now Bob has both the qubits in one of these four states."
+    },
+    {
+      "start": 2969.66,
+      "end": 2975.26,
+      "text": "He now applies a C knot with the first qubit as a control and the second as the target,"
+    },
+    {
+      "start": 2975.26,
+      "end": 2977.7,
+      "text": "giving us these states."
+    },
+    {
+      "start": 2977.7,
+      "end": 2981.1,
+      "text": "Then he applies a Hadamard gate to the left qubit."
+    },
+    {
+      "start": 2981.1,
+      "end": 2984.3,
+      "text": "This gives us this state that Alice wanted to send."
+    },
+    {
+      "start": 2984.3,
+      "end": 2989.42,
+      "text": "All Bob now has to do is measure the qubits and he will get the two bits Alice intended"
+    },
+    {
+      "start": 2989.42,
+      "end": 2990.66,
+      "text": "to send."
+    },
+    {
+      "start": 2990.66,
+      "end": 2995.78,
+      "text": "As you can see, with quantum computers, we can send two bits of classical information"
+    },
+    {
+      "start": 2995.78,
+      "end": 2998.14,
+      "text": "by sending one qubit."
+    },
+    {
+      "start": 2998.14,
+      "end": 3009.71,
+      "text": "This works since there are two entangled qubits in the entire system."
+    },
+    {
+      "start": 3009.71,
+      "end": 3014.51,
+      "text": "Before we look at how we can apply functions on quantum computers, we will quickly look"
+    },
+    {
+      "start": 3014.51,
+      "end": 3019.95,
+      "text": "at how classical computers perform operations on bits and how we make classical operations"
+    },
+    {
+      "start": 3019.95,
+      "end": 3021.19,
+      "text": "reversible."
+    },
+    {
+      "start": 3021.19,
+      "end": 3028.07,
+      "text": "There are four main operations we can perform on classical bits, the and, or, not, and exclusive"
+    },
+    {
+      "start": 3028.07,
+      "end": 3029.07,
+      "text": "or operations."
+    },
+    {
+      "start": 3029.07,
+      "end": 3032.47,
+      "text": "Let's go through each one of them quickly."
+    },
+    {
+      "start": 3032.47,
+      "end": 3037.87,
+      "text": "The simplest is the knot gate, which flips 0 to 1 and 1 to 0."
+    },
+    {
+      "start": 3037.87,
+      "end": 3043.59,
+      "text": "Here is the truth table for the gate, where x is the input and f of x is the output."
+    },
+    {
+      "start": 3043.59,
+      "end": 3046.71,
+      "text": "As you can see, this gate acts on one bit."
+    },
+    {
+      "start": 3046.71,
+      "end": 3049.63,
+      "text": "Now, let's look at the and gate."
+    },
+    {
+      "start": 3049.63,
+      "end": 3051.87,
+      "text": "Here is the truth table for the gate."
+    },
+    {
+      "start": 3051.87,
+      "end": 3059.43,
+      "text": "The operation acts on two bits and returns 1 if the two bits are 1 and 0 otherwise."
+    },
+    {
+      "start": 3059.43,
+      "end": 3062.43,
+      "text": "The or gate acts on two bits as well."
+    },
+    {
+      "start": 3062.43,
+      "end": 3069.91,
+      "text": "If either of the bits is a 1 or both are 1, then it returns 1, otherwise it returns 0."
+    },
+    {
+      "start": 3070.79,
+      "end": 3073.67,
+      "text": "Lastly, we have the exclusive or gate."
+    },
+    {
+      "start": 3073.67,
+      "end": 3076.59,
+      "text": "Here is the truth table for the operation."
+    },
+    {
+      "start": 3076.59,
+      "end": 3082.47,
+      "text": "As you can see, it returns 1 if either of the inputs is 1 and returns 0 if both the bits"
+    },
+    {
+      "start": 3082.47,
+      "end": 3084.19,
+      "text": "are 0 or 1."
+    },
+    {
+      "start": 3084.19,
+      "end": 3089.39,
+      "text": "We use the exclusive or operation to make reversible classical gates."
+    },
+    {
+      "start": 3089.39,
+      "end": 3092.23,
+      "text": "We say a function f is reversible."
+    },
+    {
+      "start": 3092.23,
+      "end": 3096.31,
+      "text": "If given f of x, we can determine the value of x."
+    },
+    {
+      "start": 3096.39,
+      "end": 3100.55,
+      "text": "So if we are given the output, we can determine the input."
+    },
+    {
+      "start": 3100.55,
+      "end": 3105.87,
+      "text": "So this function here, where we negate the second bit, is reversible, since each row"
+    },
+    {
+      "start": 3105.87,
+      "end": 3109.47,
+      "text": "of the truth table for this function is unique."
+    },
+    {
+      "start": 3109.47,
+      "end": 3113.35,
+      "text": "So we can map each output to a unique input."
+    },
+    {
+      "start": 3113.35,
+      "end": 3118.51,
+      "text": "But the or operation, on the other hand, is not reversible, since if we get an output"
+    },
+    {
+      "start": 3118.51,
+      "end": 3121.87,
+      "text": "of 1, we cannot say what the input was."
+    },
+    {
+      "start": 3121.87,
+      "end": 3126.45,
+      "text": "It could have been any of these three inputs."
+    },
+    {
+      "start": 3126.45,
+      "end": 3130.49,
+      "text": "To make any classical gate reversible, we must input another bit."
+    },
+    {
+      "start": 3130.49,
+      "end": 3136.85,
+      "text": "Let's call it C and instead of only returning f of x, we return the input x as well as C"
+    },
+    {
+      "start": 3136.85,
+      "end": 3139.57,
+      "text": "exclusive or with f of x."
+    },
+    {
+      "start": 3139.57,
+      "end": 3142.29,
+      "text": "This makes the operation reversible."
+    },
+    {
+      "start": 3142.29,
+      "end": 3147.01,
+      "text": "Let's look at converting the or gate to a reversible operation."
+    },
+    {
+      "start": 3147.01,
+      "end": 3151.29,
+      "text": "Here is a normal or gate and here is a reversible or gate."
+    },
+    {
+      "start": 3151.29,
+      "end": 3158.33,
+      "text": "As you can see, we input another bit C and return it exclusive or with the output."
+    },
+    {
+      "start": 3158.33,
+      "end": 3164.81,
+      "text": "Now looking at the truth table, each row of the outputs is unique, so the gate is reversible,"
+    },
+    {
+      "start": 3164.81,
+      "end": 3169.29,
+      "text": "since we can determine the input from the output."
+    },
+    {
+      "start": 3169.29,
+      "end": 3170.93,
+      "text": "What is the point in all this?"
+    },
+    {
+      "start": 3170.93,
+      "end": 3177.81,
+      "text": "Well, with quantum computers, all operations besides measuring the qubits must be reversible."
+    },
+    {
+      "start": 3177.81,
+      "end": 3181.61,
+      "text": "This is because every operation must be unitary."
+    },
+    {
+      "start": 3181.61,
+      "end": 3186.17,
+      "text": "If you remember from the first section of this course, unitary matrices rotate and flip"
+    },
+    {
+      "start": 3186.17,
+      "end": 3189.41,
+      "text": "a vector, so they must be reversible."
+    },
+    {
+      "start": 3189.41,
+      "end": 3194.37,
+      "text": "In the next lesson, we will discuss how we can apply functions on quantum computers using"
+    },
+    {
+      "start": 3194.37,
+      "end": 3203.8,
+      "text": "the same techniques that we used to make reversible classical gates."
+    },
+    {
+      "start": 3203.8,
+      "end": 3208.88,
+      "text": "We discussed in the previous lesson how we can make classical gates reversible."
+    },
+    {
+      "start": 3208.88,
+      "end": 3213.0,
+      "text": "Now let's use this same technique to make quantum functions."
+    },
+    {
+      "start": 3213.0,
+      "end": 3217.96,
+      "text": "Since the operations we perform on quantum computers must be reversible, if we wanted"
+    },
+    {
+      "start": 3217.96,
+      "end": 3222.52,
+      "text": "to apply a function on a quantum computer, the function must be reversible."
+    },
+    {
+      "start": 3222.52,
+      "end": 3226.96,
+      "text": "To do this, we use the same techniques for making classical gates reversible."
+    },
+    {
+      "start": 3226.96,
+      "end": 3233.44,
+      "text": "A standard quantum function looks like this, where we input x and y and get back x and"
+    },
+    {
+      "start": 3233.44,
+      "end": 3237.24,
+      "text": "y exclusive or with f of x."
+    },
+    {
+      "start": 3237.24,
+      "end": 3242.44,
+      "text": "Now you might be thinking, how are we going to get the output if it is exclusive or with"
+    },
+    {
+      "start": 3242.44,
+      "end": 3243.6,
+      "text": "y?"
+    },
+    {
+      "start": 3243.6,
+      "end": 3250.08,
+      "text": "But if we set y to zero, then we get zero exclusive or with f of x. Zero exclusive or"
+    },
+    {
+      "start": 3250.08,
+      "end": 3253.36,
+      "text": "with any bit gives us back that bit."
+    },
+    {
+      "start": 3253.36,
+      "end": 3259.28,
+      "text": "This means that zero exclusive or with f of x is just f of x."
+    },
+    {
+      "start": 3259.28,
+      "end": 3264.16,
+      "text": "This allows us to query the function and get its output on a quantum computer."
+    },
+    {
+      "start": 3264.16,
+      "end": 3270.48,
+      "text": "We can encode functions within a unitary matrix, and so it is a valid quantum gate."
+    },
+    {
+      "start": 3270.48,
+      "end": 3274.68,
+      "text": "We usually denote a function f as u sub f."
+    },
+    {
+      "start": 3274.68,
+      "end": 3283.2,
+      "text": "So overall, if we apply a function f to the state x zero, we get the state x f of x."
+    },
+    {
+      "start": 3283.2,
+      "end": 3288.76,
+      "text": "Then to get the function output, we can measure the second register of qubits."
+    },
+    {
+      "start": 3288.76,
+      "end": 3293.96,
+      "text": "Let's see what happens if we apply a function f to this state, with the output register"
+    },
+    {
+      "start": 3293.96,
+      "end": 3295.6,
+      "text": "being the minus state."
+    },
+    {
+      "start": 3295.6,
+      "end": 3300.68,
+      "text": "First, let's rewrite the minus state like this, and distribute the x state into the"
+    },
+    {
+      "start": 3300.68,
+      "end": 3302.48,
+      "text": "superposition."
+    },
+    {
+      "start": 3302.48,
+      "end": 3307.6,
+      "text": "Since the function is a unitary operation, it gets distributed into the superposition,"
+    },
+    {
+      "start": 3307.6,
+      "end": 3309.12,
+      "text": "like any other gate."
+    },
+    {
+      "start": 3309.12,
+      "end": 3312.96,
+      "text": "Then it acts on each of the superposition states individually."
+    },
+    {
+      "start": 3312.96,
+      "end": 3316.0,
+      "text": "Applying u sub f, we get this state."
+    },
+    {
+      "start": 3316.0,
+      "end": 3321.56,
+      "text": "The zero exclusive or with f of x becomes f of x, and the one exclusive or with f of"
+    },
+    {
+      "start": 3321.56,
+      "end": 3324.2,
+      "text": "x becomes not f of x."
+    },
+    {
+      "start": 3324.2,
+      "end": 3326.84,
+      "text": "Now let's consider two scenarios."
+    },
+    {
+      "start": 3326.84,
+      "end": 3334.04,
+      "text": "If f of x is equal to zero, then the state becomes one on root two x zero minus x one,"
+    },
+    {
+      "start": 3334.04,
+      "end": 3337.52,
+      "text": "which we can rewrite as x minus."
+    },
+    {
+      "start": 3337.52,
+      "end": 3344.16,
+      "text": "On the other hand, if f of x is equal to one, then the state becomes one on root two x one"
+    },
+    {
+      "start": 3344.16,
+      "end": 3345.76,
+      "text": "minus x zero."
+    },
+    {
+      "start": 3345.76,
+      "end": 3350.84,
+      "text": "We can factor out the negative one, leaving us with the state negative one on root two"
+    },
+    {
+      "start": 3350.84,
+      "end": 3353.16,
+      "text": "x zero minus x one."
+    },
+    {
+      "start": 3353.16,
+      "end": 3357.6,
+      "text": "This can be further factored into negative x minus."
+    },
+    {
+      "start": 3357.6,
+      "end": 3362.92,
+      "text": "Now looking at these two states, we can see that the only difference is the phase at the"
+    },
+    {
+      "start": 3362.92,
+      "end": 3364.0,
+      "text": "front."
+    },
+    {
+      "start": 3364.0,
+      "end": 3370.64,
+      "text": "We can combine these two equations into negative one to the power of f of x x minus."
+    },
+    {
+      "start": 3370.64,
+      "end": 3377.32,
+      "text": "So, if we apply a function to the state x minus, we get back negative one to the power"
+    },
+    {
+      "start": 3377.32,
+      "end": 3379.68,
+      "text": "of f of x x minus."
+    },
+    {
+      "start": 3379.68,
+      "end": 3385.04,
+      "text": "When we query a function in this way, where the output bit is in the minus state, we call"
+    },
+    {
+      "start": 3385.04,
+      "end": 3386.8,
+      "text": "it a phase oracle."
+    },
+    {
+      "start": 3386.8,
+      "end": 3391.88,
+      "text": "In the next lesson, we will finally see how quantum computers can outperform classical"
+    },
+    {
+      "start": 3391.88,
+      "end": 3398.8,
+      "text": "computers with Deutscher's algorithm, which uses this technique of the phase oracle."
+    },
+    {
+      "start": 3398.8,
+      "end": 3403.56,
+      "text": "One more thing we will discuss when it comes to quantum computers is a theorem called the"
+    },
+    {
+      "start": 3403.56,
+      "end": 3405.84,
+      "text": "no cloning theorem."
+    },
+    {
+      "start": 3405.84,
+      "end": 3411.72,
+      "text": "When we want to copy bits on a classical computer, all we need to do is read the values of the"
+    },
+    {
+      "start": 3411.72,
+      "end": 3414.72,
+      "text": "bits and write the values to other bits."
+    },
+    {
+      "start": 3414.72,
+      "end": 3420.12,
+      "text": "But with quantum computers, if we have a qubit in an unknown state, say we have psi is equal"
+    },
+    {
+      "start": 3420.12,
+      "end": 3426.4,
+      "text": "to alpha zero plus beta one, we cannot copy this state if we don't know alpha and beta."
+    },
+    {
+      "start": 3426.4,
+      "end": 3431.84,
+      "text": "If we were to measure psi, we would get zero or one, but to copy the state, we need to"
+    },
+    {
+      "start": 3431.84,
+      "end": 3435.96,
+      "text": "know the amplitudes, so we would need to know alpha and beta."
+    },
+    {
+      "start": 3435.96,
+      "end": 3440.48,
+      "text": "We could easily copy qubit states where we know the amplitudes by applying the needed"
+    },
+    {
+      "start": 3440.48,
+      "end": 3451.27,
+      "text": "gates, but if we do not know the state, we cannot copy a qubit."
+    },
+    {
+      "start": 3451.27,
+      "end": 3455.95,
+      "text": "Now let's finally look at a quantum algorithm, Deutscher's algorithm."
+    },
+    {
+      "start": 3455.95,
+      "end": 3460.91,
+      "text": "But first, let's look at the problem it solves and how it would solve that problem with a"
+    },
+    {
+      "start": 3460.91,
+      "end": 3462.51,
+      "text": "classical computer."
+    },
+    {
+      "start": 3462.51,
+      "end": 3468.47,
+      "text": "Say we have a function f that takes in a bit and returns a bit, we don't know what the"
+    },
+    {
+      "start": 3468.47,
+      "end": 3469.87,
+      "text": "function does."
+    },
+    {
+      "start": 3469.87,
+      "end": 3475.87,
+      "text": "All we can do is send in a bit and read the output bit, it is like a black box."
+    },
+    {
+      "start": 3475.87,
+      "end": 3482.75,
+      "text": "Our task is to find out whether the function f is constant or balanced."
+    },
+    {
+      "start": 3482.75,
+      "end": 3487.79,
+      "text": "If a function is constant, then it returns the same bit, no matter the input."
+    },
+    {
+      "start": 3487.79,
+      "end": 3492.91,
+      "text": "Here are the two constant functions that can act on one bit, constant one, which always"
+    },
+    {
+      "start": 3492.91,
+      "end": 3499.11,
+      "text": "returns one, and constant zero, which always returns zero."
+    },
+    {
+      "start": 3499.11,
+      "end": 3503.95,
+      "text": "Balanced functions on the other hand, return zero for half the inputs and one for the other"
+    },
+    {
+      "start": 3503.95,
+      "end": 3505.95,
+      "text": "half of the inputs."
+    },
+    {
+      "start": 3505.95,
+      "end": 3511.55,
+      "text": "Here are the two balanced functions that can act on one bit, identity, which returns the"
+    },
+    {
+      "start": 3511.55,
+      "end": 3516.63,
+      "text": "input, and the not gate, which we saw before, which flips the bit."
+    },
+    {
+      "start": 3516.63,
+      "end": 3524.03,
+      "text": "As you can see, both these operations return zero for one input and one for the other input."
+    },
+    {
+      "start": 3524.03,
+      "end": 3529.39,
+      "text": "For this problem, we don't care if the function is a not gate or a constant zero, we only"
+    },
+    {
+      "start": 3529.39,
+      "end": 3532.71,
+      "text": "care if it is constant or balanced."
+    },
+    {
+      "start": 3532.71,
+      "end": 3538.39,
+      "text": "If we wanted to find out if f is constant or balanced on a classical computer, we would"
+    },
+    {
+      "start": 3538.39,
+      "end": 3545.19,
+      "text": "first need to input zero and then input one to see if we get the same or different values."
+    },
+    {
+      "start": 3545.27,
+      "end": 3550.67,
+      "text": "If f of zero equals f of one, then we know that the function is constant, and if f of"
+    },
+    {
+      "start": 3550.67,
+      "end": 3554.63,
+      "text": "zero does not equal f of one, then the function is balanced."
+    },
+    {
+      "start": 3554.63,
+      "end": 3559.55,
+      "text": "So we need to query the function twice, once with zero as the input, and once with one"
+    },
+    {
+      "start": 3559.55,
+      "end": 3560.95,
+      "text": "as the input."
+    },
+    {
+      "start": 3560.95,
+      "end": 3566.39,
+      "text": "With quantum computers and Deutscher's algorithm however, we only need one query of the function"
+    },
+    {
+      "start": 3566.39,
+      "end": 3570.31,
+      "text": "to find out if the function is constant or balanced."
+    },
+    {
+      "start": 3570.31,
+      "end": 3572.75,
+      "text": "Here is the circuit for the algorithm."
+    },
+    {
+      "start": 3572.75,
+      "end": 3575.79,
+      "text": "The u of f represents the function f."
+    },
+    {
+      "start": 3575.79,
+      "end": 3580.79,
+      "text": "At psi sub zero, the qubits are in the state zero zero."
+    },
+    {
+      "start": 3580.79,
+      "end": 3585.59,
+      "text": "Then at psi sub one, the qubits are in the state zero one."
+    },
+    {
+      "start": 3585.59,
+      "end": 3591.67,
+      "text": "At psi sub two, we apply a Hadamard to each of the qubits, leaving us with the state plus"
+    },
+    {
+      "start": 3591.67,
+      "end": 3592.67,
+      "text": "minus."
+    },
+    {
+      "start": 3592.67,
+      "end": 3598.27,
+      "text": "Let's expand the plus state and distribute the minus state into the equation."
+    },
+    {
+      "start": 3598.27,
+      "end": 3605.39,
+      "text": "Now at psi sub three, we apply the unitary matrix uf acting as the function to the state."
+    },
+    {
+      "start": 3605.39,
+      "end": 3611.19,
+      "text": "Since all quantum operations are linear, uf gets distributed into the state and acts on"
+    },
+    {
+      "start": 3611.19,
+      "end": 3614.59,
+      "text": "each of the superposition states individually."
+    },
+    {
+      "start": 3614.59,
+      "end": 3619.47,
+      "text": "If we look at each of the superposition states, they are in the phase oracle form."
+    },
+    {
+      "start": 3619.47,
+      "end": 3624.95,
+      "text": "So applying u of f to the first state becomes negative one to the power of f of zero zero"
+    },
+    {
+      "start": 3624.95,
+      "end": 3631.75,
+      "text": "minus and the second state becomes negative one to the power of f of one one minus."
+    },
+    {
+      "start": 3631.75,
+      "end": 3636.59,
+      "text": "The minus qubit is not needed for the rest of the algorithm, so we will omit it to clean"
+    },
+    {
+      "start": 3636.59,
+      "end": 3638.59,
+      "text": "up the equation."
+    },
+    {
+      "start": 3638.59,
+      "end": 3641.51,
+      "text": "Now let's consider two different scenarios."
+    },
+    {
+      "start": 3641.51,
+      "end": 3647.63,
+      "text": "If f of zero equals f of one, then the state becomes one over root two zero plus one."
+    },
+    {
+      "start": 3647.63,
+      "end": 3654.99,
+      "text": "If f of zero and f of one equals zero, or one over root two negative zero minus one,"
+    },
+    {
+      "start": 3654.99,
+      "end": 3658.47,
+      "text": "if f of zero and f of one equal one."
+    },
+    {
+      "start": 3658.47,
+      "end": 3663.99,
+      "text": "With this, we can factor out a global phase of negative one, leaving us with one over"
+    },
+    {
+      "start": 3663.99,
+      "end": 3666.71,
+      "text": "root two zero plus one."
+    },
+    {
+      "start": 3666.71,
+      "end": 3673.19,
+      "text": "Therefore, if f of zero equals f of one, the state becomes one over root two zero plus"
+    },
+    {
+      "start": 3673.19,
+      "end": 3675.67,
+      "text": "one, or the plus state."
+    },
+    {
+      "start": 3675.67,
+      "end": 3679.75,
+      "text": "Now let's look at if f of zero does not equal f of one."
+    },
+    {
+      "start": 3679.75,
+      "end": 3686.63,
+      "text": "So if f zero equals zero and f one equals one, the state becomes one over root two zero"
+    },
+    {
+      "start": 3686.63,
+      "end": 3687.93,
+      "text": "minus one."
+    },
+    {
+      "start": 3687.93,
+      "end": 3693.75,
+      "text": "If f of zero equals one and f of one equals zero, then the state becomes one over root"
+    },
+    {
+      "start": 3693.75,
+      "end": 3696.83,
+      "text": "two minus zero plus one."
+    },
+    {
+      "start": 3696.83,
+      "end": 3702.07,
+      "text": "With this, we can factor out a global phase of negative one, leaving us with the minus"
+    },
+    {
+      "start": 3702.07,
+      "end": 3707.32,
+      "text": "state."
+    },
+    {
+      "start": 3707.32,
+      "end": 3712.64,
+      "text": "So overall, if f of zero equals f of one, the state becomes the plus state."
+    },
+    {
+      "start": 3712.64,
+      "end": 3717.76,
+      "text": "And if f of zero does not equal f of one, the state becomes the minus state."
+    },
+    {
+      "start": 3717.76,
+      "end": 3723.83,
+      "text": "See if you can finish the rest of the algorithm off yourself."
+    },
+    {
+      "start": 3723.83,
+      "end": 3727.87,
+      "text": "Now at size sub four, we apply a Hadamard to the qubit."
+    },
+    {
+      "start": 3727.87,
+      "end": 3732.91,
+      "text": "In the case where f of zero equals f of one, this transforms the state into zero."
+    },
+    {
+      "start": 3732.91,
+      "end": 3738.83,
+      "text": "And in the case where f of zero does not equal f of one, the state becomes one."
+    },
+    {
+      "start": 3738.83,
+      "end": 3742.39,
+      "text": "Now all that's left to do is measure the qubit."
+    },
+    {
+      "start": 3742.39,
+      "end": 3747.07,
+      "text": "Looking at our equations, if we measure zero, then the function is constant."
+    },
+    {
+      "start": 3747.07,
+      "end": 3749.51,
+      "text": "Since f of zero equals f of one."
+    },
+    {
+      "start": 3749.51,
+      "end": 3752.59,
+      "text": "And if we measure one, then the function is balanced."
+    },
+    {
+      "start": 3752.59,
+      "end": 3755.79,
+      "text": "Since f of zero does not equal f of one."
+    },
+    {
+      "start": 3755.79,
+      "end": 3760.79,
+      "text": "As you can see, what took a classical computer two queries of the function was done with"
+    },
+    {
+      "start": 3760.79,
+      "end": 3764.79,
+      "text": "one query of the function on a quantum computer."
+    },
+    {
+      "start": 3764.79,
+      "end": 3769.87,
+      "text": "In the next lesson, we will look at the Deutsch-Jose algorithm, which considers itself with the"
+    },
+    {
+      "start": 3769.87,
+      "end": 3775.63,
+      "text": "same problem of Deutsch's algorithm of finding out if a function is constant or balanced."
+    },
+    {
+      "start": 3775.63,
+      "end": 3780.75,
+      "text": "But instead of having a function that only inputs one bit, the algorithm is a general"
+    },
+    {
+      "start": 3780.75,
+      "end": 3789.43,
+      "text": "case that accepts any number of bits as input."
+    },
+    {
+      "start": 3789.43,
+      "end": 3794.79,
+      "text": "The Deutsch-Jose algorithm considers itself with the same problem of Deutsch's algorithm"
+    },
+    {
+      "start": 3794.79,
+      "end": 3798.71,
+      "text": "of finding out if a function is constant or balanced."
+    },
+    {
+      "start": 3798.71,
+      "end": 3805.31,
+      "text": "But instead this algorithm is a general case that can accept any number of bits as input."
+    },
+    {
+      "start": 3805.31,
+      "end": 3809.55,
+      "text": "Let's quickly revise constant and balanced functions."
+    },
+    {
+      "start": 3809.55,
+      "end": 3814.07,
+      "text": "Constant functions always return the same value no matter the input."
+    },
+    {
+      "start": 3814.07,
+      "end": 3819.55,
+      "text": "Here are the two constant functions, constant zero and constant one."
+    },
+    {
+      "start": 3819.55,
+      "end": 3825.27,
+      "text": "Balanced functions return zero for half the inputs and one for the other half of the inputs."
+    },
+    {
+      "start": 3825.27,
+      "end": 3830.43,
+      "text": "Here is an example of a balanced function that takes in a bit string of length three."
+    },
+    {
+      "start": 3830.43,
+      "end": 3835.47,
+      "text": "As you can see, the function returns zero for four of the inputs and one for the other"
+    },
+    {
+      "start": 3835.47,
+      "end": 3838.27,
+      "text": "four of the inputs."
+    },
+    {
+      "start": 3838.27,
+      "end": 3842.91,
+      "text": "For a classical computer to solve this problem, it would need to query the function in the"
+    },
+    {
+      "start": 3842.91,
+      "end": 3849.03,
+      "text": "worst case two to the power of n minus one plus one times, where n is the length of the"
+    },
+    {
+      "start": 3849.03,
+      "end": 3852.59,
+      "text": "bit string the function takes as input."
+    },
+    {
+      "start": 3852.63,
+      "end": 3857.59,
+      "text": "This is because in the worst case, we check half of the inputs and get the same output"
+    },
+    {
+      "start": 3857.59,
+      "end": 3859.11,
+      "text": "for all of them."
+    },
+    {
+      "start": 3859.11,
+      "end": 3863.71,
+      "text": "When this happens, we need to check one more input to determine whether the function is"
+    },
+    {
+      "start": 3863.71,
+      "end": 3865.71,
+      "text": "constant or balanced."
+    },
+    {
+      "start": 3865.71,
+      "end": 3870.99,
+      "text": "There are two to the n possible bit strings of length n, so two to the n minus one is"
+    },
+    {
+      "start": 3870.99,
+      "end": 3873.47,
+      "text": "half of the possible inputs."
+    },
+    {
+      "start": 3873.47,
+      "end": 3879.95,
+      "text": "Therefore, we need to check half plus one, so two to the n minus one plus one inputs"
+    },
+    {
+      "start": 3879.95,
+      "end": 3885.31,
+      "text": "in the worst case to be certain the function is constant or balanced."
+    },
+    {
+      "start": 3885.31,
+      "end": 3890.35,
+      "text": "With a quantum computer, we only need one query of the function, just like Deutsch's"
+    },
+    {
+      "start": 3890.35,
+      "end": 3895.99,
+      "text": "algorithm, to determine whether the function is constant or balanced."
+    },
+    {
+      "start": 3895.99,
+      "end": 3898.55,
+      "text": "Here is the circuit for the algorithm."
+    },
+    {
+      "start": 3898.55,
+      "end": 3905.91,
+      "text": "This line here going through the circuit represents n qubits and the Hadamard gates tensor n represent"
+    },
+    {
+      "start": 3905.91,
+      "end": 3907.71,
+      "text": "n Hadamard gates."
+    },
+    {
+      "start": 3907.71,
+      "end": 3911.39,
+      "text": "Each one being applied to one of the n qubits."
+    },
+    {
+      "start": 3911.39,
+      "end": 3913.27,
+      "text": "Let's go through the algorithm."
+    },
+    {
+      "start": 3913.27,
+      "end": 3920.51,
+      "text": "At psi sub zero, we have n zeroes minus, then at psi sub one, we apply a Hadamard gate"
+    },
+    {
+      "start": 3920.51,
+      "end": 3923.99,
+      "text": "to each of the n zeroes, giving us this state."
+    },
+    {
+      "start": 3923.99,
+      "end": 3929.03,
+      "text": "Let's quickly derive an identity that we frequently use when applying Hadamards to"
+    },
+    {
+      "start": 3929.03,
+      "end": 3931.03,
+      "text": "a register of zeroes."
+    },
+    {
+      "start": 3931.03,
+      "end": 3933.23,
+      "text": "This gives us n plus states."
+    },
+    {
+      "start": 3933.23,
+      "end": 3938.83,
+      "text": "If we expand them out, we get one over root two, zero plus one, tensed with one over root"
+    },
+    {
+      "start": 3938.83,
+      "end": 3942.95,
+      "text": "two, zero plus one, and so on, n times."
+    },
+    {
+      "start": 3942.95,
+      "end": 3947.91,
+      "text": "Let's try different values of n to figure out how we can represent this mathematically."
+    },
+    {
+      "start": 3947.91,
+      "end": 3952.63,
+      "text": "If we have n equals two, we have the plus state, tensed with itself."
+    },
+    {
+      "start": 3952.63,
+      "end": 3958.35,
+      "text": "Distributing the states gives us a state one over root two squared, zero zero plus zero"
+    },
+    {
+      "start": 3958.35,
+      "end": 3962.11,
+      "text": "one, plus one zero, plus one one."
+    },
+    {
+      "start": 3962.11,
+      "end": 3966.95,
+      "text": "We can represent the superposition states like this with a sum over all bit strings"
+    },
+    {
+      "start": 3966.95,
+      "end": 3970.31,
+      "text": "of length two, x."
+    },
+    {
+      "start": 3970.31,
+      "end": 3972.19,
+      "text": "Let's try n equals three."
+    },
+    {
+      "start": 3972.19,
+      "end": 3976.39,
+      "text": "With this, we have the plus state tensed with itself three times."
+    },
+    {
+      "start": 3976.39,
+      "end": 3978.91,
+      "text": "Distributing gives us this state."
+    },
+    {
+      "start": 3978.91,
+      "end": 3984.39,
+      "text": "We can once again represent the superposition states as a sum over all possible bit strings"
+    },
+    {
+      "start": 3984.39,
+      "end": 3988.51,
+      "text": "of length three, x, resulting in this state."
+    },
+    {
+      "start": 3988.51,
+      "end": 3993.87,
+      "text": "We can generalize this and say that if we apply a Hadamard to each of the n zeroes,"
+    },
+    {
+      "start": 3993.87,
+      "end": 3999.67,
+      "text": "we get one over root two to the power of n times the sum over all bit strings of length"
+    },
+    {
+      "start": 3999.67,
+      "end": 4001.87,
+      "text": "n, x."
+    },
+    {
+      "start": 4001.87,
+      "end": 4007.35,
+      "text": "This is a very important identity in quantum algorithms and is used in many algorithms."
+    },
+    {
+      "start": 4007.35,
+      "end": 4009.99,
+      "text": "If you think about it, this makes sense."
+    },
+    {
+      "start": 4009.99,
+      "end": 4015.83,
+      "text": "Since each qubit is in the plus state, it has an even chance of being zero and one."
+    },
+    {
+      "start": 4015.83,
+      "end": 4020.91,
+      "text": "So every possible combination of zeros and ones will occur in the state and with equal"
+    },
+    {
+      "start": 4020.91,
+      "end": 4022.95,
+      "text": "probabilities."
+    },
+    {
+      "start": 4022.95,
+      "end": 4028.71,
+      "text": "Going back to size sub one, we can now change this to our identity."
+    },
+    {
+      "start": 4028.71,
+      "end": 4032.87,
+      "text": "Now at size sub two, we apply the oracle function."
+    },
+    {
+      "start": 4032.87,
+      "end": 4038.35,
+      "text": "Since the function acts on each of the superposition states, we distribute it into the sum."
+    },
+    {
+      "start": 4038.35,
+      "end": 4043.87,
+      "text": "Now, if you look at each of the superposition states in the sum, they are in the phase oracle"
+    },
+    {
+      "start": 4043.87,
+      "end": 4045.11,
+      "text": "form."
+    },
+    {
+      "start": 4045.11,
+      "end": 4050.23,
+      "text": "Applying the function gives us the equation one over root two to the power of n times the"
+    },
+    {
+      "start": 4050.23,
+      "end": 4057.23,
+      "text": "sum over all bit strings of length n, negative one to the power of f of x, x minus."
+    },
+    {
+      "start": 4057.23,
+      "end": 4063.67,
+      "text": "Let's omit the minus qubit from the equation as it is not needed in the algorithm anymore."
+    },
+    {
+      "start": 4063.67,
+      "end": 4069.15,
+      "text": "At size sub three, we once again apply a Hadamard to each of the qubits."
+    },
+    {
+      "start": 4069.15,
+      "end": 4074.75,
+      "text": "What this means is that for every bit in the bit string x, we apply a Hadamard gate."
+    },
+    {
+      "start": 4074.75,
+      "end": 4080.03,
+      "text": "You may be looking at this and thinking that we can use the formula we used before, but"
+    },
+    {
+      "start": 4080.03,
+      "end": 4083.91,
+      "text": "that one can only be used when the state is all zeros."
+    },
+    {
+      "start": 4083.91,
+      "end": 4088.15,
+      "text": "The x state can be any combinations of zeros and ones."
+    },
+    {
+      "start": 4088.15,
+      "end": 4092.71,
+      "text": "Let's quickly figure out how we can represent this mathematically."
+    },
+    {
+      "start": 4092.71,
+      "end": 4099.11,
+      "text": "For this, we can rewrite the Hadamard transform on an arbitrary bit x i as one over root"
+    },
+    {
+      "start": 4099.11,
+      "end": 4104.19,
+      "text": "two, zero plus negative one to the power of x i one."
+    },
+    {
+      "start": 4104.19,
+      "end": 4110.31,
+      "text": "Since if x i is zero, it becomes a plus state, and if x i is one, it becomes the minus state."
+    },
+    {
+      "start": 4110.31,
+      "end": 4114.27,
+      "text": "Let's try x being a bit string of length three."
+    },
+    {
+      "start": 4114.27,
+      "end": 4115.97,
+      "text": "This gives us this state."
+    },
+    {
+      "start": 4115.97,
+      "end": 4119.47,
+      "text": "If we tend to the states together, we get this state."
+    },
+    {
+      "start": 4119.47,
+      "end": 4123.31,
+      "text": "Let's quickly add the exponents of the negative ones."
+    },
+    {
+      "start": 4123.31,
+      "end": 4128.19,
+      "text": "As you can see, whenever there is a one in the superposition state, that state is being"
+    },
+    {
+      "start": 4128.19,
+      "end": 4134.95,
+      "text": "multiplied by a negative one to the power of x i, where x i is the position of the one."
+    },
+    {
+      "start": 4134.95,
+      "end": 4143.17,
+      "text": "We can rewrite this as the dot product of x with the superposition state."
+    },
+    {
+      "start": 4143.17,
+      "end": 4149.13,
+      "text": "Now we can combine this state as the sum of all z's that are bit strings of length three."
+    },
+    {
+      "start": 4149.13,
+      "end": 4153.65,
+      "text": "Negative one to the power of x dot z, z."
+    },
+    {
+      "start": 4153.65,
+      "end": 4158.65,
+      "text": "Generalizing, we get this identity, where applying a Hadamard to an arbitrary bit string"
+    },
+    {
+      "start": 4158.65,
+      "end": 4165.25,
+      "text": "of length n, x gives us one over root two to the power of n times the sum of all bit"
+    },
+    {
+      "start": 4165.25,
+      "end": 4171.81,
+      "text": "strings of length n, negative one to the power of x dot z, z."
+    },
+    {
+      "start": 4171.81,
+      "end": 4177.17,
+      "text": "This is also a very important identity that is used in many quantum algorithms."
+    },
+    {
+      "start": 4177.17,
+      "end": 4188.43,
+      "text": "With this, the qubits are now in this state."
+    },
+    {
+      "start": 4188.43,
+      "end": 4192.39,
+      "text": "Let's now consider the amplitude of the all zero state."
+    },
+    {
+      "start": 4192.39,
+      "end": 4197.83,
+      "text": "We find that it is one over two to the power of n times the sum over all bit strings of"
+    },
+    {
+      "start": 4197.83,
+      "end": 4204.11,
+      "text": "length n, negative one to the power of f of x plus x dotted with the all zeroes."
+    },
+    {
+      "start": 4204.11,
+      "end": 4211.04,
+      "text": "The x dotted with the all zeroes becomes zero, so the state becomes this state."
+    },
+    {
+      "start": 4211.04,
+      "end": 4217.2,
+      "text": "Now, if the function f is constant, then the value of f of x will be the same no matter"
+    },
+    {
+      "start": 4217.2,
+      "end": 4218.64,
+      "text": "the input."
+    },
+    {
+      "start": 4218.64,
+      "end": 4223.88,
+      "text": "This means that if f of x is equal to zero, the amplitude of the state becomes one over"
+    },
+    {
+      "start": 4223.88,
+      "end": 4228.68,
+      "text": "two to the power of n times the sum over all x's one."
+    },
+    {
+      "start": 4228.68,
+      "end": 4234.16,
+      "text": "Evaluating the sum, there are two to the n possible combinations of zeroes and ones"
+    },
+    {
+      "start": 4234.16,
+      "end": 4241.16,
+      "text": "of length n, so the sum is one plus one plus one and so on, two to the power of n times."
+    },
+    {
+      "start": 4241.16,
+      "end": 4245.84,
+      "text": "This gives us one over two to the power of n times two to the power of n, which equals"
+    },
+    {
+      "start": 4245.84,
+      "end": 4247.16,
+      "text": "one."
+    },
+    {
+      "start": 4247.16,
+      "end": 4253.84,
+      "text": "On the other hand, if f of x is equal to one, we do the same thing, giving us negative one."
+    },
+    {
+      "start": 4253.84,
+      "end": 4259.96,
+      "text": "So if the function is constant, the amplitude of the all zero state is plus or minus one."
+    },
+    {
+      "start": 4259.96,
+      "end": 4265.12,
+      "text": "If the function is balanced, then half the inputs will result in zero and the other half"
+    },
+    {
+      "start": 4265.12,
+      "end": 4266.88,
+      "text": "will result in one."
+    },
+    {
+      "start": 4266.88,
+      "end": 4271.64,
+      "text": "If we look at the sum, this means that there will be the same number of ones being added"
+    },
+    {
+      "start": 4271.64,
+      "end": 4274.4,
+      "text": "to the same number of negative ones."
+    },
+    {
+      "start": 4274.4,
+      "end": 4278.2,
+      "text": "This means the sum will be evaluated to zero."
+    },
+    {
+      "start": 4278.2,
+      "end": 4284.8,
+      "text": "So if the function is balanced, then the amplitude of the all zero state is zero."
+    },
+    {
+      "start": 4284.8,
+      "end": 4287.04,
+      "text": "Now we measure the qubits."
+    },
+    {
+      "start": 4287.04,
+      "end": 4292.08,
+      "text": "Before we saw that if the function is constant, then the amplitude of the all zero state"
+    },
+    {
+      "start": 4292.08,
+      "end": 4294.08,
+      "text": "is plus or minus one."
+    },
+    {
+      "start": 4294.08,
+      "end": 4298.32,
+      "text": "That means the probability of measuring the all zero state is one."
+    },
+    {
+      "start": 4298.32,
+      "end": 4303.04,
+      "text": "If the function is balanced on the other hand, then the probability of measuring all zeroes"
+    },
+    {
+      "start": 4303.04,
+      "end": 4304.36,
+      "text": "is zero."
+    },
+    {
+      "start": 4304.36,
+      "end": 4308.56,
+      "text": "What this means is that if we measure all zeroes, the function is constant."
+    },
+    {
+      "start": 4308.56,
+      "end": 4312.44,
+      "text": "But if we measure anything else, the function is balanced."
+    },
+    {
+      "start": 4312.44,
+      "end": 4313.56,
+      "text": "And we are done."
+    },
+    {
+      "start": 4313.56,
+      "end": 4320.08,
+      "text": "We have determined if the function f is constant or balanced in a single query of the function."
+    },
+    {
+      "start": 4320.08,
+      "end": 4324.0,
+      "text": "The key takeaway from this algorithm are these two identities."
+    },
+    {
+      "start": 4324.0,
+      "end": 4331.95,
+      "text": "They will keep popping up again and again."
+    },
+    {
+      "start": 4331.95,
+      "end": 4335.51,
+      "text": "Let's now look at the Bernstein-Veserini algorithm."
+    },
+    {
+      "start": 4335.51,
+      "end": 4337.91,
+      "text": "Here is the problem it solves."
+    },
+    {
+      "start": 4337.91,
+      "end": 4343.47,
+      "text": "Here we have a function f that takes in a bit string of length n and returns a single"
+    },
+    {
+      "start": 4343.47,
+      "end": 4350.11,
+      "text": "bit, which is the dot product of the input with some secret string s modulo 2."
+    },
+    {
+      "start": 4350.11,
+      "end": 4355.39,
+      "text": "Our task is to find out what the secret string s is."
+    },
+    {
+      "start": 4355.39,
+      "end": 4360.39,
+      "text": "On a classical computer, the approach is to input a bit string of all zeroes, except"
+    },
+    {
+      "start": 4360.39,
+      "end": 4362.83,
+      "text": "for one in one position."
+    },
+    {
+      "start": 4362.83,
+      "end": 4368.15,
+      "text": "This allows us to get the value of one position of the bit string s, as all the zeroes in"
+    },
+    {
+      "start": 4368.15,
+      "end": 4371.51,
+      "text": "the input will cancel out in the dot product."
+    },
+    {
+      "start": 4371.51,
+      "end": 4377.51,
+      "text": "This means that we must query the function n times, where n is the length of s."
+    },
+    {
+      "start": 4377.51,
+      "end": 4381.87,
+      "text": "Since each query, we get one value of s."
+    },
+    {
+      "start": 4381.87,
+      "end": 4386.67,
+      "text": "With quantum computers, on the other hand, we only need to query the function once to"
+    },
+    {
+      "start": 4386.67,
+      "end": 4389.15,
+      "text": "find out what s is."
+    },
+    {
+      "start": 4389.15,
+      "end": 4392.47,
+      "text": "If we look at the circuit, it may look familiar."
+    },
+    {
+      "start": 4392.47,
+      "end": 4397.67,
+      "text": "It's the same circuit as a Deutsch-Jose algorithm, just with a different function being applied"
+    },
+    {
+      "start": 4397.67,
+      "end": 4399.07,
+      "text": "to the qubits."
+    },
+    {
+      "start": 4399.07,
+      "end": 4404.03,
+      "text": "Initially, the qubits are in the state n zeroes minus."
+    },
+    {
+      "start": 4404.03,
+      "end": 4409.83,
+      "text": "Then at psi sub one, the state is one over root two to the power of n times the sum over"
+    },
+    {
+      "start": 4409.83,
+      "end": 4415.59,
+      "text": "all x, where x is a bit string of length n, x minus."
+    },
+    {
+      "start": 4415.59,
+      "end": 4418.83,
+      "text": "At psi sub two, we apply the oracle."
+    },
+    {
+      "start": 4418.83,
+      "end": 4423.47,
+      "text": "Since the target qubit is in the minus state, we use the phase oracle property."
+    },
+    {
+      "start": 4423.47,
+      "end": 4429.65,
+      "text": "So the state becomes one over root two to the power of n times the sum over all x, negative"
+    },
+    {
+      "start": 4429.65,
+      "end": 4433.67,
+      "text": "one to the power of f of x, x minus."
+    },
+    {
+      "start": 4433.67,
+      "end": 4439.07,
+      "text": "Let's rewrite f of x as the dot product of x and s, since that is the definition of"
+    },
+    {
+      "start": 4439.07,
+      "end": 4440.57,
+      "text": "our function."
+    },
+    {
+      "start": 4440.57,
+      "end": 4444.95,
+      "text": "Let's also emit the minus qubit, since it is not needed anymore."
+    },
+    {
+      "start": 4444.95,
+      "end": 4456.23,
+      "text": "Now we apply a Hadamard to each of our qubits."
+    },
+    {
+      "start": 4456.35,
+      "end": 4461.87,
+      "text": "Let's distribute the negative one to the power of x dot s into the sum."
+    },
+    {
+      "start": 4461.87,
+      "end": 4467.07,
+      "text": "We can now add the exponents, giving us the dot product of s and x plus the dot product"
+    },
+    {
+      "start": 4467.07,
+      "end": 4468.87,
+      "text": "of x and z."
+    },
+    {
+      "start": 4468.87,
+      "end": 4474.35,
+      "text": "We can factor out the x, giving us s plus z dotted with x."
+    },
+    {
+      "start": 4474.35,
+      "end": 4477.43,
+      "text": "The plus indicates bitwise exclusive or."
+    },
+    {
+      "start": 4477.43,
+      "end": 4483.95,
+      "text": "So for each bit in s, we exclusive or it with the bit in z that is in the same position."
+    },
+    {
+      "start": 4483.95,
+      "end": 4491.59,
+      "text": "So the ith position of s plus z is s sub i, exclusive or with z sub i."
+    },
+    {
+      "start": 4491.59,
+      "end": 4495.07,
+      "text": "This gives us another bit string of length n."
+    },
+    {
+      "start": 4495.07,
+      "end": 4497.23,
+      "text": "Now we measure the qubits."
+    },
+    {
+      "start": 4497.23,
+      "end": 4500.31,
+      "text": "Let's look at the probability of measuring s."
+    },
+    {
+      "start": 4500.31,
+      "end": 4505.91,
+      "text": "Expanding out, we find the amplitude of the s state is one over two to the power of n"
+    },
+    {
+      "start": 4505.91,
+      "end": 4511.07,
+      "text": "times the sum over all x's, where x is a bit string of length n, negative one to the"
+    },
+    {
+      "start": 4511.07,
+      "end": 4515.63,
+      "text": "power of s plus s dotted with x."
+    },
+    {
+      "start": 4515.63,
+      "end": 4523.92,
+      "text": "Since plus indicates bitwise exclusive or, s plus s equals to all zeros."
+    },
+    {
+      "start": 4523.92,
+      "end": 4528.44,
+      "text": "Now in the exponent, we have all zeros dotted with x."
+    },
+    {
+      "start": 4528.44,
+      "end": 4534.44,
+      "text": "This will equal zero, since all the zeros will cancel out all the x's at each position."
+    },
+    {
+      "start": 4534.44,
+      "end": 4540.2,
+      "text": "Plying the power means the state becomes one on two to the power of n times the sum over"
+    },
+    {
+      "start": 4540.2,
+      "end": 4542.72,
+      "text": "all x's, one."
+    },
+    {
+      "start": 4542.72,
+      "end": 4547.4,
+      "text": "Since there are two to the power of n bit strings of length n, there are two to the"
+    },
+    {
+      "start": 4547.4,
+      "end": 4549.64,
+      "text": "n possible values of x."
+    },
+    {
+      "start": 4549.64,
+      "end": 4553.36,
+      "text": "So evaluating the sum, we get two to the power of n."
+    },
+    {
+      "start": 4553.36,
+      "end": 4557.48,
+      "text": "This leaves the amplitude of the s state as one."
+    },
+    {
+      "start": 4557.48,
+      "end": 4563.32,
+      "text": "This means that the probability of measuring s after applying the algorithm is one."
+    },
+    {
+      "start": 4563.32,
+      "end": 4564.6,
+      "text": "And that is it."
+    },
+    {
+      "start": 4564.6,
+      "end": 4569.68,
+      "text": "After one query of the function, we can find s by measuring the qubits."
+    },
+    {
+      "start": 4569.68,
+      "end": 4574.24,
+      "text": "You may start to see the similarities between this algorithm and the others."
+    },
+    {
+      "start": 4574.24,
+      "end": 4579.16,
+      "text": "Applying a Hadamard to each of the qubits so that the state is in a uniform superposition,"
+    },
+    {
+      "start": 4579.16,
+      "end": 4589.45,
+      "text": "then applying the function, and once again applying Hadamards, is used in many algorithms."
+    },
+    {
+      "start": 4589.45,
+      "end": 4594.25,
+      "text": "In the next two lessons, we will look at the quantum Fourier transform as well as quantum"
+    },
+    {
+      "start": 4594.25,
+      "end": 4595.89,
+      "text": "phase estimation."
+    },
+    {
+      "start": 4595.89,
+      "end": 4600.25,
+      "text": "These are both used within many quantum algorithms, including Shaw's algorithm."
+    },
+    {
+      "start": 4600.25,
+      "end": 4604.45,
+      "text": "Let's start with the quantum Fourier transform, or QFT."
+    },
+    {
+      "start": 4604.45,
+      "end": 4609.49,
+      "text": "Before we look at the maths and circuit behind it, let's look at how it transforms states"
+    },
+    {
+      "start": 4609.49,
+      "end": 4612.81,
+      "text": "on the block sphere so we can gain some intuition."
+    },
+    {
+      "start": 4612.81,
+      "end": 4617.37,
+      "text": "On the top, we have how we would normally represent a number in binary."
+    },
+    {
+      "start": 4617.37,
+      "end": 4621.41,
+      "text": "As you can see, each of the qubits is either zero or one."
+    },
+    {
+      "start": 4621.41,
+      "end": 4624.41,
+      "text": "And if we take those bits, we get the number."
+    },
+    {
+      "start": 4624.41,
+      "end": 4629.97,
+      "text": "Then underneath, we have the same qubits after the quantum Fourier transform has been applied."
+    },
+    {
+      "start": 4630.49,
+      "end": 4635.33,
+      "text": "As you can see, instead of encoding the numbers like we normally do in a classical computer"
+    },
+    {
+      "start": 4635.33,
+      "end": 4641.21,
+      "text": "with zeros and ones, the numbers are now encoded by the phase of the qubits that are in a uniform"
+    },
+    {
+      "start": 4641.21,
+      "end": 4642.73,
+      "text": "superposition."
+    },
+    {
+      "start": 4642.73,
+      "end": 4649.33,
+      "text": "As you can see, the left qubit has two possible phase options, either zero or negative one,"
+    },
+    {
+      "start": 4649.33,
+      "end": 4650.65,
+      "text": "relative phase."
+    },
+    {
+      "start": 4650.65,
+      "end": 4654.89,
+      "text": "Then the next qubit has four possible phase options, and so on."
+    },
+    {
+      "start": 4654.89,
+      "end": 4660.05,
+      "text": "Up until the last qubit, which has two to the n possible phase positions, where n is"
+    },
+    {
+      "start": 4660.05,
+      "end": 4661.97,
+      "text": "the number of qubits."
+    },
+    {
+      "start": 4661.97,
+      "end": 4668.93,
+      "text": "In this case, the right qubit has two to the three, or eight possible phase options."
+    },
+    {
+      "start": 4668.93,
+      "end": 4673.05,
+      "text": "Depending on the number, the phase of the qubits is different."
+    },
+    {
+      "start": 4673.05,
+      "end": 4678.21,
+      "text": "Let's see how the number five is encoded once the quantum Fourier transform has been applied."
+    },
+    {
+      "start": 4678.21,
+      "end": 4684.57,
+      "text": "As you can see, the right qubit has been rotated around the z-axis five over eight times two"
+    },
+    {
+      "start": 4684.57,
+      "end": 4690.49,
+      "text": "pi radians, which is five pi on four radians."
+    },
+    {
+      "start": 4690.49,
+      "end": 4695.89,
+      "text": "To get the amount rotated around the z-axis of the next qubit, we multiply the previous"
+    },
+    {
+      "start": 4695.89,
+      "end": 4697.73,
+      "text": "one by two."
+    },
+    {
+      "start": 4697.73,
+      "end": 4703.73,
+      "text": "So the next qubit has been rotated two times five over eight times two pi radians."
+    },
+    {
+      "start": 4703.73,
+      "end": 4708.97,
+      "text": "So rotating the qubit pi over two radians around the z-axis."
+    },
+    {
+      "start": 4708.97,
+      "end": 4716.28,
+      "text": "The last one is two times that, which is two times pi over two radians."
+    },
+    {
+      "start": 4716.28,
+      "end": 4721.64,
+      "text": "This means that if we have this state, which is five in binary, and we apply the quantum"
+    },
+    {
+      "start": 4721.64,
+      "end": 4724.68,
+      "text": "Fourier transform, we get this state."
+    },
+    {
+      "start": 4724.68,
+      "end": 4728.76,
+      "text": "In the next lesson, we will see a use of the quantum Fourier transform."
+    },
+    {
+      "start": 4728.76,
+      "end": 4731.72,
+      "text": "But for now, let's look at the circuit."
+    },
+    {
+      "start": 4731.72,
+      "end": 4736.16,
+      "text": "Here is the quantum Fourier transform circuit for any number of bits."
+    },
+    {
+      "start": 4736.16,
+      "end": 4740.16,
+      "text": "As you can see, there are two gates that we have not seen before."
+    },
+    {
+      "start": 4740.16,
+      "end": 4743.04,
+      "text": "This gate here is a controlled R gate."
+    },
+    {
+      "start": 4743.04,
+      "end": 4745.92,
+      "text": "We will define this gate with this matrix."
+    },
+    {
+      "start": 4745.92,
+      "end": 4752.24,
+      "text": "As you can see, this gate has a variable k, which we can set and affects the phase applied."
+    },
+    {
+      "start": 4752.24,
+      "end": 4758.68,
+      "text": "This gate transformed the basis state zero into zero and one into e to the two pi over"
+    },
+    {
+      "start": 4758.68,
+      "end": 4766.2,
+      "text": "two to the k, one, giving us a relative phase if applied to a qubit in superposition."
+    },
+    {
+      "start": 4766.2,
+      "end": 4770.88,
+      "text": "The controlled version, like we have in this circuit, is the same as all the other controlled"
+    },
+    {
+      "start": 4770.88,
+      "end": 4776.6,
+      "text": "versions of other gates, only applying the gate if the control is a one."
+    },
+    {
+      "start": 4776.6,
+      "end": 4783.44,
+      "text": "This other weird-looking gate is called a swap gate, and it swaps the states of the two qubits."
+    },
+    {
+      "start": 4783.44,
+      "end": 4787.48,
+      "text": "For this lesson, we will go through an example with three bits."
+    },
+    {
+      "start": 4787.48,
+      "end": 4791.64,
+      "text": "For this example, we will use the state j as an input to the algorithm."
+    },
+    {
+      "start": 4792.2,
+      "end": 4798.92,
+      "text": "We will label each one of j's bits like this, where each ji is either zero or one."
+    },
+    {
+      "start": 4798.92,
+      "end": 4804.2,
+      "text": "To keep our equations tidy, we will look at each one of the qubits individually, then"
+    },
+    {
+      "start": 4804.2,
+      "end": 4807.64,
+      "text": "combine them at the end of the algorithm."
+    },
+    {
+      "start": 4807.64,
+      "end": 4811.6,
+      "text": "Let's start with finding out what j zero becomes."
+    },
+    {
+      "start": 4811.6,
+      "end": 4817.48,
+      "text": "After the Hadamard gate, the state becomes one on route two, zero, plus negative one"
+    },
+    {
+      "start": 4817.48,
+      "end": 4821.12,
+      "text": "to the power of j zero, one."
+    },
+    {
+      "start": 4821.12,
+      "end": 4825.73,
+      "text": "We can represent this like this."
+    },
+    {
+      "start": 4825.73,
+      "end": 4830.89,
+      "text": "You will see why we keep the j zero divided by two and don't simplify the fraction at"
+    },
+    {
+      "start": 4830.89,
+      "end": 4832.09,
+      "text": "the end."
+    },
+    {
+      "start": 4832.09,
+      "end": 4847.59,
+      "text": "Then we apply the controlled R2 gate with j one as the control."
+    },
+    {
+      "start": 4847.59,
+      "end": 4855.16,
+      "text": "We apply the R3 gate in the same way."
+    },
+    {
+      "start": 4855.16,
+      "end": 4858.32,
+      "text": "Now let's find out what j one becomes."
+    },
+    {
+      "start": 4858.32,
+      "end": 4861.6,
+      "text": "After the Hadamard gate, the state becomes this state."
+    },
+    {
+      "start": 4861.6,
+      "end": 4869.52,
+      "text": "Even after the controlled R2 gate and simplifying like we did previously, we get this state."
+    },
+    {
+      "start": 4869.52,
+      "end": 4877.0,
+      "text": "Lastly, we apply a Hadamard gate to the j2 qubit, leaving it in this state."
+    },
+    {
+      "start": 4877.0,
+      "end": 4881.68,
+      "text": "So after this part of the algorithm, our state j is in this state."
+    },
+    {
+      "start": 4881.68,
+      "end": 4888.48,
+      "text": "Now, once we swap the qubits, the state changes to this and we're done with the algorithm."
+    },
+    {
+      "start": 4888.48,
+      "end": 4894.72,
+      "text": "It may not seem like we did much, but we have in fact encoded the value of j into the phase"
+    },
+    {
+      "start": 4894.72,
+      "end": 4899.68,
+      "text": "of the qubits, just like we saw with the animation previously."
+    },
+    {
+      "start": 4899.68,
+      "end": 4906.62,
+      "text": "Let's quickly check this by making j the value of five, so 101 in binary."
+    },
+    {
+      "start": 4906.62,
+      "end": 4912.24,
+      "text": "If we now input the values into the equations for the state, then we can see that the phases"
+    },
+    {
+      "start": 4912.24,
+      "end": 4917.64,
+      "text": "do match up to what we had previously discovered at the beginning of the lesson."
+    },
+    {
+      "start": 4917.64,
+      "end": 4923.72,
+      "text": "If we were to apply the quantum Fourier transform to an arbitrary basis state, j, we get one"
+    },
+    {
+      "start": 4923.72,
+      "end": 4929.84,
+      "text": "of a root two to the power of n times the sum from k equals zero to two to the n minus"
+    },
+    {
+      "start": 4929.84,
+      "end": 4937.96,
+      "text": "one, e to the power of two pi i jk over two to the n, k, where n is the number of bits"
+    },
+    {
+      "start": 4937.96,
+      "end": 4940.36,
+      "text": "in j."
+    },
+    {
+      "start": 4940.36,
+      "end": 4945.7,
+      "text": "We also have the inverse quantum Fourier transform, and that undoes the quantum Fourier"
+    },
+    {
+      "start": 4945.7,
+      "end": 4947.34,
+      "text": "transform."
+    },
+    {
+      "start": 4947.34,
+      "end": 4952.64,
+      "text": "So if we add this state, which is the state where we encoded five using the quantum Fourier"
+    },
+    {
+      "start": 4952.64,
+      "end": 4958.04,
+      "text": "transform, if we now apply the inverse quantum Fourier transform, we get back to our state"
+    },
+    {
+      "start": 4958.04,
+      "end": 4965.06,
+      "text": "101."
+    },
+    {
+      "start": 4965.06,
+      "end": 4970.62,
+      "text": "The quantum phase estimation algorithm allows us to find the eigenvalue of an eigenvector"
+    },
+    {
+      "start": 4970.62,
+      "end": 4972.42,
+      "text": "given the matrix."
+    },
+    {
+      "start": 4972.42,
+      "end": 4978.46,
+      "text": "So if we have a matrix u and apply it to its eigenvector v, since v is an eigenvector,"
+    },
+    {
+      "start": 4978.46,
+      "end": 4984.28,
+      "text": "we get e to the i theta v, where e to the i theta is the eigenvalue."
+    },
+    {
+      "start": 4984.28,
+      "end": 4989.2,
+      "text": "We can represent all eigenvalues in quantum computing in this form."
+    },
+    {
+      "start": 4989.2,
+      "end": 4996.4,
+      "text": "The QPE, or quantum phase estimation algorithm, finds e to the i theta to a certain accuracy."
+    },
+    {
+      "start": 4996.4,
+      "end": 5001.52,
+      "text": "This algorithm is a key part in many quantum algorithms, including Schur's algorithm, which"
+    },
+    {
+      "start": 5001.52,
+      "end": 5007.28,
+      "text": "we will discuss in the next lesson, which allows us to find prime factors of large numbers."
+    },
+    {
+      "start": 5007.28,
+      "end": 5010.3,
+      "text": "Here is the quantum phase estimation circuit."
+    },
+    {
+      "start": 5010.3,
+      "end": 5012.74,
+      "text": "As you can see, we have two registers."
+    },
+    {
+      "start": 5012.74,
+      "end": 5018.42,
+      "text": "The first one contains m zeroes and is used to store the estimated phase, and the second"
+    },
+    {
+      "start": 5018.42,
+      "end": 5024.54,
+      "text": "one, v, is n qubits and is the eigenvector of the gate we are trying to measure the"
+    },
+    {
+      "start": 5024.54,
+      "end": 5027.38,
+      "text": "eigenvalue of."
+    },
+    {
+      "start": 5027.38,
+      "end": 5032.58,
+      "text": "Looking at the circuit, you can see that the gate u, which we are trying to find the eigenvalue"
+    },
+    {
+      "start": 5032.58,
+      "end": 5035.86,
+      "text": "of, is to the power of some numbers."
+    },
+    {
+      "start": 5035.86,
+      "end": 5041.44,
+      "text": "Due to the power of n is the same as applying u to a qubit n times."
+    },
+    {
+      "start": 5041.44,
+      "end": 5047.28,
+      "text": "Also, you can see we have the inverse quantum Fourier transform at the end of the algorithm."
+    },
+    {
+      "start": 5047.28,
+      "end": 5049.44,
+      "text": "Let's start going through the circuit."
+    },
+    {
+      "start": 5049.44,
+      "end": 5054.24,
+      "text": "At psi sub zero, we have the state m zeroes v."
+    },
+    {
+      "start": 5054.24,
+      "end": 5062.69,
+      "text": "Then at psi sub one, we apply the Hadamard gates to all the qubits in the first register."
+    },
+    {
+      "start": 5062.69,
+      "end": 5068.67,
+      "text": "At psi sub two, we apply the u gate to the eigenvector v with the rightmost qubit in"
+    },
+    {
+      "start": 5068.67,
+      "end": 5071.43,
+      "text": "the first register as a control."
+    },
+    {
+      "start": 5071.43,
+      "end": 5077.07,
+      "text": "Since v is the eigenvector of u, phase kickback occurs, which adds a relative phase of e to"
+    },
+    {
+      "start": 5077.07,
+      "end": 5079.95,
+      "text": "the i theta to the qubit."
+    },
+    {
+      "start": 5079.95,
+      "end": 5085.43,
+      "text": "Then at psi sub three, we apply two u gates or the u squared gate with the qubit in the"
+    },
+    {
+      "start": 5085.43,
+      "end": 5089.39,
+      "text": "first register as a control and v as the target."
+    },
+    {
+      "start": 5089.41,
+      "end": 5094.57,
+      "text": "Once again, phase kickback occurs, applying a phase of e to the i theta times e to the"
+    },
+    {
+      "start": 5094.57,
+      "end": 5098.25,
+      "text": "i theta or e to the two i theta."
+    },
+    {
+      "start": 5098.25,
+      "end": 5103.45,
+      "text": "We continue this process for each of the qubits in the first register, which leaves us with"
+    },
+    {
+      "start": 5103.45,
+      "end": 5105.85,
+      "text": "this state."
+    },
+    {
+      "start": 5105.85,
+      "end": 5113.05,
+      "text": "Now we let theta equal two pi j, where j is a number between zero and one, since theta"
+    },
+    {
+      "start": 5113.05,
+      "end": 5116.73,
+      "text": "is an angle between zero and two pi."
+    },
+    {
+      "start": 5116.73,
+      "end": 5120.51,
+      "text": "With this, if we find j, we can find theta."
+    },
+    {
+      "start": 5120.51,
+      "end": 5123.63,
+      "text": "Substituting this in, we get this equation."
+    },
+    {
+      "start": 5123.63,
+      "end": 5129.35,
+      "text": "Now since j is a bit string less than one, we can represent it like this, which converts"
+    },
+    {
+      "start": 5129.35,
+      "end": 5133.79,
+      "text": "it from a decimal in binary to a decimal in base ten."
+    },
+    {
+      "start": 5133.79,
+      "end": 5138.03,
+      "text": "If we now sub that into our equation, it becomes this."
+    },
+    {
+      "start": 5138.03,
+      "end": 5143.55,
+      "text": "Now if we look at the first qubit, we have a factor of two to the power of m minus one."
+    },
+    {
+      "start": 5143.57,
+      "end": 5149.6,
+      "text": "If we distribute that into j, we get this."
+    },
+    {
+      "start": 5149.6,
+      "end": 5154.08,
+      "text": "Since all these terms are integers, when we expand them out, there will be a factor of"
+    },
+    {
+      "start": 5154.08,
+      "end": 5158.44,
+      "text": "two pi, so they are not needed since they are redundant."
+    },
+    {
+      "start": 5158.44,
+      "end": 5162.72,
+      "text": "This leaves us with j m minus one over two."
+    },
+    {
+      "start": 5162.72,
+      "end": 5167.76,
+      "text": "If we do the same process to the rest of the qubits, we are left with this state."
+    },
+    {
+      "start": 5167.76,
+      "end": 5170.28,
+      "text": "Can you notice anything about this state?"
+    },
+    {
+      "start": 5170.28,
+      "end": 5175.44,
+      "text": "This is the same state as if we were to apply the quantum Fourier transform to the state"
+    },
+    {
+      "start": 5176.42,
+      "end": 5177.42,
+      "text": "j."
+    },
+    {
+      "start": 5177.42,
+      "end": 5183.42,
+      "text": "So, when we apply the inverse quantum Fourier transform, we end up with the state j."
+    },
+    {
+      "start": 5183.42,
+      "end": 5189.18,
+      "text": "All we need to do is measure the state and we have approximated j to m bits."
+    },
+    {
+      "start": 5189.18,
+      "end": 5196.38,
+      "text": "Now with j, we can multiply it by two pi to get theta, and then we can find the eigenvalue"
+    },
+    {
+      "start": 5196.38,
+      "end": 5205.77,
+      "text": "as e to the i theta."
+    },
+    {
+      "start": 5205.77,
+      "end": 5212.05,
+      "text": "Now we will tackle probably the most important and popular quantum algorithm, Schur's algorithm."
+    },
+    {
+      "start": 5212.05,
+      "end": 5216.37,
+      "text": "This algorithm allows us to find the prime factors of a large number."
+    },
+    {
+      "start": 5216.37,
+      "end": 5222.95,
+      "text": "So if we have a number n equals pq, where pq are both prime, Schur's algorithm allows"
+    },
+    {
+      "start": 5222.95,
+      "end": 5226.11,
+      "text": "us to find p and q."
+    },
+    {
+      "start": 5226.11,
+      "end": 5231.91,
+      "text": "This may not seem very useful, but this is the backbone of RSA, which is a widely used"
+    },
+    {
+      "start": 5231.91,
+      "end": 5233.63,
+      "text": "type of encryption."
+    },
+    {
+      "start": 5233.63,
+      "end": 5238.65,
+      "text": "So using Schur's algorithm will allow us to crack RSA encryption, but that won't happen"
+    },
+    {
+      "start": 5238.65,
+      "end": 5239.81,
+      "text": "for a while."
+    },
+    {
+      "start": 5239.81,
+      "end": 5244.69,
+      "text": "To Runtur's algorithm, we will need a fault torrent quantum computer with millions of"
+    },
+    {
+      "start": 5244.69,
+      "end": 5248.61,
+      "text": "logical qubits, which won't happen for some time."
+    },
+    {
+      "start": 5248.61,
+      "end": 5253.85,
+      "text": "This algorithm uses both classical and quantum computers for different steps."
+    },
+    {
+      "start": 5253.85,
+      "end": 5262.05,
+      "text": "First, we choose an a that is between 1 and n, and the gcd of an n is 1."
+    },
+    {
+      "start": 5262.05,
+      "end": 5266.13,
+      "text": "So a and n share no common factors."
+    },
+    {
+      "start": 5266.13,
+      "end": 5272.31,
+      "text": "Next we do the quantum step, but before that, we will look at some number theory."
+    },
+    {
+      "start": 5272.31,
+      "end": 5279.69,
+      "text": "In modular arithmetic, we say that a is congruent to b mod n, if the remainder of a divided"
+    },
+    {
+      "start": 5279.69,
+      "end": 5281.85,
+      "text": "by n is b."
+    },
+    {
+      "start": 5281.85,
+      "end": 5291.01,
+      "text": "For example, 3 is congruent to 1 mod 2, since dividing 3 with 2 gives a remainder of 1."
+    },
+    {
+      "start": 5291.01,
+      "end": 5296.37,
+      "text": "We can reduce the factoring problem down into the problem of finding the period of modular"
+    },
+    {
+      "start": 5296.37,
+      "end": 5298.37,
+      "text": "exponentiation."
+    },
+    {
+      "start": 5298.37,
+      "end": 5303.65,
+      "text": "Modular exponentiation is when you take the powers of a number, modulo a number."
+    },
+    {
+      "start": 5303.65,
+      "end": 5306.17,
+      "text": "Here is an example."
+    },
+    {
+      "start": 5306.17,
+      "end": 5311.81,
+      "text": "As you can see, if we have a number, in this case 2, and put it to increasing powers, we"
+    },
+    {
+      "start": 5311.81,
+      "end": 5315.17,
+      "text": "get a repeating pattern when we take the modulo."
+    },
+    {
+      "start": 5315.17,
+      "end": 5320.17,
+      "text": "The period of this pattern is the length of the sequence, and that is what we are looking"
+    },
+    {
+      "start": 5320.17,
+      "end": 5321.33,
+      "text": "for."
+    },
+    {
+      "start": 5321.33,
+      "end": 5325.01,
+      "text": "In this case, the period r is equal to 6."
+    },
+    {
+      "start": 5325.01,
+      "end": 5331.13,
+      "text": "All of the sequences start with a to the power of 0 is congruent to 1 mod n, so we need to"
+    },
+    {
+      "start": 5331.13,
+      "end": 5335.49,
+      "text": "keep increasing the power until we get back to 1."
+    },
+    {
+      "start": 5335.49,
+      "end": 5341.57,
+      "text": "If we are able to find the period, we can use some number theory to find the prime factors."
+    },
+    {
+      "start": 5341.57,
+      "end": 5347.41,
+      "text": "If we have a number n, which is equal to the product of two prime numbers, p and q, if we"
+    },
+    {
+      "start": 5347.41,
+      "end": 5355.05,
+      "text": "pick a number a, where the gcd of a and n is equal to 1, so they share no common factors,"
+    },
+    {
+      "start": 5355.05,
+      "end": 5361.89,
+      "text": "and we find the period of a to the x mod n, then if we get a good approximation for r,"
+    },
+    {
+      "start": 5361.89,
+      "end": 5368.89,
+      "text": "the gcd of a to the power of r divided by 2 minus 1 and n, and the gcd of a to the power"
+    },
+    {
+      "start": 5368.89,
+      "end": 5376.45,
+      "text": "of n divided by 2 plus 1 and n, has a good chance of containing the factors of n."
+    },
+    {
+      "start": 5376.49,
+      "end": 5381.41,
+      "text": "Let's go through the steps in finding the period of modular exponentiation."
+    },
+    {
+      "start": 5381.41,
+      "end": 5383.69,
+      "text": "For this, we need to use this gate."
+    },
+    {
+      "start": 5383.69,
+      "end": 5390.45,
+      "text": "Let's call it u, which transforms the state x to the state xa mod n."
+    },
+    {
+      "start": 5390.45,
+      "end": 5397.73,
+      "text": "If we apply this gate to the one state multiple times, we can get powers of a in mod n."
+    },
+    {
+      "start": 5397.73,
+      "end": 5401.57,
+      "text": "How we construct this gate is outside the scope of this course."
+    },
+    {
+      "start": 5401.57,
+      "end": 5406.69,
+      "text": "See the problem set for resources on how we can construct this gate."
+    },
+    {
+      "start": 5406.69,
+      "end": 5411.61,
+      "text": "Let's consider this state, us."
+    },
+    {
+      "start": 5411.61,
+      "end": 5420.83,
+      "text": "If we apply a u gate to the state, it gives us this state."
+    },
+    {
+      "start": 5420.83,
+      "end": 5426.71,
+      "text": "Looking at the a to the r mod n, we can change this to a to the zero mod n, since they are"
+    },
+    {
+      "start": 5426.71,
+      "end": 5428.39,
+      "text": "both 1."
+    },
+    {
+      "start": 5428.39,
+      "end": 5435.19,
+      "text": "If we multiply the right hand side by 1, or e to the 2 pi is over r, times e to the"
+    },
+    {
+      "start": 5435.19,
+      "end": 5440.19,
+      "text": "negative 2 pi is over r, we get this state."
+    },
+    {
+      "start": 5440.19,
+      "end": 5447.99,
+      "text": "We can change the e to the negative 2 pi is over r to e to the negative 2 pi i zero over"
+    },
+    {
+      "start": 5447.99,
+      "end": 5450.95,
+      "text": "r, since they are both equal to 1."
+    },
+    {
+      "start": 5450.95,
+      "end": 5456.55,
+      "text": "Now, as you can see, this whole state becomes the us state."
+    },
+    {
+      "start": 5456.55,
+      "end": 5463.11,
+      "text": "This means that the us state is an eigenvector of the u gate, with an eigenvalue of e to"
+    },
+    {
+      "start": 5463.11,
+      "end": 5467.19,
+      "text": "the power of 2 pi i s over r."
+    },
+    {
+      "start": 5467.19,
+      "end": 5472.71,
+      "text": "This means that if we can construct the us state, we can use the quantum phase estimation"
+    },
+    {
+      "start": 5472.71,
+      "end": 5476.47,
+      "text": "algorithm to get the value of s over r."
+    },
+    {
+      "start": 5476.47,
+      "end": 5483.99,
+      "text": "It turns out that it is far easier to construct the equal superposition of all of the us states."
+    },
+    {
+      "start": 5483.99,
+      "end": 5487.35,
+      "text": "What this becomes is 1 mod n."
+    },
+    {
+      "start": 5487.35,
+      "end": 5491.47,
+      "text": "In the problem set for this lesson, we will prove this result."
+    },
+    {
+      "start": 5491.47,
+      "end": 5497.15,
+      "text": "We can construct the 1 mod n by applying a knot to the rightmost q bit in a register"
+    },
+    {
+      "start": 5497.15,
+      "end": 5503.63,
+      "text": "of all zeros, which gives us the value 1, which is equal to 1 in mod n."
+    },
+    {
+      "start": 5503.63,
+      "end": 5510.19,
+      "text": "So by creating the state 1 mod n, we are actually creating the state 1 over root r times the"
+    },
+    {
+      "start": 5510.19,
+      "end": 5515.43,
+      "text": "sum from s equals 0 to r minus 1 of us."
+    },
+    {
+      "start": 5515.43,
+      "end": 5518.15,
+      "text": "Here is the circuit for the algorithm."
+    },
+    {
+      "start": 5518.15,
+      "end": 5522.07,
+      "text": "Looking at it, this is just the quantum phase estimation circuit."
+    },
+    {
+      "start": 5522.07,
+      "end": 5528.79,
+      "text": "As you can see, we now know that 1 is an eigenvector of the u gate, so we are using this to estimate"
+    },
+    {
+      "start": 5528.79,
+      "end": 5536.23,
+      "text": "the eigenvalue e to the power of 2 pi i s over r, where s is an integer from 0 to r minus"
+    },
+    {
+      "start": 5536.23,
+      "end": 5537.23,
+      "text": "1."
+    },
+    {
+      "start": 5537.23,
+      "end": 5544.15,
+      "text": "This is because our eigenvector 1 mod n is equal to 1 over root r times the sum from"
+    },
+    {
+      "start": 5544.15,
+      "end": 5548.79,
+      "text": "s equals 0 to r minus 1 of us."
+    },
+    {
+      "start": 5548.79,
+      "end": 5556.75,
+      "text": "So we will get the eigenvalue e to the power of 2 pi i s over r for 1 value of s."
+    },
+    {
+      "start": 5556.75,
+      "end": 5563.51,
+      "text": "So when we measure the q bits, we will get the eigenvalue of 1 of the us's, which means"
+    },
+    {
+      "start": 5563.51,
+      "end": 5568.87,
+      "text": "that we will get s over r for 1s from 0 to r minus 1."
+    },
+    {
+      "start": 5568.87,
+      "end": 5575.55,
+      "text": "If we happen to get 0 as our eigenvalue, so s equals 0, then we repeat the circuit so"
+    },
+    {
+      "start": 5575.55,
+      "end": 5579.59,
+      "text": "we can get an eigenvalue that is nonzero."
+    },
+    {
+      "start": 5579.59,
+      "end": 5584.31,
+      "text": "Now we have a decimal number j, which is equal to s over r."
+    },
+    {
+      "start": 5584.31,
+      "end": 5587.11,
+      "text": "That is the quantum part of the algorithm done."
+    },
+    {
+      "start": 5587.11,
+      "end": 5593.87,
+      "text": "Now we estimate the values of s and r by using a technique called continued fractions."
+    },
+    {
+      "start": 5593.87,
+      "end": 5598.39,
+      "text": "Here is an example with the decimal 0.312."
+    },
+    {
+      "start": 5598.39,
+      "end": 5605.69,
+      "text": "We start by writing it as a fraction, then we flip the fraction."
+    },
+    {
+      "start": 5605.69,
+      "end": 5610.41,
+      "text": "We continue this process until we have the number 1 in the numerator."
+    },
+    {
+      "start": 5610.41,
+      "end": 5615.93,
+      "text": "By representing a decimal in this way, we can approximate its value with a fraction by"
+    },
+    {
+      "start": 5615.93,
+      "end": 5619.09,
+      "text": "rounding off the continued fraction."
+    },
+    {
+      "start": 5619.09,
+      "end": 5624.21,
+      "text": "Here are the first three approximations for the decimal 0.312."
+    },
+    {
+      "start": 5624.21,
+      "end": 5630.69,
+      "text": "To approximate s over r, we find an approximation where the denominator is less than n."
+    },
+    {
+      "start": 5630.69,
+      "end": 5634.17,
+      "text": "Since the period r must be less than n."
+    },
+    {
+      "start": 5634.17,
+      "end": 5639.37,
+      "text": "If r is odd, then we repeat the algorithm and get a new value of r."
+    },
+    {
+      "start": 5639.37,
+      "end": 5644.65,
+      "text": "Now that we have a value for r, we can use this to find the factors of n."
+    },
+    {
+      "start": 5644.65,
+      "end": 5652.29,
+      "text": "We know that a to the r is congruent to 1 mod n, so a to the r minus 1 is congruent to"
+    },
+    {
+      "start": 5652.29,
+      "end": 5654.25,
+      "text": "0 mod n."
+    },
+    {
+      "start": 5654.25,
+      "end": 5660.57,
+      "text": "This means that a to the power of r minus 1 has a factor of n, since when we divide it"
+    },
+    {
+      "start": 5660.57,
+      "end": 5664.09,
+      "text": "by n, we get 0 remainder."
+    },
+    {
+      "start": 5664.09,
+      "end": 5670.69,
+      "text": "If we factor a to the power of r minus 1 with the difference of 2 squares, then we get this."
+    },
+    {
+      "start": 5670.69,
+      "end": 5676.97,
+      "text": "From this, we can see that if we calculate the GCD of a to the power of r over 2 minus"
+    },
+    {
+      "start": 5676.97,
+      "end": 5683.25,
+      "text": "1, n, and the GCD of a to the power of r over 2 plus 1 and n."
+    },
+    {
+      "start": 5683.25,
+      "end": 5688.41,
+      "text": "With our approximation of r, we have a good chance of them being one of the factors."
+    },
+    {
+      "start": 5688.41,
+      "end": 5693.02,
+      "text": "This allows us to find p and q."
+    },
+    {
+      "start": 5693.02,
+      "end": 5699.82,
+      "text": "Let's go through a quick example with n equal to 15, so p is 3 and q is 5."
+    },
+    {
+      "start": 5699.82,
+      "end": 5704.54,
+      "text": "In step 1, we choose an a which is relatively prime to 15."
+    },
+    {
+      "start": 5704.54,
+      "end": 5707.54,
+      "text": "Let's choose a equals 7."
+    },
+    {
+      "start": 5707.54,
+      "end": 5714.02,
+      "text": "Now in step 2, we use the quantum part of Shaw's algorithm to find the period or r."
+    },
+    {
+      "start": 5714.06,
+      "end": 5720.22,
+      "text": "So we need to find r such that 7 to the power of r is congruent to 1 mod 15."
+    },
+    {
+      "start": 5720.22,
+      "end": 5724.74,
+      "text": "By using the algorithm, we find that r is equal to 4."
+    },
+    {
+      "start": 5724.74,
+      "end": 5732.74,
+      "text": "Now we calculate the GCD of 7 to the power of 4 over 2 minus 1 and 15, and the GCD of"
+    },
+    {
+      "start": 5732.74,
+      "end": 5736.94,
+      "text": "7 to the power of 4 over 2 plus 1 and 15."
+    },
+    {
+      "start": 5736.94,
+      "end": 5745.98,
+      "text": "The first one becomes the GCD of 48 and 15, and the second becomes the GCD of 50 and 15."
+    },
+    {
+      "start": 5745.98,
+      "end": 5754.46,
+      "text": "The GCD of 48 and 15 is 3, and the GCD of 50 and 15 is 5."
+    },
+    {
+      "start": 5754.46,
+      "end": 5760.18,
+      "text": "As you can see, we have found the factors of 15, 3 and 5 using Shaw's algorithm."
+    }
+  ]
+}
